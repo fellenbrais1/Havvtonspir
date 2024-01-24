@@ -1,5 +1,5 @@
 
-# This code makes use of the calendar module to simply print a calendar based on the data
+# This code is just 'Calendar.py' but trimmed down, so it can be imported into other programs
 from calendar import *
 
 
@@ -8,5 +8,7 @@ def calender_maker():
     print(calendar(year, 2, 1, 8, 3))
 
 
-if __name__ == " __main__":
+# This final piece of code means that 'Calendar_Module' won't run automatically when imported
+# '__name__ == "__main__"' means that it will only run if called and made into the main active code
+if __name__ == "__main__":
     calender_maker()

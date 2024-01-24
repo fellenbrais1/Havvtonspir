@@ -9,6 +9,7 @@ name = name.capitalize()
 print("Well hello there {0}!".format(name))
 
 # This try loop is to handle ValueError if the user types a str into the age variable
+# A while loop is used to prompt the user for another input in case of an erroneous one
 done = False
 while not done:
     try:
@@ -26,5 +27,6 @@ while not done:
                   .format(age))
             print("Please let us know if you are interested in another product {0}.".format(name))
             done = True
+# This except code is what runs if an invalid input is entered
     except ValueError:
         print("Please enter your age in numbers {0}.".format(name))
