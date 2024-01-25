@@ -158,7 +158,7 @@ while choice1 != "Y" or "N":
         print("\nI'm sorry, please choose between 'Y' and 'N'\n")
         continue
 
-# The hat-crumplers dastardly hat-crumpling trap
+# The hat-crumplers' dastardly hat-crumpling trap
 input()
 print("Suddenly, a hat-crumpling trap springs from the sides of the corridor!\n"
       "You have mere seconds before it ruins your hats!")

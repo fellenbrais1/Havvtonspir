@@ -1,4 +1,5 @@
 
+# Importing the 'random' module to generate random numbers for the 'answer' variable
 from random import *
 
 
@@ -7,6 +8,7 @@ def guesser():
     guess = 0
     guess_count = 3
 
+    print("You must guess a number between 1 and 9, you have 3 guesses \nGood luck!")
     while guess != answer:
         if guess_count == 0:
             print("I am sorry you have run out of guesses")
@@ -31,7 +33,7 @@ def guesser():
                 else:
                     print("I'm sorry, please enter a number between 1 and 9 to proceed")
                     continue
-
+# 'except' handles a ValueError situation and loops back to the input
             except ValueError:
                 print("I'm sorry, please enter a number between 1 and 9 to proceed")
                 continue

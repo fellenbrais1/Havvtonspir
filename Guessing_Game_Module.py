@@ -1,4 +1,5 @@
 
+# 'Guessing_Game' but made into a module that won't run automatically when imported
 from random import *
 
 
@@ -7,6 +8,7 @@ def guesser():
     guess = 0
     guess_count = 3
 
+    print("You must guess a number between 1 and 9, you have 3 guesses \nGood luck!")
     while guess != answer:
         if guess_count == 0:
             print("I am sorry you have run out of guesses")
@@ -39,5 +41,6 @@ def guesser():
     print("GAME OVER")
 
 
+# This code causes it not to run automatically and only when called by another program
 if __name__ == " __main__":
     guesser()
