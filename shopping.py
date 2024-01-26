@@ -1,6 +1,6 @@
 
 # Assigning values to a list, a series of values in quotes separated by commas
-# In Python, we use [] to specify a list
+# In Python, we use '[]' to specify a list
 
 shopping_list = ['milk', 'pasta', 'eggs', 'spam', 'bread', 'rice']
 
@@ -25,7 +25,7 @@ for item in shopping_list:
         continue
     print("Buy: ", item)
 
-# 'break' breaks out of the loop completely and stops anything from happening with it
+# 'break' breaks out of the loop completely and stops anything further from happening there
 print()
 for item in shopping_list:
     if item == 'spam':

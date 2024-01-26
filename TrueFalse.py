@@ -1,8 +1,10 @@
 
+# Testing True and False conditions and branching outputs
 day = str(input("What day is it? "))
 temperature = int(input("What is the temperature today? "))
 raining = False
 
+# Testing with an if block for True and False values
 if day == "Saturday" and temperature > 27 and not raining:
     print("Go swimming")
 else:
@@ -20,10 +22,13 @@ if (day == "Saturday" and temperature > 27) or not raining:
 else:
     print("Learn Python")
 
-if 0:
-    print("True")
-else:
-    print("False")
+# In this example the IDE throws up a potential problem as a piece of code cannot be reached
+
+# COMMENTED OUT FOR NOW
+# if 0:
+#     print("True")
+# else:
+#     print("False")
 
 name = input("Please enter your name: ")
 if name:

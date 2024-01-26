@@ -15,11 +15,13 @@ item_to_find = item_to_find.casefold()
 # This could be in a situation where an item is not found in the list for example
 found_at = None
 
+# Breaking out of the loop means we don't need to do any processing once the desired result is found
 for index in range(len(shopping_list)):
     if shopping_list[index].casefold() == item_to_find:
         found_at = index
         break
 
+# To print a message if the specified value is found or not found in the list
 if found_at is not None:
     print('\'{0}\' found at position {1}'.format(item_to_find, found_at))
 else:

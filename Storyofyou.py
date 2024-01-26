@@ -1,20 +1,24 @@
 
-if __name__ == "__main__":
-    global name
-    name = ""
-    global age
-    age = ""
-    global hobbies
-    hobbies = []
-    name = input("What is your name? ")
-    age = input("How old are you? ") + "-years-old"
-    hobbies.append(input("What is your first hobby? "))
-    hobbies.append(input("What is your second hobby? "))
-    hobbies.append(input("What is your third hobby? " ))
+# Abandon for now, I don't have a good enough understanding of functions yet to make this work
 
 
-def storyofyou():
-    print("Your name is", name)
+def storyofyou(name='', age='', hobbies=''):
+    if name == '':
+        name = input("What is your name? ".capitalize())
+    else:
+        pass
+    if age == '':
+        age = input("How old are you? ") + "-years-old"
+    else:
+        pass
+    hobbies = list(hobbies)
+    if not hobbies:
+        hobbies.append(input("What is your first hobby? "))
+        hobbies.append(input("What is your second hobby? "))
+        hobbies.append(input("What is your third hobby? "))
+    else:
+        pass
+    print("\nYour name is", name)
     print("You are", age)
     print("Your hobbies are:")
     for item in hobbies:
@@ -23,4 +27,12 @@ def storyofyou():
     print("Goodbye!")
 
 
-storyofyou()
+if __name__ == "__main__":
+    storyofyou(name='', age='', hobbies='')
+
+    # input_hobbies = []
+    # input_name = input("What is your name? ".capitalize())
+    # input_age = input("How old are you? ") + "-years-old"
+    # input_hobbies.append(input("What is your first hobby? "))
+    # input_hobbies.append(input("What is your second hobby? "))
+    # input_hobbies.append(input("What is your third hobby? "))

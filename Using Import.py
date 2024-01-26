@@ -1,12 +1,21 @@
 
+# Trying to supply arguments to an imported function to make it use the supplied inputs
 try:
-    from STT import STX
+    from Storyofyou import storyofyou
 except ImportError:
-    print("Change the name of your file to something else or check if other problems are occuring")
-    exit
+    print("Change the name of your file to something else or check if other problems are occurring")
+    exit()
 
-name = "Michael"
-age = "35"
-hobbies = ["Gaming", "Eating", "Programming"]
+# This code is to specify values to be used by the 'storyofyou' function instead of the default ones
+input_name = "Michael"
+input_age = "35"
+input_hobbies = ["Gaming", "Eating", "Programming"]
 
-STX.story()
+# This block of code is to test 'storyofyou' by supplying empty values
+
+# COMMENTED OUT FOR NOW
+# input_name = ""
+# input_age = ""
+# input_hobbies = []
+
+storyofyou(input_name, input_age, input_hobbies)
