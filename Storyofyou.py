@@ -30,6 +30,9 @@ def storyofyou(name='', age='', hobbies=''):
 if __name__ == "__main__":
     storyofyou(name='', age='', hobbies='')
 
+# Code not needed for now
+
+# COMMENTED OUT FOR NOW
     # input_hobbies = []
     # input_name = input("What is your name? ".capitalize())
     # input_age = input("How old are you? ") + "-years-old"
