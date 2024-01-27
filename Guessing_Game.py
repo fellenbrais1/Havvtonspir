@@ -1,21 +1,44 @@
 
+# Modified this code to be more robust and to handle error exceptions concerning the input
+# User can now choose their difficult from three options
+
 # Importing the 'random' module to generate random numbers for the 'answer' variable
 from random import *
 
 
 def guesser():
     answer = randint(1, 9)
+    difficulty = ['4', '3', '2']
     guess = 0
-    guess_count = 3
+    guess_count = 0
 
-    print("You must guess a number between 1 and 9, you have 3 guesses \nGood luck!")
+    print('1. Easy\n2. Medium\n3. Hard')
+    ready_1 = True
+
+    while ready_1:
+        try:
+            difficulty_input = int(input('Choose your difficulty: '))
+            try:
+                guess_count = difficulty[difficulty_input - 1]
+                guess_count = int(guess_count)
+                ready_1 = False
+            except IndexError:
+                print("Please choose your difficulty by typing the numbers 1 (Easy), 2 (Medium), or 3 (Hard)")
+            continue
+        except ValueError:
+            print("Please choose your difficulty by typing the numbers 1 (Easy), 2 (Medium), or 3 (Hard)")
+
+    print("You must guess a number between 1 and 9, you have {0} guesses \nGood luck!".format(guess_count))
     while guess != answer:
         if guess_count == 0:
             print("I am sorry you have run out of guesses")
             print("GAME OVER")
             exit()
         else:
-            print("You have {0} guesses left".format(guess_count))
+            if guess_count > 1:
+                print("You have {0} guesses left".format(guess_count))
+            else:
+                print("You have {0} guess left".format(guess_count))
             print("Please guess a number between 1 and 10 ")
             try:
                 guess = int(input())
