@@ -4,7 +4,7 @@
 # User can now choose between three difficulty options on launch
 # Removed unnecessary code (breaks and continues)
 
-from random import *
+from random import randint
 
 
 def guesser():
