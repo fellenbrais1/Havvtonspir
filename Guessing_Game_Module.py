@@ -1,7 +1,7 @@
 
 # 'Guessing_Game' but made into a module that won't run automatically when imported
 # Modified the code to make it more robust and handle errors concerning user input
-# User can now choose between three difficult options on launch
+# User can now choose between three difficulty options on launch
 
 from random import *
 
