@@ -5,7 +5,6 @@
 
 # Importing the 'randint' function from the 'random' module to generate random numbers for the 'answer' variable
 from random import randint
-# from random import *
 
 
 def guesser():
@@ -30,7 +29,6 @@ def guesser():
                 ready_1 = False
             except IndexError:
                 print("Please choose your difficulty by typing the numbers 1 (Easy), 2 (Medium), or 3 (Hard)")
-            continue
         except ValueError:
             print("Please choose your difficulty by typing the numbers 1 (Easy), 2 (Medium), or 3 (Hard)")
 
@@ -57,8 +55,10 @@ def guesser():
                         if guess_count == guess_count_max:
                             print("Well done, you got the correct guess on your first try!")
                             print("You win the grand prize! If we had one!")
+                            break
                         else:
                             print("Well done, you got the correct guess!")
+                            break
                     elif guess < answer:
                         print("You guessed too low!")
                         guess_count -= 1
