@@ -1,6 +1,6 @@
 
 # Modified this code to be more robust and to handle error exceptions concerning the input
-# User can now choose their difficult from three options
+# User can now choose their difficulty from three options
 
 # Importing the 'random' module to generate random numbers for the 'answer' variable
 from random import *
