@@ -14,4 +14,3 @@ while i - 1 < 10:
 
 # In some languages the two above loops are computed the same way
 # But in Python different things are happening behind the scenes
-

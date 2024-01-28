@@ -1,13 +1,13 @@
 
 # This code shows examples of concatenation with strings and numerical operations with ints etc
-string1 = "he's "
-string2 = "probably "
-string3 = "pining "
-string4 = "for the "
-string5 = "fjords"
+string_1 = "he's "
+string_2 = "probably "
+string_3 = "pining "
+string_4 = "for the "
+string_5 = "fjords"
 
 # Simple string concatenation
-print(string1 + string2 + string3 + string4 + string5)
+print(string_1 + string_2 + string_3 + string_4 + string_5)
 print("he's " "probably " "pining " "for the " "fjords")
 
 # Multiplying the output (duplicating) of a string

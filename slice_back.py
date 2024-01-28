@@ -18,17 +18,17 @@ print(backwards)
 
 # Programming challenge to produce the outputs 'qpo', 'edcba', and 'zyxwvuts'
 # Using negative step value slices
-seq1 = letters[14:17]
-rev_seq1 = seq1[::-1]
-print("\n", rev_seq1)
+seq_1 = letters[14:17]
+rev_seq_1 = seq_1[::-1]
+print("\n", rev_seq_1)
 
-seq2 = letters[0:5]
-rev_seq2 = seq2[::-1]
-print("\n", rev_seq2)
+seq_2 = letters[0:5]
+rev_seq_2 = seq_2[::-1]
+print("\n", rev_seq_2)
 
-seq3 = letters[18:26]
-rev_seq3 = seq3[::-1]
-print("\n", rev_seq3)
+seq_3 = letters[18:26]
+rev_seq_3 = seq_3[::-1]
+print("\n", rev_seq_3)
 
 # OR
 print("\n", letters[16:13:-1])

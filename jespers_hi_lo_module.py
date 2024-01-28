@@ -1,5 +1,5 @@
 
-# This code is 'JespersHiLo.py' turned into a module for importing
+# This code is 'jespers_hi_lo.py' turned into a module for importing
 
 from time import sleep
 

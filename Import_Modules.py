@@ -5,10 +5,10 @@
 # Program without everything having chance to execute
 
 # Comment imports out if you want to test the others
-from Calendar_Module import calender_maker
-from Guessing_Game_Module import guesser
-from JespersHiLo_Module import jespers_hi_lo
-from HiLo_Module import hi_lo
+from calendar_maker_module import calender_maker
+from guessing_game_module import guesser
+from jespers_hi_lo_module import jespers_hi_lo
+from hi_lo_module import hi_lo
 
 # Comment functions out if you want to test the others
 calender_maker()

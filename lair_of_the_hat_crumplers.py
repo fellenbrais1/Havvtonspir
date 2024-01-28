@@ -1,12 +1,12 @@
 # Experimental text based adventure the Lair of the Hat-Crumplers
 
 # Defining these assets, so they can be re-defined later in the code - class selection/ character names
-char1class = 0
-char2class = 0
-char3class = 0
+char_1_class = 0
+char_2_class = 0
+char_3_class = 0
 
-# Defining the charclass list
-charclass = ["Crimper", "Measurer", "Fitter", "Hat Thrower", "Trichomancer"]
+# Defining the char_class list
+char_class = ["Crimper", "Measurer", "Fitter", "Hat Thrower", "Trichomancer"]
 
 # The character selection text to be displayed
 char_selection = ("1.Crimper - A mighty crimper of edges and disarmer of traps\n"
@@ -36,15 +36,15 @@ print("A team of three of the kingdom's finest should be able to enter the dunge
       "stop the Hat-Crumplers once and for all. Will you be the ones to stop them?\n")
 
 # Choice0, starting the game
-choice0 = ""
-while choice0 != "Y" or "N":
+choice_0 = ""
+while choice_0 != "Y" or "N":
     print("Are you ready to choose your characters?\n")
-    choice0 = input("Y/N\t\t")
-    if choice0.casefold() == "y":
+    choice_0 = input("Y/N\t\t")
+    if choice_0.casefold() == "y":
         print("\nThen let us set start off on a terrifying adventure, \n"
               "but do not say you have not been warned...\n")
         break
-    elif choice0.casefold() == "n":
+    elif choice_0.casefold() == "n":
         print("\nThen run away back to your knitting coward! Be gone!\n")
         print("GAME OVER!\n")
         exit()
@@ -56,92 +56,93 @@ while choice0 != "Y" or "N":
 # There is a lot of duplicate code for characters 1-3, I wonder if this can be done more efficiently
 
 # Character 1
-char1name = input("What is the name of your first character?\t")
-print("\nWhat class would you like " + char1name.capitalize() + " to be?\n")
+char_1_name = input("What is the name of your first character?\t")
+print("\nWhat class would you like " + char_1_name.capitalize() + " to be?\n")
 # ACTION Is there a character limit needed to be specified for names?
 print(char_selection)
-(char1type) = 0
-while char1type == 0:
+(char_1_type) = 0
+while char_1_type == 0:
     try:
-        char1type = int(input("Please type a number...\t"))
+        char_1_type = int(input("Please type a number...\t"))
     except ValueError:
-        char1type = 0
-    if char1type in range(1, 6):
+        char_1_type = 0
+    if char_1_type in range(1, 6):
         break
     else:
         print("\nI'm sorry, that is not a valid number, please choose from 1-5.\n"
               "Enter 6 to see the class list again.\n")
-        if char1type == 6:
-            print("\nWhat class would you like " + char1name.capitalize() + " to be?\n")
+        if char_1_type == 6:
+            print("\nWhat class would you like " + char_1_name.capitalize() + " to be?\n")
             print(char_selection)
-        char1type = 0
+        char_1_type = 0
         continue
-char1class = charclass[char1type - 1]
-print("So be it, " + char1name.capitalize() + " will be a " + char1class + ".\n")
+char_1_class = char_class[char_1_type - 1]
+print("So be it, " + char_1_name.capitalize() + " will be a " + char_1_class + ".\n")
 
 # Character 2
-char2name = input("What is the name of your second character?\t\t")
-print("\nWhat class would you like " + char2name.capitalize() + " to be?\n")
+char_2_name = input("What is the name of your second character?\t\t")
+print("\nWhat class would you like " + char_2_name.capitalize() + " to be?\n")
 # Is there a character limit needed to be specified for names?
 print(char_selection)
-char2type = 0
-while char2type == 0:
+char_2_type = 0
+while char_2_type == 0:
     try:
-        char2type = int(input("Please type a number...\t"))
+        char_2_type = int(input("Please type a number...\t"))
     except ValueError:
-        char2type = 0
-    if char2type in range(1, 6):
+        char_2_type = 0
+    if char_2_type in range(1, 6):
         break
     else:
         print("\nI'm sorry, that is not a valid number, please choose from 1-5\n"
               "Enter 6 to see the class list again.\n")
-        if char2type == 6:
-            print("\nWhat class would you like " + char2name.capitalize() + " to be?\n")
+        if char_2_type == 6:
+            print("\nWhat class would you like " + char_2_name.capitalize() + " to be?\n")
             print(char_selection)
-        char2type = 0
+        char_2_type = 0
         continue
-char2class = charclass[char2type - 1]
-print("So be it, " + char2name.capitalize() + " will be a " + char2class + ".\n")
+char_2_class = char_class[char_2_type - 1]
+print("So be it, " + char_2_name.capitalize() + " will be a " + char_2_class + ".\n")
 
 # Character 3
-char3name = input("\nWhat is the name of your third character?\t\t".capitalize())
-print("\nWhat class would you like " + char3name.capitalize() + " to be?\n")
+char_3_name = input("\nWhat is the name of your third character?\t\t".capitalize())
+print("\nWhat class would you like " + char_3_name.capitalize() + " to be?\n")
 # Is there a character limit needed to be specified for names?
 print(char_selection)
-char3type = 0
-while char3type == 0:
+char_3_type = 0
+while char_3_type == 0:
     try:
-        char3type = int(input("Please type a number...\t"))
+        char_3_type = int(input("Please type a number...\t"))
     except ValueError:
-        char3type = 0
-    if char3type in range(1, 6):
+        char_3_type = 0
+    if char_3_type in range(1, 6):
         break
     else:
         print("\nI'm sorry, that is not a valid number, please choose from 1-5\n"
               "Enter 6 to see the class list again.\n")
-        if char3type == 6:
-            print("\nWhat class would you like " + char3name.capitalize() + " to be?\n")
+        if char_3_type == 6:
+            print("\nWhat class would you like " + char_3_name.capitalize() + " to be?\n")
             print(char_selection)
-        char3type = 0
+        char_3_type = 0
         continue
-char3class = charclass[char3type - 1]
-print("So be it, " + char3name.capitalize() + " will be a " + char3class + ".\n")
+char_3_class = char_class[char_3_type - 1]
+print("So be it, " + char_3_name.capitalize() + " will be a " + char_3_class + ".\n")
 
 # Defining the text displayed from char_list
-char_list = char1name.capitalize() + ", the mighty and incomparable " + char1class + ",\n" + char2name.capitalize() \
-            + ", the most formidable " + char2class + " this world has ever seen, and,\n" + char3name.capitalize() \
-            + ", the most deadly " + char3class + " in the western court.\n".format(charclass)
+char_list = char_1_name.capitalize() + ", the mighty and incomparable " + char_1_class + \
+            ",\n" + char_2_name.capitalize() \
+            + ", the most formidable " + char_2_class + " this world has ever seen, and,\n" + char_3_name.capitalize() \
+            + ", the most deadly " + char_3_class + " in the western court.\n".format(char_class)
 
 # Party composition text and start
 print("\nYour party is composed of:\n" + char_list)
 
 # Choice1
-choice1 = ""
-while choice1 != "Y" or "N":
+choice_1 = ""
+while choice_1 != "Y" or "N":
     print("Are you ready to begin your adventure? It's not too late to quit,\n"
           "or to go back and re-select your characters!\n")
-    choice1 = input("Y/N\t\t")
-    if choice1.casefold() == "y":
+    choice_1 = input("Y/N\t\t")
+    if choice_1.casefold() == "y":
         print("\nYour make your way down into the caverns of the hat-crumplers...\n"
               "Moisture drips from walls that seem to press in on your from every side.\n"
               "You can smell the fetid stench of the Hat-Crumplers who have been here recently\n"
@@ -149,7 +150,7 @@ while choice1 != "Y" or "N":
               "can almost feel the pain of their previous owners, cruelly forced to buy new hats.\n"
               "The terror of such a fate almost stops you in your tracks...")
         break
-    elif choice1.casefold() == "n":
+    elif choice_1.casefold() == "n":
         print("\nPlease begin again to re-select your characters!\n"
               "But if cowardice has overtaken your feeble heart then be gone!\n")
         print("PLEASE TRY AGAIN")
@@ -164,8 +165,8 @@ print("Suddenly, a hat-crumpling trap springs from the sides of the corridor!\n"
       "You have mere seconds before it ruins your hats!")
 input()
 
-if char1class == charclass[0] or char2class == charclass[0] or char3class == charclass[0]:
-    print("Ah good! You have a " + charclass[0] + " in your party.\n" +
+if char_1_class == char_class[0] or char_2_class == char_class[0] or char_3_class == char_class[0]:
+    print("Ah good! You have a " + char_class[0] + " in your party.\n" +
           "They effortlessly crimp down the edges of a dastardly hat-crumpling trap!\n")
     print("You are safe, for now...")
 else:

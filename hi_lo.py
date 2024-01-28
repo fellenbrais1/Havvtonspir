@@ -1,5 +1,5 @@
 
-# This code is 'HiLo.py' turned into a module for importing
+# This code is a test of using the binary search process in a program
 
 
 def hi_lo():
@@ -12,7 +12,7 @@ def hi_lo():
     input("Press enter to start...")
 
     while True:
-        # This formula is used to perform a binary search
+        # The below formula is used to perform a binary search
         # It will find the midpoint based off the low and high values
         # Depending on if the guess is too high or low, it will find a new mid-point next time
         # A computer can always guess any number between 1 and 1023 in 10 guesses
@@ -50,15 +50,14 @@ def hi_lo():
                     exit()
             elif user_input == 'h':
                 print("\nOkay, I will guess lower next time...")
-                high = guess
+                high = guess - 1
                 guess_loop = False
             elif user_input == 'l':
                 print("\nOkay, I will guess higher next time...")
-                low = guess
+                low = guess + 1
                 guess_loop = False
             else:
                 print("\nI am sorry, please type 'c' for correct, 'h' for too high and 'l' for too low.")
 
 
-if __name__ == " __main__":
-    hi_lo()
+hi_lo()

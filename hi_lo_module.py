@@ -1,5 +1,5 @@
 
-# This code is a test of using the binary search process in a program
+# This code is 'hi_lo.py' turned into a module for importing
 
 
 def hi_lo():
@@ -50,14 +50,15 @@ def hi_lo():
                     exit()
             elif user_input == 'h':
                 print("\nOkay, I will guess lower next time...")
-                high = guess
+                high = guess - 1
                 guess_loop = False
             elif user_input == 'l':
                 print("\nOkay, I will guess higher next time...")
-                low = guess
+                low = guess + 1
                 guess_loop = False
             else:
                 print("\nI am sorry, please type 'c' for correct, 'h' for too high and 'l' for too low.")
 
 
-hi_lo()
+if __name__ == " __main__":
+    hi_lo()

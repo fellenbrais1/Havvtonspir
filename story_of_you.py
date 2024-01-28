@@ -2,7 +2,7 @@
 # Abandon for now, I don't have a good enough understanding of functions yet to make this work
 
 
-def storyofyou(name='', age='', hobbies=''):
+def story_of_you(name='', age='', hobbies=''):
     if name == '':
         name = input("What is your name? ".capitalize())
     else:
@@ -28,7 +28,7 @@ def storyofyou(name='', age='', hobbies=''):
 
 
 if __name__ == "__main__":
-    storyofyou(name='', age='', hobbies='')
+    story_of_you(name='', age='', hobbies='')
 
 # Code not needed for now
 

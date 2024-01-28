@@ -1,5 +1,5 @@
 
-# This code is just 'Calendar.py' but trimmed down, so it can be imported into other programs
+# This code is just 'calendar_maker.py' but trimmed down, so it can be imported into other programs
 from calendar import *
 
 

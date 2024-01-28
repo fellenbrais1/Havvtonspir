@@ -1,6 +1,6 @@
 
 # This code imports code from another file to be used here
-from Guessing_Game_Module import guesser
+from guessing_game_module import guesser
 
 # Statements to collect the user's data
 name = input("What is your name? ")
