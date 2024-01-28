@@ -1,6 +1,6 @@
 
 # This code is for a very special psychic guessing game
-# it is guaranteed to guess any number you pick on the first try
+# It is guaranteed to guess any number you pick on the first try
 
 # Importing the sleep function from time to allow waits in the print outputs
 from time import sleep
