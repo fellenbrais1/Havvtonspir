@@ -15,7 +15,7 @@ def hi_lo():
         # This formula is used to perform a binary search
         # It will find the midpoint based off the low and high values
         # Depending on if the guess is too high or low, it will find a new mid-point next time
-        # A computer can always guess any number between 1 and 23 in 10 guesses
+        # A computer can always guess any number between 1 and 1023 in 10 guesses
         guess = low + (high - low) // 2
         guess_count += 1
         if guess_count == 0:
