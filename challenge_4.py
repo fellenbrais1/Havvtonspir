@@ -1,5 +1,7 @@
 
-from Challenge3 import *
+# A coding challenge from a textbook, just playing with ASCII art
+
+from challenge_3 import *
 
 went_market()
 
@@ -19,3 +21,6 @@ print("""
                |      |  |      |
                |      |  |      |
               C C C C/    \D D D D""")
+
+# The frog throws up multiple weak errors, but they can all be ignored /
+# ASCII art is obviously not liked by the interpreter

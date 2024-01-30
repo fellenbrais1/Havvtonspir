@@ -1,7 +1,5 @@
 
-# This code is a test of using the binary search process in a program
-# This version allows the program to say what the correct guess is when it \
-# closes in on it
+# This code is 'hi_lo_2.py' turned into a module for importing
 
 
 def hi_lo():
@@ -82,4 +80,5 @@ def hi_lo():
             exit()
 
 
-hi_lo()
+if __name__ == " __main__":
+    hi_lo()

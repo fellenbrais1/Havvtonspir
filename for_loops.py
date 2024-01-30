@@ -1,5 +1,6 @@
 
-# A very simple code exercise to iterate through the characters of a string and print them out
+# A very simple code exercise to iterate through the characters of a string \
+# and print them out
 parrot = "Norwegian Blue"
 
 for char in parrot:

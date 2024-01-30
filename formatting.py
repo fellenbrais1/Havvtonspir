@@ -1,27 +1,34 @@
 
-# Examples of using the '.format()' method in code to replace strings with values
-# We have specified the width of the string replacement fields using the number after
+# Examples of using the '.format()' method in code to replace strings with \
+# values
+# We have specified the width of the string replacement fields using the \
+# number after
 # The ':' in the curly braces
 for i in range(1, 13):
-    print("No. {0:2} squared is {1:3} amd cubed is {2:4}".format(i, i ** 2, i ** 3))
+    print("No. {0:2} squared is {1:3} amd cubed is {2:4}"
+          .format(i, i ** 2, i ** 3))
 
 print()
 
 # Right align using the > symbol
 for i in range(1, 13):
-    print("No. {0:>2} squared is {1:>3} amd cubed is {2:>4}".format(i, i ** 2, i ** 3))
+    print("No. {0:>2} squared is {1:>3} amd cubed is {2:>4}"
+          .format(i, i ** 2, i ** 3))
 
 # Left align using the < symbol
 for i in range(1, 13):
-    print("No. {0:<2} squared is {1:<3} amd cubed is {2:<4}".format(i, i ** 2, i ** 3))
+    print("No. {0:<2} squared is {1:<3} amd cubed is {2:<4}"
+          .format(i, i ** 2, i ** 3))
 
 # Center using the caret symbol ^ after the colon
 for i in range(1, 13):
-    print("No. {0:^2} squared is {1:^3} amd cubed is {2:^4}".format(i, i ** 2, i ** 3))
+    print("No. {0:^2} squared is {1:^3} amd cubed is {2:^4}"
+          .format(i, i ** 2, i ** 3))
 
 print()
 
-# Here we have specified the index value 0, a width reserved of 12, 52, 62, or 72
+# Here we have specified the index value 0, a width reserved of 12, 52, \
+# 62, or 72
 # '.numf' specifies how many floating point numbers we want to generate
 print("Pi is approximately {0:12}".format(22/7))
 print("Pi is approximately {0:<12f}".format(22/7))

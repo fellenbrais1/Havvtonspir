@@ -16,13 +16,15 @@ if day == "Saturday" and temperature > 27 or not raining:
 else:
     print("Learn Python")
 
-# Use parentheses to make sure the code is being interpreted in the way you want it to be
+# Use parentheses to make sure the code is being interpreted in the way you /
+# want it to be
 if (day == "Saturday" and temperature > 27) or not raining:
     print("Go swimming")
 else:
     print("Learn Python")
 
-# In this example the IDE throws up a potential problem as a piece of code cannot be reached
+# In this example the IDE throws up a potential problem as a piece of code /
+# cannot be reached
 
 # COMMENTED OUT FOR NOW
 # if 0:

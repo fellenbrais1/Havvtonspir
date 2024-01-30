@@ -7,7 +7,8 @@ if age >= 16 and age <= 65:
 
 print("-" * 80) 
 
-# Below is an example of the same expression but simplified, so we don't need to repeat the variable
+# Below is an example of the same expression but simplified, so we don't need \
+# to repeat the variable
 if 16 <= age <= 65:
     print("Have a good day at work")
 else:

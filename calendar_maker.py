@@ -1,5 +1,6 @@
 
-# This code makes use of the calendar module to simply print a calendar based on the data
+# This code makes use of the calendar module to simply print a calendar based \
+# on the data
 from calendar import *
 
 # This function uses calendar data to print out a simple formatted calendar

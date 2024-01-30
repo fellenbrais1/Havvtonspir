@@ -1,7 +1,9 @@
 
 # This is a test of importing modules to use in another program
-# In this case the modules have been coded to only run when called and not automatically
-# This is just an experiment, due to exit() statements in some functions it is possible to end this
+# In this case the modules have been coded to only run when called and not \
+# automatically
+# This is just an experiment, due to exit() statements in some functions it is \
+# possible to end this
 # Program without everything having chance to execute
 
 # Comment imports out if you want to test the others
