@@ -1,4 +1,8 @@
 
+# A coding challenge from a textbook, prompting a user to enter a middle /
+# name, a favorite type of pasta, and a number to concatenate into a new /
+# password for the user
+
 
 def password_creation():
     middle_name = ""
@@ -44,7 +48,8 @@ def password_creation():
             print("That input is not acceptable")
 
     while loop_count == 3:
-        created_password = middle_name.capitalize() + favourite_pasta.casefold() + number.casefold()
+        created_password = middle_name.capitalize() + \
+                           favourite_pasta.casefold() + number.casefold()
         created_password = created_password.replace(" ", "")
         return created_password
 
@@ -58,7 +63,8 @@ while not password_done:
     answer = ""
     while answer != "y" and answer != "n":
         print("Your new password is:", password)
-        print("Is this password acceptable? (Y) Or would you like to try again? (N)")
+        print("Is this password acceptable? (Y) Or would you like "
+              "to try again? (N)")
         answer = str(input(">>> "))
         answer = answer.casefold()
     else:
@@ -78,3 +84,6 @@ while not password_done:
 else:
     print("Well done, please use the password:", password, "in future")
     exit()
+
+
+password_creation()

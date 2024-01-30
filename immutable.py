@@ -1,7 +1,8 @@
 
 # Testing the 'id()' method to generate IDs for immutable objects
 
-# In this example, both variables have the same ID as they both evaluate to 'True'
+# In this example, both variables have the same ID as they both evaluate \
+# to 'True'
 result = True
 another_result = result
 print(id(result))

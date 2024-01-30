@@ -12,12 +12,15 @@ for i in range(21):
 for i in range(0, 11, 2):
     print(i)
 
-# You can use a negative step value, but remember to reverse the order of the start and stop value
+# You can use a negative step value, but remember to reverse the order of /
+# the start and stop value
 for i in range(10, 0, -2):
     print(i)
 
-# You can also test if a value is contained within a range or not as the example below
-# Most of the time there is a more efficient way to do this but this can be useful too
+# You can also test if a value is contained within a range or not as the /
+# example below
+# Most of the time there is a more efficient way to do this but this can be /
+# useful too
 age = int(input("How old are you? "))
 
 # We need to specify the stop value as one higher than what we need to test for

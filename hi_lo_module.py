@@ -3,7 +3,6 @@
 
 
 def hi_lo():
-
     low = 1
     high = 1000
     guess_count = 0
@@ -14,8 +13,10 @@ def hi_lo():
     while True:
         # This formula is used to perform a binary search
         # It will find the midpoint based off the low and high values
-        # Depending on if the guess is too high or low, it will find a new mid-point next time
-        # A computer can always guess any number between 1 and 1023 in 10 guesses
+        # Depending on if the guess is too high or low, it will find a new \
+        # mid-point next time
+        # A computer can always guess any number between 1 and 1023 in 10 \
+        # guesses
         guess = low + (high - low) // 2
         guess_count += 1
         if guess_count == 0:
@@ -46,7 +47,8 @@ def hi_lo():
                     print("\nThat was lucky, I got it right on my last guess!")
                     exit()
                 else:
-                    print("\nI got the correct answer in {0} guesses".format(guess_count))
+                    print("\nI got the correct answer in {0} guesses"
+                          .format(guess_count))
                     exit()
             elif user_input == 'h':
                 print("\nOkay, I will guess lower next time...")
@@ -57,7 +59,8 @@ def hi_lo():
                 low = guess + 1
                 guess_loop = False
             else:
-                print("\nI am sorry, please type 'c' for correct, 'h' for too high and 'l' for too low.")
+                print("\nI am sorry, please type 'c' for correct, 'h' for too "
+                      "high and 'l' for too low.")
 
 
 if __name__ == " __main__":

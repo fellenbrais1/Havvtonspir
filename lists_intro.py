@@ -43,7 +43,8 @@ for item in computer_parts:
     print(item)
 
 # Testing indexing a list
-print("\nThe salesman recommends that you buy a '{0}' first".format(computer_parts[1]))
+print("\nThe salesman recommends that you buy a '{0}'"
+      " first".format(computer_parts[1]))
 
 # Practicing slicing a list
 print("\nI recommend all of the following:")

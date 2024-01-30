@@ -36,14 +36,18 @@ print(type(age_in_words))
 # # print(name + " is" + age + " years old")
 
 # You can do this easily using comma separators instead
-# The comma automatically adds a space, but you can change it by specifying, "sep = ''"
+# The comma automatically adds a space, but you can change it by specifying, /
+# "sep = ''"
 print(name, "is", age, "years old")
 
-# You can use an f string to do something similar to .format() but potentially even easier
+# You can use an f string to do something similar to .format() but potentially /
+# even easier
 print(name + f" is {age} years old")
 
-# You can use the '.numf' to specify how many decimal points to return with a float
-# The number specified after the ':' specifies the width of display but changing it here does nothing
+# You can use the '.numf' to specify how many decimal points to return with /
+# a float
+# The number specified after the ':' specifies the width of display but /
+# changing it here does nothing
 print(f"Pi is approximately {22 / 7:12.50f}")
 pi = 22 / 7
 print(f"Pi is approximately {pi:12.50f}")

@@ -16,8 +16,10 @@ else:
     print("You are old enough to vote")
     print("Please put an 'X' in the box")
 
-# We can reverse the order of how we deal with things in any situation, it doesn't really matter
-# Unless there are some cases where this is very important or if it makes sense to do it one way
+# We can reverse the order of how we deal with things in any situation, it \
+# doesn't really matter
+# Unless there are some cases where this is very important or if it makes \
+# sense to do it one way
 print()
 if age >= 18:
     print("You are old enough to vote")
@@ -30,7 +32,7 @@ print()
 if age < 18:
     print("Please come back in {0} years".format(18 - age))
 elif age == 900:
-    print("Sorry Yoda you die in Return of the Jedi")
+    print("Sorry Yoda, you die in Return of the Jedi")
 else:
     print("You are old enough to vote")
     print("Please put an 'X' in the box")

@@ -28,11 +28,13 @@ def battle_options():
                 exit()
             else:
                 action_chosen = available_actions[answer - 1]
-                print("\nYou have chosen to do the {0} action!".format(action_chosen))
+                print("\nYou have chosen to do the {0} action!"
+                      .format(action_chosen))
                 sleep(1.5)
                 print("\nThe enemy takes their turn...")
                 sleep(1.5)
-                print("The enemy does the {0} action!".format(available_actions[enemy_choice - 1]))
+                print("The enemy does the {0} action!"
+                      .format(available_actions[enemy_choice - 1]))
                 if enemy_choice == 9:
                     print("\nThe enemy runs away in terror!")
                     print("You win the battle!")

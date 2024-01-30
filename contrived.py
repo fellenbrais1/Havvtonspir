@@ -8,8 +8,10 @@ for number in numbers:
         # reject the list
         print("The numbers are unacceptable")
         break
-# This else block gives us another output if the loop runs all the way to the end
+# This else block gives us another output if the loop runs all the way to the \
+# end
 # Some people don't like using 'else' like this as it can be confusing to read
-# You need to watch the indentation of the else block to make sure it works in the intended way
+# You need to watch the indentation of the else block to make sure it works in \
+# the intended way
 else:
     print("Those numbers are acceptable")

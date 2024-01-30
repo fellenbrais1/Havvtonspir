@@ -1,5 +1,5 @@
 
-# Abandon for now, I don't have a good enough understanding of functions yet to make this work
+# A function to gather user data and print out a story about them
 
 
 def story_of_you(name='', age='', hobbies=''):

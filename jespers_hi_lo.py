@@ -7,7 +7,6 @@ from time import sleep
 
 
 def jespers_hi_lo():
-
     low = 1
     high = 1000
 
@@ -20,9 +19,11 @@ def jespers_hi_lo():
             if 0 < number_input < 1001:
                 break
             else:
-                print("Please enter a number between {0} and {1}.".format(low, high))
+                print("Please enter a number between {0} and {1}."
+                      .format(low, high))
         except ValueError:
-            print("Please enter a number between {0} and {1}.".format(low, high))
+            print("Please enter a number between {0} and {1}."
+                  .format(low, high))
     sleep(1.5)
     print("\nThank you, now let me gaze into the veil...")
     sleep(1)
@@ -43,19 +44,20 @@ def jespers_hi_lo():
         answer = input("Your answer?: ")
         answer.casefold()
         if answer == 'y':
-            print("Yes, my psychic power knows no bounds!")
+            print("\nYes, my psychic power knows no bounds!")
             sleep(1)
             print("I win again!")
             exit()
         elif answer == 'n':
             sleep(2)
-            print("'No'? What do you mean 'no'!?")
+            print("\n'No'? What do you mean 'no'!?")
             print("I won't play with a cheater!")
             sleep(1)
-            print("Goodbye!")
+            print("\nGoodbye!")
             exit()
         else:
-            print("I am sorry, please enter between 'y' for yes and 'n' for no.")
+            (print("I am sorry, please enter between 'y' for yes and 'n' "
+                   "for no."))
 
 
 jespers_hi_lo()

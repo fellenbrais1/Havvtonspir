@@ -14,7 +14,8 @@ print("The pet shop owner said \"No, no 'e's uh,... he's only resting\".")
 # Or triple quotes escape everything inside them
 print("""The pet shop owner said "No, no, 'e's uh,... he's only resting".""")
 
-# Escaping via triple quotes also allows formatting to be carried into the output
+# Escaping via triple quotes also allows formatting to be carried into the \
+# output
 another_split_string = """This string has been
 split over
 several
@@ -32,9 +33,9 @@ print(another_split_string)
 print("""The pet shop owner said "No, no, \
 'e's uh,... he's only resting".""")
 
-# The line below won't print because it naturally contains escape \
-# 'print("C:\Users\timbuchalka\notes.txt")'
+# The line below won't print because it naturally contains escape chars '\'
+# 'print("C:\Users\mmccann\notes.txt")'
 
 # We can either escape a \ with another \ or use a raw string like (r"Hello")
-print("C:\\Users\\timbuchalka\\notes.txt")
-print(r"C:\Users\timbuchalka\notes.txt")
+print("C:\\Users\\mmccann\\notes.txt")
+print(r"C:\Users\mmccann\notes.txt")

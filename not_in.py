@@ -19,6 +19,7 @@ else:
 
 # Using 'not in'
 if "cinema" and "gaming" not in activity:
-    print("\nBut I want to go to the cinema or do some gaming! I don't want to {0}!".format(activity))
+    print("\nBut I want to go to the cinema or do some gaming! I don't want "
+          "to {0}!".format(activity))
 else:
     print("\nThen lets {0}!".format(activity))
