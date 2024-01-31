@@ -4,9 +4,7 @@
 
 # Defining these assets, so they can be re-defined later in the code \
 # class selection/ character names
-char_1_class = 0
-char_2_class = 0
-char_3_class = 0
+char_1_class = char_2_class = char_3_class = 0
 
 # Defining the char_class list
 char_class = ["Crimper", "Measurer", "Fitter", "Hat Thrower", "Trichomancer"]
@@ -45,15 +43,15 @@ print("A team of three of the kingdom's finest should be able to enter the "
       "ones to stop them?\n")
 
 # Choice0, starting the game
-choice_0 = ""
-while choice_0 != "Y" or "N":
+choice = ""
+while choice != "Y" or "N":
     print("Are you ready to choose your characters?\n")
-    choice_0 = input("Y/N\t\t")
-    if choice_0.casefold() == "y":
+    choice = input("Y/N\t\t")
+    if choice.casefold() == "y":
         print("\nThen let us set start off on a terrifying adventure,\n"
               "but do not say you have not been warned...\n")
         break
-    elif choice_0.casefold() == "n":
+    elif choice.casefold() == "n":
         print("\nThen run away back to your knitting coward! Be gone!\n")
         print("GAME OVER!\n")
         exit()
@@ -127,12 +125,12 @@ char_list = char_name_list[0] + ", the mighty and incomparable " + \
 print("\nYour party is composed of:\n" + char_list)
 
 # Choice1
-choice_1 = ""
-while choice_1 != "Y" or "N":
+choice = ""
+while choice != "Y" or "N":
     print("Are you ready to begin your adventure? It's not too late to quit,\n"
           "or to go back and re-select your characters!\n")
-    choice_1 = input("Y/N\t\t")
-    if choice_1.casefold() == "y":
+    choice = input("Y/N\t\t")
+    if choice.casefold() == "y":
         print(
             "\nYour make your way down into the caverns of the hat-crumplers"
             "...\n"
@@ -146,7 +144,7 @@ while choice_1 != "Y" or "N":
             "to buy new hats.\n"
             "The terror of such a fate almost stops you in your tracks...")
         break
-    elif choice_1.casefold() == "n":
+    elif choice.casefold() == "n":
         print("\nPlease begin again to re-select your characters!\n"
               "But if cowardice has overtaken your feeble heart then be "
               "gone!\n")
