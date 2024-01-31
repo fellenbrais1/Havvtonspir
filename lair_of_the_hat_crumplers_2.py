@@ -1,5 +1,6 @@
 
-# Experimental text based adventure 'Lair of the Hat-Crumplers'
+# Experimental text based adventure 'Lair of the Hat-Crumplers' Mk.2
+# Modified with some big improvements over the last version
 
 # Defining these assets, so they can be re-defined later in the code \
 # class selection/ character names
@@ -113,99 +114,6 @@ for i in range(0, 3):
         "So be it, " + char_name_list[i] + " will be a " + char_class_list[i] +
         ".\n")
     i += 1
-
-# # Character 1
-# char_1_name = input("What is the name of your first character?\t")
-# char_1_name = char_1_name.capitalize()
-# print("\nWhat class would you like " + char_1_name + " to be?\n")
-# # ACTION Is there a character limit needed to be specified for names?
-# print(char_selection)
-# (char_1_type) = 0
-# while char_1_type == 0:
-#     try:
-#         char_1_type = int(input("Please type a number...\t"))
-#     except ValueError:
-#         char_1_type = 0
-#     if char_1_type in range(1, 6):
-#         break
-#     else:
-#         print(
-#             "\nI'm sorry, that is not a valid number, please choose from "
-#             "1-5.\n"
-#             "Enter 6 to see the class list again.\n")
-#         if char_1_type == 6:
-#             print(
-#                 "\nWhat class would you like " + char_1_name +
-#                 " to be?\n")
-#             print(char_selection)
-#         char_1_type = 0
-#         continue
-# char_1_class = char_class[char_1_type - 1]
-# print(
-#     "So be it, " + char_1_name + " will be a " + char_1_class +
-#     ".\n")
-#
-# # Character 2
-# char_2_name = input("What is the name of your second character?\t\t")
-# char_2_name = char_2_name.capitalize()
-# print("\nWhat class would you like " + char_2_name + " to be?\n")
-# # Is there a character limit needed to be specified for names?
-# print(char_selection)
-# char_2_type = 0
-# while char_2_type == 0:
-#     try:
-#         char_2_type = int(input("Please type a number...\t"))
-#     except ValueError:
-#         char_2_type = 0
-#     if char_2_type in range(1, 6):
-#         break
-#     else:
-#         print(
-#             "\nI'm sorry, that is not a valid number, please choose from "
-#             "1-5\n"
-#             "Enter 6 to see the class list again.\n")
-#         if char_2_type == 6:
-#             print(
-#                 "\nWhat class would you like " + char_2_name +
-#                 " to be?\n")
-#             print(char_selection)
-#         char_2_type = 0
-#         continue
-# char_2_class = char_class[char_2_type - 1]
-# print(
-#     "So be it, " + char_2_name + " will be a " + char_2_class +
-#     ".\n")
-#
-# # Character 3
-# char_3_name = input("\nWhat is the name of your third character?\t\t")
-# char_3_name = char_3_name.capitalize()
-# print("\nWhat class would you like " + char_3_name + " to be?\n")
-# # Is there a character limit needed to be specified for names?
-# print(char_selection)
-# char_3_type = 0
-# while char_3_type == 0:
-#     try:
-#         char_3_type = int(input("Please type a number...\t"))
-#     except ValueError:
-#         char_3_type = 0
-#     if char_3_type in range(1, 6):
-#         break
-#     else:
-#         print(
-#             "\nI'm sorry, that is not a valid number, please choose from "
-#             "1-5\n"
-#             "Enter 6 to see the class list again.\n")
-#         if char_3_type == 6:
-#             print(
-#                 "\nWhat class would you like " + char_3_name +
-#                 " to be?\n")
-#             print(char_selection)
-#         char_3_type = 0
-#         continue
-# char_3_class = char_class[char_3_type - 1]
-# print(
-#     "So be it, " + char_3_name + " will be a " + char_3_class +
-#     ".\n")
 
 # Defining the text displayed from char_list
 char_list = char_name_list[0] + ", the mighty and incomparable " + \
