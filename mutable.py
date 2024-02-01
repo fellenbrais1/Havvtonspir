@@ -22,3 +22,17 @@ print()
 print(shopping_list)
 print(id(shopping_list))
 print(id(another_list))
+
+print(another_list)
+
+a = b = c = d = e = f = another_list
+
+print(another_list)
+print(a)
+
+print("Adding cream")
+b.append("cream")
+print(c)
+print(d)
+print(e)
+print(f)
