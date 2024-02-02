@@ -2,7 +2,7 @@
 # Practicing appending to a list using numbered items in a dictionary
 # Users can add items to their chosen_list by specifying numbers
 # They can confirm the list before purchasing and can also reset the list
-# Added sorting of 'chosen_list_ in the code for readability
+# Added sorting of 'chosen_list' in the code for readability
 
 # Importing needed methods
 from time import sleep
