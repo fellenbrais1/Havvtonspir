@@ -47,11 +47,12 @@ choice = ""
 while choice != "Y" or "N":
     print("Are you ready to choose your characters?\n")
     choice = input("Y/N\t\t")
-    if choice.casefold() == "y":
+    choice.casefold()
+    if choice == "y":
         print("\nThen let us set start off on a terrifying adventure,\n"
               "but do not say you have not been warned...\n")
         break
-    elif choice.casefold() == "n":
+    elif choice == "n":
         print("\nThen run away back to your knitting coward! Be gone!\n")
         print("GAME OVER!\n")
         exit()
@@ -130,7 +131,8 @@ while choice != "Y" or "N":
     print("Are you ready to begin your adventure? It's not too late to quit,\n"
           "or to go back and re-select your characters!\n")
     choice = input("Y/N\t\t")
-    if choice.casefold() == "y":
+    choice.casefold()
+    if choice == "y":
         print(
             "\nYour make your way down into the caverns of the hat-crumplers"
             "...\n"
@@ -144,7 +146,7 @@ while choice != "Y" or "N":
             "to buy new hats.\n"
             "The terror of such a fate almost stops you in your tracks...")
         break
-    elif choice.casefold() == "n":
+    elif choice == "n":
         print("\nPlease begin again to re-select your characters!\n"
               "But if cowardice has overtaken your feeble heart then be "
               "gone!\n")
