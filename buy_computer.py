@@ -1,7 +1,8 @@
 
 # Practicing appending to a list using numbered items in a dictionary
 # Users can add items to their chosen_list by specifying numbers
-# They can confirm the list before purchasing and can also reset the list
+# They can confirm the list before purchasing and can also reset the list and /
+# delete any items they want from the list
 # Added sorting of 'chosen_list' in the code for readability
 
 # Importing needed methods
@@ -43,6 +44,8 @@ for item in item_dict.keys():
 
 finished = False
 
+edit = True
+
 # Main loop to enable continuable inputs
 while not finished:
     while current_choice != '0':
@@ -69,6 +72,7 @@ while not finished:
                   .format(max_items))
 
         try:
+            edit = True
             current_choice = input(">>> ")
         except ValueError:
             current_choice = "-"
@@ -89,7 +93,7 @@ while not finished:
             letter_count += 1
         current_choice = "-"
         sleep(1)
-        choice = input("\nAre you happy with this list? Y/N ('R' to reset) "
+        choice = input("\nAre you happy with this list? Y/N ('E' to edit) "
                        ">>> ")
         choice.casefold()
         if choice == 'y':
@@ -101,9 +105,57 @@ while not finished:
                 print("\nOkay, so let's go to the checkout page!")
                 sleep(1)
                 finished = True
-        # Added a reset option to reinitialize 'chosen_list'
-        elif choice == 'r':
-            chosen_list = []
+        # This 'edit' block allows items to be deleted from 'chosen_list' and /
+        # it also allows 'chosen_list' to be cleared completely
+        elif choice == 'e':
+            while edit:
+                print("\nYour current shopping list is:")
+                letter_count = 0
+                chosen_list.sort()
+                for item in chosen_list:
+                    print(letters[letter_count], ".\t", item, sep="")
+                    letter_count += 1
+                print("\nWould you like to delete an item or remove all items?")
+                print("Please choose 'D' to delete and 'R' to reset the list, "
+                      "or enter '0' to cancel.")
+                edit_choice = (input(">>> "))
+                edit_choice.casefold()
+                if edit_choice == 'r':
+                    print("\nResetting your list...")
+                    sleep(1)
+                    chosen_list = []
+                    edit_choice = "-"
+                    edit = False
+                elif edit_choice == 'd':
+                    edit_choice = "-"
+                    print("\nWhich item would you like to delete, please enter "
+                          "its letter to delete it or type a number to cancel.")
+                    del_choice = input(">>> ")
+                    del_choice = del_choice.upper()
+                    if del_choice in letters:
+                        try:
+                            del_index = letters.index(del_choice)
+                            print("\nRemoving {0}."
+                                  .format(chosen_list[del_index]))
+                            sleep(1)
+                            del chosen_list[del_index]
+                            del_choice = "-"
+                        except IndexError:
+                            print("\nThat item is not in your list!")
+                            del_choice = "-"
+                    elif del_choice == '0':
+                        print("\nExiting the edit process...")
+                        sleep(1)
+                        edit = False
+                    else:
+                        del_choice = "-"
+                elif edit_choice == '0':
+                    print("Exiting the edit process...")
+                    sleep(1)
+                    edit_choice = "-"
+                    edit = False
+                else:
+                    edit_choice = "-"
         elif choice != 'n' and choice != 'y':
             print("\nPlease choose between 'Y' and 'N'.")
             sleep(1)
