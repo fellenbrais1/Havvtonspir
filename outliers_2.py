@@ -60,7 +60,7 @@ print("Elements deleted:", items_deleted)
 # has to constantly re-loop around the code to get a result, and it also has /
 # to do another for loop to generate the 'items_to_delete' list
 
-# However, this
+# However, this does make it easy to print out the 'items_to_delete' list
 
 min_valid = 100
 max_valid = 200
