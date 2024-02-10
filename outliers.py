@@ -95,3 +95,34 @@ for index, value in enumerate(data):
 print("\nStop value:", stop)
 del data[:stop]
 print(data)
+
+# -----------------------------------------------------------------------------
+
+# Processing the high values in the list
+
+min_valid = 100
+max_valid = 200
+
+data = [104, 105, 110, 120, 130, 130, 150,
+        160, 170, 183, 185, 187, 188, 191, 350, 360]
+
+# This is a way to index backwards through a list, using a start and stop /
+# value of -1 and a step value of -1
+start = 0
+for index in range(len(data) - 1, - 1, - 1):
+    # To check it is iterating backwards properly
+    # COMMENTED OUT FOR NOW
+    # print(index)
+    if data[index] <= max_valid:
+        start = index + 1
+        break
+
+# This code does the same as what we did with the low values, we change the /
+# index value to generate a deletion slice we can use, adding 1 to make sure /
+# we do not delete the value that actually represents the start value
+# Start represents from where we should start deleting from, but not including /
+# this piece of data
+
+print(start)    # For debugging
+del data[start:]
+print(data)

@@ -36,7 +36,7 @@ data = list(reversed(data))
 
 while deleting_2:
     for index, value in enumerate(data):
-        if value <= value >= max_valid:
+        if value >= max_valid:
             items_deleted.append(data[index])
             del data[index]
             break
