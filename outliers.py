@@ -123,6 +123,6 @@ for index in range(len(data) - 1, - 1, - 1):
 # Start represents from where we should start deleting from, but not including /
 # this piece of data
 
-print(start)    # For debugging
+print("Start value:", start)    # For debugging
 del data[start:]
 print(data)

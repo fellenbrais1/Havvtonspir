@@ -93,3 +93,44 @@ print("\nDeleting finished...")
 
 print("Cleansed data:", data)
 print("Elements deleted:", list_to_delete)
+
+# -----------------------------------------------------------------------------
+
+# A final method based on what was taught in the course using start and stop /
+# values as slices to delete and harvest the data that does not pass the /
+# conditions
+
+min_valid = 100
+max_valid = 200
+
+data = [4, 5, 104, 105, 110, 120, 130, 130, 150,
+        160, 170, 183, 185, 187, 188, 191, 350, 360]
+
+list_to_delete = []
+
+stop = 0
+for index, value in enumerate(data):
+    if value >= min_valid:
+        stop = index
+        break
+
+print("\nStop value:", stop)
+for item in data[:stop]:
+    list_to_delete.append(item)
+del data[:stop]
+print(data)
+
+start = 0
+for index in range(len(data) - 1, - 1, - 1):
+    if data[index] <= max_valid:
+        start = index + 1
+        break
+
+print("\nStart value:", start)
+for item in data[start:]:
+    list_to_delete.append(item)
+list_to_delete = sorted(list_to_delete)
+del data[start:]
+
+print("Cleansed data:", data)
+print("Elements deleted:", list_to_delete)
