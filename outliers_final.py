@@ -2,6 +2,10 @@
 # There may be other changes that could be made to make this program a bit /
 # more user-friendly, such as specifying where a lost file should be
 
+# Added a time measurement function, but this dataset is so small it is quite /
+# buggy and sometimes equates to 0 time passed between calls of 'datetime.now()'
+from datetime import datetime
+
 print("\n* Final version (for now) of the outlier removal program")
 
 try:
@@ -25,6 +29,8 @@ min_valid = 100
 max_valid = 200
 
 list_to_delete = []
+
+start_time = datetime.now()
 
 if not data == []:
     stop = 0
@@ -86,3 +92,9 @@ if not data == []:
 else:
     print("\nRESULTS:")
     print("Status: The data set is empty and there is nothing to process")
+
+end_time = datetime.now()
+
+time_elapsed = end_time - start_time
+
+print("Time elapsed:", time_elapsed.total_seconds())
