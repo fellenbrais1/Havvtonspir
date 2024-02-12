@@ -295,7 +295,6 @@ if not data == []:
             print("\nStatus: Dataset contains anomalous data, like strings etc."
                   " instead of numbers. There may be some issues with cleansing"
                   " the file.")
-            index += 1
             stop = index
             continue
 
@@ -355,6 +354,8 @@ default_data = [4, 5, 104, 105, 110, 120, 130, 130, 150,
 try:
     from troubleshooting_outliers import data_2 as data
 except ImportError:
+    # In the real file, an exit statement would be better here, maybe also /
+    # specifying to the user which directory/ position the data should be in
     print("\nThe data could not be found, please make sure it is in the correct"
           " file location and try again.")
     print("'default_data' will be used in place of 'data_2' for now.")
@@ -379,7 +380,6 @@ if not data == []:
             print("\nStatus: Dataset contains anomalous data, like strings etc."
                   " instead of numbers. There may be some issues with cleansing"
                   " the file.")
-            index += 1
             stop = index
             continue
 
@@ -459,7 +459,6 @@ if not data == []:
             print("\nStatus: Dataset contains anomalous data, like strings etc."
                   " instead of numbers. There may be some issues with cleansing"
                   " the file.")
-            index += 1
             stop = index
             continue
 

@@ -1,4 +1,7 @@
 
+# There may be other changes that could be made to make this program a bit /
+# more user-friendly, such as specifying where a lost file should be
+
 print("\n* Final version (for now) of the outlier removal program")
 
 try:
@@ -6,6 +9,15 @@ try:
 except ImportError:
     print("\nThe data could not be found, please make sure it is in the correct"
           " file location and try again.")
+    # Ideally the program should specify where the data should be
+    data = []
+    exit()
+
+if isinstance(data, list):
+    pass
+else:
+    print("The data was found but appears to be of the wrong type. Please "
+          "ensure the data is in list format and try again.")
     data = []
     exit()
 
@@ -28,7 +40,6 @@ if not data == []:
             print("\nStatus: Dataset contains anomalous data, like strings etc."
                   " instead of numbers. There may be some issues with cleansing"
                   " the file.")
-            index += 1
             stop = index
             continue
 
