@@ -1,4 +1,3 @@
-
 # More experimentation with the 'enumerate' function
 
 # You can iterate around a for loop with more than one value by specifying /

@@ -1,4 +1,3 @@
-
 # Experimental text based adventure 'Lair of the Hat-Crumplers'
 
 # Defining these assets, so they can be re-defined later in the code \
@@ -6,7 +5,9 @@
 char_1_class = char_2_class = char_3_class = 0
 
 # Defining the char_class list
-char_class = ["Crimper", "Measurer", "Fitter", "Hat Thrower", "Trichomancer"]
+char_class = [
+    "Crimper", "Measurer", "Fitter", "Hat Thrower", "Trichomancer",
+]
 
 # The character selection text to be displayed
 char_selection = ("1.Crimper - A mighty crimper of edges and disarmer of "
@@ -31,21 +32,21 @@ print("\nWelcome, player, to the chilling tale of the \"Lair of the "
       "\t\t!                         !\n"
       "\t-----------------------------------\n")
 
-input("Please press enter to continue...")
+input("Please press enter to continue >>>")
 print("\nThe kingdom of Bromsgrove is in need of help! The evil Hat-Crumplers "
       "have taken\nover the dungeons under the city, and are using them to "
       "continue their reign of\nhat-crumpling terror. Not a hat in the "
-      "land is safe!")
+      "land is safe! >>>")
 input()
 print("A team of three of the kingdom's finest should be able to enter the "
       "dungeons and\nstop the Hat-Crumplers once and for all. Will you be the "
-      "ones to stop them?\n")
+      "ones to end their reign of terror?\n")
 
 # Choice0, starting the game
 choice = ""
 while choice != "Y" or "N":
     print("Are you ready to choose your characters?\n")
-    choice = input("Y/N\t\t")
+    choice = input("Y/N:\t\t")
     if choice.casefold() == "y":
         print("\nThen let us set start off on a terrifying adventure,\n"
               "but do not say you have not been warned...\n")
@@ -55,31 +56,39 @@ while choice != "Y" or "N":
         print("GAME OVER!\n")
         exit()
     else:
-        print("\nI'm sorry, please choose between 'Y' and 'N'\n")
+        print("\nI'm sorry, please choose between 'Y' and 'N'.\n")
         continue
 
 # Made this code more efficient by using a for range to initialize all the /
 # characters and their information assigning it all to a list
 
 char_1_name = char_2_name = char_3_name = ""
-char_name_list = [char_1_name, char_2_name, char_3_name]
+char_name_list = [
+    char_1_name, char_2_name, char_3_name,
+]
 
 char_1_type = char_2_type = char_3_type = 0
-char_type_list = [char_1_type, char_2_type, char_3_type]
+char_type_list = [
+    char_1_type, char_2_type, char_3_type,
+]
 
 char_1_class = char_2_class = char_3_class = char_class[0]
-char_class_list = [char_1_class, char_2_class, char_3_class]
+char_class_list = [
+    char_1_class, char_2_class, char_3_class,
+]
 
 for i in range(0, 3):
     active_char_name = char_name_list[i]
     active_char_type = char_type_list[i]
     active_char_class = char_class_list[i]
     if i == 0:
-        active_char_name = input("What is the name of your first character?\t")
+        active_char_name = input("What is the name of your first character?:\t")
     elif i == 1:
-        active_char_name = input("What is the name of your second character?\t")
+        active_char_name = input("What is the name of your second character?:"
+                                 "\t")
     else:
-        active_char_name = input("What is the name of your third character?\t")
+        active_char_name = input("What is the name of your third character?:"
+                                 "\t")
     active_char_name = active_char_name.capitalize()
     char_name_list[i] = active_char_name
     print("\nWhat class would you like " + active_char_name + " to be?\n")
@@ -88,7 +97,7 @@ for i in range(0, 3):
     active_char_type = 0
     while active_char_type == 0:
         try:
-            active_char_type = int(input("Please type a number...\t"))
+            active_char_type = int(input("Please type a number:\t"))
         except ValueError:
             active_char_type = 0
         if active_char_type in range(1, 6):
@@ -96,8 +105,8 @@ for i in range(0, 3):
         else:
             print(
                 "\nI'm sorry, that is not a valid number, please choose from "
-                "1-5.\n"
-                "Enter 6 to see the class list again.\n")
+                "'1-5'.\n"
+                "Enter '6' to see the class list again.\n")
             if active_char_type == 6:
                 print(
                     "\nWhat class would you like " + active_char_name +
@@ -113,15 +122,14 @@ for i in range(0, 3):
     i += 1
 
 # # Character 1
-# char_1_name = input("What is the name of your first character?\t")
+# char_1_name = input("What is the name of your first character?:\t")
 # char_1_name = char_1_name.capitalize()
 # print("\nWhat class would you like " + char_1_name + " to be?\n")
-# # ACTION Is there a character limit needed to be specified for names?
 # print(char_selection)
 # (char_1_type) = 0
 # while char_1_type == 0:
 #     try:
-#         char_1_type = int(input("Please type a number...\t"))
+#         char_1_type = int(input("Please type a number:\t"))
 #     except ValueError:
 #         char_1_type = 0
 #     if char_1_type in range(1, 6):
@@ -129,8 +137,8 @@ for i in range(0, 3):
 #     else:
 #         print(
 #             "\nI'm sorry, that is not a valid number, please choose from "
-#             "1-5.\n"
-#             "Enter 6 to see the class list again.\n")
+#             "'1-5'.\n"
+#             "Enter '6' to see the class list again.\n")
 #         if char_1_type == 6:
 #             print(
 #                 "\nWhat class would you like " + char_1_name +
@@ -144,15 +152,14 @@ for i in range(0, 3):
 #     ".\n")
 #
 # # Character 2
-# char_2_name = input("What is the name of your second character?\t\t")
+# char_2_name = input("What is the name of your second character?:\t")
 # char_2_name = char_2_name.capitalize()
 # print("\nWhat class would you like " + char_2_name + " to be?\n")
-# # Is there a character limit needed to be specified for names?
 # print(char_selection)
 # char_2_type = 0
 # while char_2_type == 0:
 #     try:
-#         char_2_type = int(input("Please type a number...\t"))
+#         char_2_type = int(input("Please type a number:\t"))
 #     except ValueError:
 #         char_2_type = 0
 #     if char_2_type in range(1, 6):
@@ -160,8 +167,8 @@ for i in range(0, 3):
 #     else:
 #         print(
 #             "\nI'm sorry, that is not a valid number, please choose from "
-#             "1-5\n"
-#             "Enter 6 to see the class list again.\n")
+#             "'1-5'.\n"
+#             "Enter '6' to see the class list again.\n")
 #         if char_2_type == 6:
 #             print(
 #                 "\nWhat class would you like " + char_2_name +
@@ -175,15 +182,14 @@ for i in range(0, 3):
 #     ".\n")
 #
 # # Character 3
-# char_3_name = input("\nWhat is the name of your third character?\t\t")
+# char_3_name = input("\nWhat is the name of your third character?:\t")
 # char_3_name = char_3_name.capitalize()
 # print("\nWhat class would you like " + char_3_name + " to be?\n")
-# # Is there a character limit needed to be specified for names?
 # print(char_selection)
 # char_3_type = 0
 # while char_3_type == 0:
 #     try:
-#         char_3_type = int(input("Please type a number...\t"))
+#         char_3_type = int(input("Please type a number:\t"))
 #     except ValueError:
 #         char_3_type = 0
 #     if char_3_type in range(1, 6):
@@ -191,8 +197,8 @@ for i in range(0, 3):
 #     else:
 #         print(
 #             "\nI'm sorry, that is not a valid number, please choose from "
-#             "1-5\n"
-#             "Enter 6 to see the class list again.\n")
+#             "'1-5'.\n"
+#             "Enter '6' to see the class list again.\n")
 #         if char_3_type == 6:
 #             print(
 #                 "\nWhat class would you like " + char_3_name +
@@ -221,7 +227,7 @@ choice = ""
 while choice != "Y" or "N":
     print("Are you ready to begin your adventure? It's not too late to quit,\n"
           "or to go back and re-select your characters!\n")
-    choice = input("Y/N\t\t")
+    choice = input("Y/N:\t\t")
     if choice.casefold() == "y":
         print(
             "\nYour make your way down into the caverns of the hat-crumplers"
@@ -240,10 +246,10 @@ while choice != "Y" or "N":
         print("\nPlease begin again to re-select your characters!\n"
               "But if cowardice has overtaken your feeble heart then be "
               "gone!\n")
-        print("PLEASE TRY AGAIN")
+        print("PLEASE TRY AGAIN!")
         exit()
     else:
-        print("\nI'm sorry, please choose between 'Y' and 'N'\n")
+        print("\nI'm sorry, please choose between 'Y' and 'N'.\n")
         continue
 
 # The hat-crumplers' dastardly hat-crumpling trap

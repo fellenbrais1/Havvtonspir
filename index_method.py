@@ -1,12 +1,15 @@
-
 # Experimenting with the'.index()' method and the 'enumerate' function
 
 # '.index()' method
 # Sadly, '.index()' does not work with dictionaries unless transformation of /
 # the data into lists etc. happens first
 
-stuff_list = ["tops", "caps", "tappers"]
-stuff_dict = {"1": "taps", "2": "cops", "3": "tupperware"}
+stuff_list = [
+    "tops", "caps", "tappers",
+]
+stuff_dict = {
+    "1": "taps", "2": "cops", "3": "tupperware",
+}
 
 # Testing the '.index()' method
 print(stuff_list.index("caps"))
@@ -46,17 +49,17 @@ for item in stuff_dict:
 # We can also use the 'enumerate' function to return an index value along with /
 # an item, this is the most efficient way to do this in terms of computing /
 # power and time
-print("\n'enumerate' function test")
+print("\n'enumerate' function test.")
 for number, item in enumerate(stuff_dict_values):
     print(number + 1, ". ", item, sep="")
 
 # This could be a way of printing out a list and its index values for testing /
 # purposes, so you know what to index in the future
-print("\nAnother 'enumerate' function test")
+print("\nAnother 'enumerate' function test.")
 for item in enumerate(stuff_dict_values):
     print(item)
 
-print("\nFinal 'enumerate' function test")
+print("\nFinal 'enumerate' function test.")
 stuff_dict_values.sort()
 for item in enumerate(stuff_dict_values):
     print(item)

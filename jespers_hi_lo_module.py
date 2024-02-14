@@ -1,4 +1,3 @@
-
 # This code is 'jespers_hi_lo.py' turned into a module for importing
 
 from time import sleep
@@ -8,7 +7,7 @@ def jespers_hi_lo():
     low = 1
     high = 1000
 
-    print("Please think of a number between {0} and {1}".format(low, high))
+    print("Please think of a number between {0} and {1}.".format(low, high))
     print("I will use my amazing psychic power to guess your number!")
     print("\nPlease enter the number here so you can remember it easily.")
     while True:

@@ -1,4 +1,3 @@
-
 # This code is 'hi_lo_2.py' turned into a module for importing
 
 
@@ -7,8 +6,8 @@ def hi_lo():
     high = 1000
     guess_count = 0
 
-    print("Please think of a number between {0} and {1}".format(low, high))
-    input("Press enter to start...")
+    print("Please think of a number between {0} and {1}.".format(low, high))
+    input("Press enter to start: ")
 
     while low != high:
         # The below formula is used to perform a binary search
@@ -20,21 +19,21 @@ def hi_lo():
         guess = low + (high - low) // 2
         guess_count += 1
         if guess_count == 0:
-            print("\nMy first guess will be {0}".format(guess))
+            print("\nMy first guess will be {0}.".format(guess))
         elif guess_count == 10:
-            print("\nMy final guess will be {0}".format(guess))
+            print("\nMy final guess will be {0}.".format(guess))
         elif guess_count == 11:
             print("\nI have run out of guesses and lost the game!")
             print("Well done human, you have beaten me!")
             exit()
         else:
-            print("\nMy next guess will be {0}".format(guess))
+            print("\nMy next guess will be {0}.".format(guess))
         if guess_count == 1:
-            print("I have used {0} guess so far".format(guess_count))
+            print("I have used {0} guess so far.".format(guess_count))
         else:
-            print("I have used {0} guesses so far".format(guess_count))
+            print("I have used {0} guesses so far.".format(guess_count))
         print("\nIs that correct, too high or too low?")
-        print("Type: 'c' for correct, 'h' for too high and 'l' for to low")
+        print("Type: 'c' for correct, 'h' for too high and 'l' for to low.")
         guess_loop = True
         while guess_loop:
             user_input = input("Your answer: ")
@@ -50,7 +49,7 @@ def hi_lo():
                     exit()
                 else:
                     print("Ah! So the answer IS {0}!".format(guess))
-                    print("\nI got the correct answer in {0} guesses"
+                    print("\nI got the correct answer in {0} guesses!"
                           .format(guess_count))
                     exit()
             elif user_input == 'h':
@@ -75,7 +74,7 @@ def hi_lo():
             exit()
         else:
             print("Ah! The answer is {0}!".format(high))
-            print("\nI got the correct answer in {0} guesses"
+            print("\nI got the correct answer in {0} guesses!"
                   .format(guess_count))
             exit()
 

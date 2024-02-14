@@ -1,6 +1,6 @@
+# Examples of escaping characters using '\'
 
-# An example of escaping characters using '\'
-split_string = "This string has been \nsplit over\nseveral \nlines"
+split_string = "This string has been \nsplit over\nseveral \nlines."
 print(split_string)
 
 tabbed_string = "1\t2\t3\t4\t5"
@@ -19,14 +19,14 @@ print("""The pet shop owner said "No, no, 'e's uh,... he's only resting".""")
 another_split_string = """This string has been
 split over
 several
-lines"""
+lines."""
 print(another_split_string)
 
 # Here we escape the end of the line resulting in a non split output
 another_split_string = """This string has been \
 split over \
 several \
-lines"""
+lines."""
 print(another_split_string)
 
 # Same as above
