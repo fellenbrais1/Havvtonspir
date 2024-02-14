@@ -1,4 +1,3 @@
-
 # Coding challenge to create a loop and let users select actions each time round
 
 from random import randint
@@ -6,8 +5,10 @@ from time import sleep
 
 
 def battle_options():
-    available_actions = ["Attack", "Defend", "Magic", "Items", "Draw", "Mug",
-                         "GF", "Card", "Escape"]
+    available_actions = [
+        "Attack", "Defend", "Magic", "Items",
+        "Draw", "Mug", "GF", "Card", "Escape",
+    ]
     number = 1
 
     while True:
@@ -15,7 +16,7 @@ def battle_options():
         for item in available_actions:
             print(number, ". ", item, sep="")
             number += 1
-        print("Please type a number between 1 and 9, or 0 to quit")
+        print("Please type a number between 1 and 9, or 0 to quit.")
         number = 1
         enemy_choice = randint(1, 9)
         try:

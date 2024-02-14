@@ -1,11 +1,12 @@
-
 # Another way to generate a list of numbers from a list we could use to test /
 # the users input using an 'if choice in valid_choices:' type condition
 
-item_list = ["Computer", "Monitor", "Keyboard", "Mouse",
-             "Mouse Mat", "Graphics Card", "Coolant Block",
-             "Steering Wheel", "Fan Unit", "Power Supply",
-             "Ergonomic Management Keyboard"]
+item_list = [
+    "Computer", "Monitor", "Keyboard", "Mouse",
+    "Mouse Mat", "Graphics Card", "Coolant Block",
+    "Steering Wheel", "Fan Unit", "Power Supply",
+    "Ergonomic Management Keyboard",
+]
 
 # This code works well with lists, but will not work with unsorted /
 # dictionaries, so I still prefer my method for now

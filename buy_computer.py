@@ -1,4 +1,3 @@
-
 # Practicing appending to a list using numbered items in a dictionary
 # Users can add items to their chosen_list by specifying numbers
 # They can confirm the list before purchasing and can also reset the list and /
@@ -17,10 +16,12 @@ sleep(1.5)
 # Defining the necessary variables etc.
 # The dictionary can have items added and removed and the program will adapt /
 # using the 'max_items' variable based on the dictionary's len
-item_dict = {"1": "Computer", "2": "Monitor", "3": "Keyboard", "4": "Mouse",
-             "5": "Mouse Mat", "6": "Graphics Card", "7": "Coolant Block",
-             "8": "Steering Wheel", "9": "Fan Unit", "10": "Power Supply",
-             "11": "Ergonomic Management Keyboard"}
+item_dict = {
+    "1": "Computer", "2": "Monitor", "3": "Keyboard", "4": "Mouse",
+    "5": "Mouse Mat", "6": "Graphics Card", "7": "Coolant Block",
+    "8": "Steering Wheel", "9": "Fan Unit", "10": "Power Supply",
+    "11": "Ergonomic Management Keyboard",
+}
 
 max_items = len(item_dict)
 
@@ -51,7 +52,7 @@ while not finished:
     while current_choice != '0':
         if current_choice in computer_parts:
             list_select = int(current_choice)
-            print("\nAdding '{0}'".format(selectable_list[list_select - 1]))
+            print("\nAdding '{0}.'".format(selectable_list[list_select - 1]))
             chosen_list.append(selectable_list[list_select - 1])
             sleep(1)
             print("\nYour list so far:")

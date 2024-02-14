@@ -1,4 +1,3 @@
-
 # A coding challenge from a textbook asking for three numbers which it /
 # then multiplies together
 
