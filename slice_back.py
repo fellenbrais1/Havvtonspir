@@ -1,6 +1,6 @@
-
 # This code contains examples of slicing using negative index values and /
 # step values
+
 letters = "abcdefghijklmnopqrstuvwxyz"
 print(letters)
 

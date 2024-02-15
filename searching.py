@@ -1,6 +1,13 @@
-
 # This code shows that we can use a for loop to find a variable in a list
-shopping_list = ['milk', 'pasta', 'eggs', 'spam', 'bread', 'rice']
+
+shopping_list = [
+    'milk',
+    'pasta',
+    'eggs',
+    'spam',
+    'bread',
+    'rice',
+]
 
 print(shopping_list)
 item_to_find = input('\nWhat item would you like to find?: ')

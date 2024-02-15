@@ -1,8 +1,11 @@
-
 # In this code we are practicing more with 'in' and 'not in' to test conditions
 # Remember that 'not in' reverses the True/False value of something
 
-potential_options = ["cinema", "gaming"]
+potential_options = [
+    "cinema",
+    "gaming",
+]
+
 print("The potential options are: ")
 for item in potential_options:
     print(item)

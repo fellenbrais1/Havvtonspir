@@ -1,6 +1,12 @@
-
 # Experimenting with mutable objects
-shopping_list = ["eggs", "cheese", "crackers", "milk", "meat"]
+
+shopping_list = [
+    "eggs",
+    "cheese",
+    "crackers",
+    "milk",
+    "meat",
+]
 
 # After assignment, we can see that both variable's IDs are the same
 another_list = shopping_list
@@ -30,7 +36,7 @@ a = b = c = d = e = f = another_list
 print(another_list)
 print(a)
 
-print("Adding cream")
+print("Adding cream.")
 b.append("cream")
 print(c)
 print(d)

@@ -12,7 +12,9 @@
 # in the 'index in range()' statement
 
 data = [
-    104, 101, 4, 105, 308, 103, 5, 107, 100, 306, 106, 102, 108,
+    104, 101, 4, 105, 308,
+    103, 5, 107, 100, 306,
+    106, 102, 108,
 ]
 
 min_valid = 100
@@ -35,8 +37,11 @@ print(data)
 # uses 'enumerate()' which is more efficient than indexes over 1000 items
 
 print()
+
 data = [
-    104, 101, 4, 105, 308, 103, 5, 107, 100, 306, 106, 102, 108,
+    104, 101, 4, 105, 308,
+    103, 5, 107, 100, 306,
+    106, 102, 108,
 ]
 
 min_valid = 100

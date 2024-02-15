@@ -1,12 +1,26 @@
-
 # Experimenting with some common sequence operators
 
-even = [9, 2, 4, 6, 8]
-odd = [1, 3, 4, 7, 9]
-names = ["peony", "elleanora", "bob", "zyzax", "a"]
+even = [
+    2, 4, 6, 8,
+]
+
+odd = [
+    1, 3, 5, 7, 9,
+]
+
+names = [
+    "peony",
+    "elleanora",
+    "bob",
+    "zyzax",
+    "a",
+]
 
 # 'mixed_list' is an experiment to see if it will work with 'min' and 'max'
-mixed_list = [1, 7, 1024, "Bob", 1.665, "Alice", "Zyzarro"]
+mixed_list = [
+    1, 7, 1024, "Bob", 1.665,
+    "Alice", "Zyzarro",
+]
 
 # 'min' returns the lowest or closest to a and shortest value in a set of values
 # 'max' returns the highest or closest to a and longest value in a set of values

@@ -13,8 +13,13 @@ def went_market():
     ord_value = 97
     base_list = "I went to the market today and bought an "
     shopping_list = base_list
+
     vowel_set = [
-        "a", "e", "i", "o", "u",
+        "a",
+        "e",
+        "i",
+        "o",
+        "u",
     ]
 
     while ord_value <= 122:
@@ -29,7 +34,8 @@ def went_market():
         current_item = current_item.lstrip()
         current_item = current_item.rstrip()
         if current_item.startswith(current_letter):
-            shopping_list = shopping_list + current_item
+            shopping_list = shopping_list \
+                            + current_item
             print(shopping_list)
             ord_value += 1
             letter_value = ord_value

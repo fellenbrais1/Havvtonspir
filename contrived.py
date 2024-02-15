@@ -1,6 +1,11 @@
 # Lists are included within square brackets
+
 numbers = [
-    1, 45, 31, 12, 60,
+    1,
+    45,
+    31,
+    12,
+    60,
 ]
 
 # If the list contains a number divisible by 8 it will reject the numbers

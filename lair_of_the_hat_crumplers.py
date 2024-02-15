@@ -6,18 +6,22 @@ char_1_class = char_2_class = char_3_class = 0
 
 # Defining the char_class list
 char_class = [
-    "Crimper", "Measurer", "Fitter", "Hat Thrower", "Trichomancer",
+    "Crimper",
+    "Measurer",
+    "Fitter",
+    "Hat Thrower",
+    "Trichomancer",
 ]
 
 # The character selection text to be displayed
 char_selection = ("1.Crimper - A mighty crimper of edges and disarmer of "
-                  "traps\n"
+                  "traps.\n"
                   "2.Measurer - A mighty combatant who measures up their "
-                  "opponents\n"
-                  "3.Fitter - An agile fitter of hats and accessories\n"
-                  "4.Hat Thrower - A deadly arm with hats for all\n"
+                  "opponents.\n"
+                  "3.Fitter - An agile fitter of hats and accessories.\n"
+                  "4.Hat Thrower - A deadly arm with hats for all.\n"
                   "5.Trichomancer - A wielder of powerful scalp-itching "
-                  "magic\n")
+                  "magic.\n")
 
 # Introduction
 print("\nWelcome, player, to the chilling tale of the \"Lair of the "
@@ -32,11 +36,11 @@ print("\nWelcome, player, to the chilling tale of the \"Lair of the "
       "\t\t!                         !\n"
       "\t-----------------------------------\n")
 
-input("Please press enter to continue >>>")
+input("Please press enter to continue >>> ")
 print("\nThe kingdom of Bromsgrove is in need of help! The evil Hat-Crumplers "
       "have taken\nover the dungeons under the city, and are using them to "
       "continue their reign of\nhat-crumpling terror. Not a hat in the "
-      "land is safe! >>>")
+      "land is safe! >>> ")
 input()
 print("A team of three of the kingdom's finest should be able to enter the "
       "dungeons and\nstop the Hat-Crumplers once and for all. Will you be the "
@@ -63,18 +67,27 @@ while choice != "Y" or "N":
 # characters and their information assigning it all to a list
 
 char_1_name = char_2_name = char_3_name = ""
+
 char_name_list = [
-    char_1_name, char_2_name, char_3_name,
+    char_1_name,
+    char_2_name,
+    char_3_name,
 ]
 
 char_1_type = char_2_type = char_3_type = 0
+
 char_type_list = [
-    char_1_type, char_2_type, char_3_type,
+    char_1_type,
+    char_2_type,
+    char_3_type,
 ]
 
 char_1_class = char_2_class = char_3_class = char_class[0]
+
 char_class_list = [
-    char_1_class, char_2_class, char_3_class,
+    char_1_class,
+    char_2_class,
+    char_3_class,
 ]
 
 for i in range(0, 3):
@@ -91,8 +104,9 @@ for i in range(0, 3):
                                  "\t")
     active_char_name = active_char_name.capitalize()
     char_name_list[i] = active_char_name
-    print("\nWhat class would you like " + active_char_name + " to be?\n")
-    # ACTION Is there a character limit needed to be specified for names?
+    print("\nWhat class would you like "
+          + active_char_name
+          + " to be?\n")
     print(char_selection)
     active_char_type = 0
     while active_char_type == 0:
@@ -108,23 +122,27 @@ for i in range(0, 3):
                 "'1-5'.\n"
                 "Enter '6' to see the class list again.\n")
             if active_char_type == 6:
-                print(
-                    "\nWhat class would you like " + active_char_name +
-                    " to be?\n")
+                print("\nWhat class would you like "
+                      + active_char_name
+                      + " to be?\n")
                 print(char_selection)
             active_char_type = 0
             continue
     active_char_class = char_class[active_char_type - 1]
     char_class_list[i] = active_char_class
-    print(
-        "So be it, " + char_name_list[i] + " will be a " + char_class_list[i] +
-        ".\n")
+    print("So be it, "
+          + char_name_list[i]
+          + " will be a "
+          + char_class_list[i]
+          + ".\n")
     i += 1
 
 # # Character 1
 # char_1_name = input("What is the name of your first character?:\t")
 # char_1_name = char_1_name.capitalize()
-# print("\nWhat class would you like " + char_1_name + " to be?\n")
+# print("\nWhat class would you like "
+#       + char_1_name
+#       + " to be?\n")
 # print(char_selection)
 # (char_1_type) = 0
 # while char_1_type == 0:
@@ -140,21 +158,25 @@ for i in range(0, 3):
 #             "'1-5'.\n"
 #             "Enter '6' to see the class list again.\n")
 #         if char_1_type == 6:
-#             print(
-#                 "\nWhat class would you like " + char_1_name +
-#                 " to be?\n")
+#             print("\nWhat class would you like "
+#                   + char_1_name
+#                   + " to be?\n")
 #             print(char_selection)
 #         char_1_type = 0
 #         continue
 # char_1_class = char_class[char_1_type - 1]
-# print(
-#     "So be it, " + char_1_name + " will be a " + char_1_class +
-#     ".\n")
+# print("So be it, "
+#       + char_1_name
+#       + " will be a "
+#       + char_1_class
+#       + ".\n")
 #
 # # Character 2
 # char_2_name = input("What is the name of your second character?:\t")
 # char_2_name = char_2_name.capitalize()
-# print("\nWhat class would you like " + char_2_name + " to be?\n")
+# print("\nWhat class would you like "
+#       + char_2_name
+#       + " to be?\n")
 # print(char_selection)
 # char_2_type = 0
 # while char_2_type == 0:
@@ -170,21 +192,25 @@ for i in range(0, 3):
 #             "'1-5'.\n"
 #             "Enter '6' to see the class list again.\n")
 #         if char_2_type == 6:
-#             print(
-#                 "\nWhat class would you like " + char_2_name +
-#                 " to be?\n")
+#             print("\nWhat class would you like "
+#                   + char_2_name
+#                   + " to be?\n")
 #             print(char_selection)
 #         char_2_type = 0
 #         continue
 # char_2_class = char_class[char_2_type - 1]
-# print(
-#     "So be it, " + char_2_name + " will be a " + char_2_class +
-#     ".\n")
+# print("So be it, "
+#       + char_2_name
+#       + " will be a "
+#       + char_2_class
+#       + ".\n")
 #
 # # Character 3
 # char_3_name = input("\nWhat is the name of your third character?:\t")
 # char_3_name = char_3_name.capitalize()
-# print("\nWhat class would you like " + char_3_name + " to be?\n")
+# print("\nWhat class would you like "
+#       + char_3_name
+#       + " to be?\n")
 # print(char_selection)
 # char_3_type = 0
 # while char_3_type == 0:
@@ -200,27 +226,35 @@ for i in range(0, 3):
 #             "'1-5'.\n"
 #             "Enter '6' to see the class list again.\n")
 #         if char_3_type == 6:
-#             print(
-#                 "\nWhat class would you like " + char_3_name +
-#                 " to be?\n")
+#             print("\nWhat class would you like "
+#                   + char_3_name
+#                   + " to be?\n")
 #             print(char_selection)
 #         char_3_type = 0
 #         continue
 # char_3_class = char_class[char_3_type - 1]
-# print(
-#     "So be it, " + char_3_name + " will be a " + char_3_class +
-#     ".\n")
+# print("So be it, "
+#       + char_3_name
+#       + " will be a "
+#       + char_3_class
+#       + ".\n")
 
 # Defining the text displayed from char_list
-char_list = char_name_list[0] + ", the mighty and incomparable " + \
-            char_class_list[0] + ",\n" + char_name_list[1] + \
-            ", the most formidable " + char_class_list[1] + \
-            " this world has ever seen, and,\n" + char_name_list[2] \
-            + ", the most deadly " + char_class_list[2] + \
-            " in the western court.\n".format(char_class)
+char_list = char_name_list[0] \
+            + ", the mighty and incomparable " \
+            + char_class_list[0] \
+            + ",\n" + char_name_list[1] \
+            + ", the most formidable " \
+            + char_class_list[1] \
+            + " this world has ever seen, and,\n" \
+            + char_name_list[2] \
+            + ", the most deadly " \
+            + char_class_list[2] \
+            + " in the western court.\n".format(char_class)
 
 # Party composition text and start
-print("\nYour party is composed of:\n" + char_list)
+print("\nYour party is composed of:\n"
+      + char_list)
 
 # Choice1
 choice = ""
@@ -240,7 +274,7 @@ while choice != "Y" or "N":
             "crumpled, and you\n"
             "can almost feel the pain of their previous owners, cruelly forced "
             "to buy new hats.\n"
-            "The terror of such a fate almost stops you in your tracks...")
+            "The terror of such a fate almost stops you in your tracks>>> ")
         break
     elif choice.casefold() == "n":
         print("\nPlease begin again to re-select your characters!\n"
@@ -261,9 +295,11 @@ input()
 # Refined code for checking if one of characters is a 'Crimper' or not
 
 if char_class[0] in char_class_list:
-    print("Ah good! You have a " + char_class[0] + " in your party.\n" +
-          "They effortlessly crimp down the edges of a dastardly hat-crumpling "
-          "trap!\n")
+    print("Ah good! You have a "
+          + char_class[0]
+          + " in your party.\n"
+          + "They effortlessly crimp down the edges of a dastardly "
+            "hat-crumpling trap!\n")
     print("You are safe, for now...")
 else:
     print("Good gracious! Without a Crimper present, the hat-crumpling trap "

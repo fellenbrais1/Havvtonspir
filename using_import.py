@@ -1,6 +1,6 @@
-
 # Trying to supply arguments to an imported function to make it use the /
 # supplied inputs
+
 try:
     from story_of_you import story_of_you
 except ImportError:

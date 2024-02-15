@@ -1,5 +1,5 @@
-
 # Using a for loop to iterate through and remove any separators
+
 number = "9,223;372:036 854,775;807"
 # We have to first initialize separators before we add to it later
 separators = ""

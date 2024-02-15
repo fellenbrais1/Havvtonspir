@@ -1,4 +1,3 @@
-
 # Another attempt at this code, this time stopping when reading from the /
 # start when a value doesn't need to be deleted, and then stopping when /
 # reading from the end when an item doesn't need to be deleted
@@ -14,8 +13,12 @@
 min_valid = 100
 max_valid = 200
 
-data = [4, 5, 104, 105, 110, 120, 130, 130, 150,
-        160, 170, 183, 185, 187, 188, 191, 350, 360]
+data = [
+    4, 5, 104, 105, 110,
+    120, 130, 130, 150, 160,
+    170, 183, 185, 187, 188,
+    191, 350, 360,
+]
 
 items_deleted = []
 
@@ -65,8 +68,12 @@ print("Elements deleted:", items_deleted)
 min_valid = 100
 max_valid = 200
 
-data = [4, 5, 104, 105, 110, 120, 130, 130, 150,
-        160, 170, 183, 185, 187, 188, 191, 350, 360]
+data = [
+    4, 5, 104, 105, 110,
+    120, 130, 130, 150, 160,
+    170, 183, 185, 187, 188,
+    191, 350, 360,
+]
 
 list_to_delete = []
 
@@ -103,8 +110,12 @@ print("Elements deleted:", list_to_delete)
 min_valid = 100
 max_valid = 200
 
-data = [4, 5, 104, 105, 110, 120, 130, 130, 150,
-        160, 170, 183, 185, 187, 188, 191, 350, 360]
+data = [
+    4, 5, 104, 105, 110,
+    120, 130, 130, 150, 160,
+    170, 183, 185, 187, 188,
+    191, 350, 360,
+]
 
 list_to_delete = []
 

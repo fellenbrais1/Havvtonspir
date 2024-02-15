@@ -32,6 +32,7 @@ while not done:
             print("Please let us know if you are interested in another "
                   "product {0}.".format(name))
             done = True
+
     # This except code is what runs if an invalid input is entered
     except ValueError:
         print("Please enter your age in numbers {0}.".format(name))

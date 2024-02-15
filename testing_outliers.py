@@ -1,4 +1,3 @@
-
 # Error testing the removing outlying data process
 
 # -----------------------------------------------------------------------------
@@ -10,8 +9,12 @@ print("\n* Outlying values at both ends of the dataset:")
 min_valid = 100
 max_valid = 200
 
-data = [4, 5, 104, 105, 110, 120, 130, 130, 150,
-        160, 170, 183, 185, 187, 188, 191, 350, 360]
+data = [
+    4, 5, 104, 105, 110,
+    120, 130, 130, 150, 160,
+    170, 183, 185, 187, 188,
+    191, 350, 360,
+]
 
 list_to_delete = []
 
@@ -51,8 +54,12 @@ print("\n* Outlying values at the low end only:")
 min_valid = 100
 max_valid = 200
 
-data = [4, 5, 104, 105, 110, 120, 130, 130, 150,
-        160, 170, 183, 185, 187, 188, 191]
+data = [
+    4, 5, 104, 105, 110,
+    120, 130, 130, 150, 160,
+    170, 183, 185, 187, 188,
+    191,
+]
 
 list_to_delete = []
 
@@ -92,8 +99,12 @@ print("\n* Outlying values at the high end only:")
 min_valid = 100
 max_valid = 200
 
-data = [104, 105, 110, 120, 130, 130, 150,
-        160, 170, 183, 185, 187, 188, 191, 350, 360]
+data = [
+    104, 105, 110, 120, 130,
+    130, 150, 160, 170, 183,
+    185, 187, 188, 191, 350,
+    360,
+]
 
 list_to_delete = []
 
@@ -133,8 +144,11 @@ print("\n* No outlying values:")
 min_valid = 100
 max_valid = 200
 
-data = [104, 105, 110, 120, 130, 130, 150,
-        160, 170, 183, 185, 187, 188, 191]
+data = [
+    104, 105, 110, 120, 130,
+    130, 150, 160, 170, 183,
+    185, 187, 188, 191,
+]
 
 list_to_delete = []
 
@@ -177,7 +191,10 @@ print("\n* Only outlying values:")
 min_valid = 100
 max_valid = 200
 
-data = [1, 7, 18, 25, 205, 707, 1254, 16548, 11111111]
+data = [
+    1, 7, 18, 25, 205,
+    707, 1254, 16548, 11111111,
+]
 
 list_to_delete = []
 
@@ -275,9 +292,14 @@ print("\n* Data sets including anomalous data e.g. strings, floats, Bools, "
 min_valid = 100
 max_valid = 200
 
-data = [4, 5, 6.75, True, False, "Hello", 104, 105, 110, 120, 130, 130, 150,
-        160, 170, 183, 185, 187, 188, 191, 301.56145, True, 350,
-        "Ahoy there matey", 360, False]
+data = [
+    4, 5, 6.75, True, False,
+    "Hello", 104, 105, 110, 120,
+    130, 130, 150, 160, 170,
+    183, 185, 187, 188, 191,
+    301.56145, True, 350, [360, 370], "Ahoy there matey",
+    380, False,
+]
 
 list_to_delete = []
 
@@ -348,8 +370,12 @@ else:
 
 print("\n* Data sets that cannot be reached.")
 
-default_data = [4, 5, 104, 105, 110, 120, 130, 130, 150,
-                160, 170, 183, 185, 187, 188, 191, 350, 360]
+default_data = [
+    4, 5, 104, 105, 110,
+    120, 130, 130, 150, 160,
+    170, 183, 185, 187, 188,
+    191, 350, 360,
+]
 
 try:
     from troubleshooting_outliers import data_2 as data
@@ -427,7 +453,6 @@ else:
     print("\nRESULTS:")
     print("Status: The data set is empty and there is nothing to process")
 
-
 # -----------------------------------------------------------------------------
 # Data sets containing coding keywords etc.
 # FAIL
@@ -436,9 +461,14 @@ else:
 
 print("\n* Data sets containing coding keywords etc.")
 
-data = [4, 5, 6.75, True, False, "Hello", 104, 105, 110, 120, 130, 130, 150,
-        160, 170, 183, 185, 187, 188, 191, 301.56145, True, 350,
-        "Ahoy there matey", 360, False, exit()]
+data = [
+    4, 5, 6.75, True, False,
+    "Hello", 104, 105, 110, 120,
+    130, 130, 150, 160, 170,
+    183, 185, 187, 188, 191,
+    301.56145, True, 350, "Ahoy there matey", 360,
+    False, exit(),
+]
 
 min_valid = 100
 max_valid = 200

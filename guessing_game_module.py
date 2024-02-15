@@ -13,12 +13,14 @@ def guesser():
     # e.g. between 1 and 'highest'
     highest = 10
     answer = randint(1, highest)
+
     difficulty = [
-        '4', '3', '2',
+        '4',
+        '3',
+        '2',
     ]
-    guess = 0
-    guess_count = 0
-    guess_count_max = 0
+
+    guess = guess_count = guess_count_max = 0
 
     print('1. Easy\n2. Medium\n3. Hard')
     ready_1 = True

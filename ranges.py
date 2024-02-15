@@ -1,5 +1,5 @@
-
 # You can also iterate a for loop over a range
+
 # The range goes from the start value up to but not including the stop value
 for i in range(1, 21):
     print("i is now {}".format(i))

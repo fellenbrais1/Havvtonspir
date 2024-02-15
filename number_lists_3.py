@@ -1,10 +1,15 @@
-
 # More experimentation with '.sort()' and 'sorted()' and 'list()'
 # Also comparisons and '.copy()'
 
-empty_list = []         # Creating an empty list
-even = [2, 4, 6, 8]
-odd = [1, 3, 5, 7, 9]
+empty_list = []  # Creating an empty list
+
+even = [
+    2, 4, 6, 8,
+]
+
+odd = [
+    1, 3, 5, 7, 9,
+]
 
 # You can create a list by concatenating existing lists
 numbers = even + odd

@@ -9,8 +9,10 @@ print(tabbed_string)
 # Different examples of escape characters applied to string variables
 # Escape the single quotes
 print('The pet shop owner said "No, no \'e\'s uh,... he\'s only resting".')
+
 # Or escape the double quotes
 print("The pet shop owner said \"No, no 'e's uh,... he's only resting\".")
+
 # Or triple quotes escape everything inside them
 print("""The pet shop owner said "No, no, 'e's uh,... he's only resting".""")
 
@@ -35,7 +37,7 @@ print("""The pet shop owner said "No, no, \
 
 # The line below won't print because it naturally contains escape chars '\'
 # 'print("C:\Users\mmccann\notes.txt")'
+print("C:\\Users\\mmccann\\notes.txt")
 
 # We can either escape a \ with another \ or use a raw string like (r"Hello")
-print("C:\\Users\\mmccann\\notes.txt")
 print(r"C:\Users\mmccann\notes.txt")

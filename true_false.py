@@ -1,5 +1,5 @@
-
 # Testing True and False conditions and branching outputs
+
 day = str(input("What day is it? "))
 temperature = int(input("What is the temperature today? "))
 raining = False

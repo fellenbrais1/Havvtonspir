@@ -1,23 +1,39 @@
-
 # Practising deleting items from a list
-data = [4, 5, 104, 105, 110, 120, 130, 130, 150,
-        160, 170, 183, 185, 187, 188, 191, 350, 360]
+
+data = [
+    4, 5, 104, 105, 110,
+    120, 130, 130, 150, 160,
+    170, 183, 185, 187, 188,
+    191, 350, 360,
+]
 
 # Deleting the first two values because their values are two low
 del data[0:2]
 print(data)
 
 # Deleting the last two elements because their values are too large
-data = [4, 5, 104, 105, 110, 120, 130, 130, 150,
-        160, 170, 183, 185, 187, 188, 191, 350, 360]
+
+data = [
+    4, 5, 104, 105, 110,
+    120, 130, 130, 150, 160,
+    170, 183, 185, 187, 188,
+    191, 350, 360,
+]
+
 del data[16:]
 print(data)
 
 # If the first two elements of the list were already removed, you would have /
 # to change the index value to remove items from the end as the index numbers /
 # have all shifted down to accommodate the shorter list
-data = [4, 5, 104, 105, 110, 120, 130, 130, 150,
-        160, 170, 183, 185, 187, 188, 191, 350, 360]
+
+data = [
+    4, 5, 104, 105, 110,
+    120, 130, 130, 150, 160,
+    170, 183, 185, 187, 188,
+    191, 350, 360,
+]
+
 del data[0:2]
 print(data)
 del data[14:]
@@ -25,8 +41,14 @@ print(data)
 
 # OR we can use a minus slice to always be able to take the last two values /
 # from the list regardless of whether any elements have been removed before
-data = [4, 5, 104, 105, 110, 120, 130, 130, 150,
-        160, 170, 183, 185, 187, 188, 191, 350, 360]
+
+data = [
+    4, 5, 104, 105, 110,
+    120, 130, 130, 150, 160,
+    170, 183, 185, 187, 188,
+    191, 350, 360,
+]
+
 del data[-2:]
 print(data)
 
@@ -35,8 +57,12 @@ print(data)
 min_valid = 100
 max_valid = 200
 
-data = [4, 5, 104, 105, 110, 120, 130, 130, 150,
-        160, 170, 183, 185, 187, 188, 191, 350, 360]
+data = [
+    4, 5, 104, 105, 110,
+    120, 130, 130, 150, 160,
+    170, 183, 185, 187, 188,
+    191, 350, 360,
+]
 
 for index, value in enumerate(data):
     if (value < min_valid) or (value > max_valid):
@@ -65,8 +91,12 @@ print()
 min_valid = 100
 max_valid = 200
 
-data = [4, 5, 104, 105, 110, 120, 130, 130, 150,
-        160, 170, 183, 185, 187, 188, 191, 350, 360]
+data = [
+    4, 5, 104, 105, 110,
+    120, 130, 130, 150, 160,
+    170, 183, 185, 187, 188,
+    191, 350, 360,
+]
 
 deleting = True
 while deleting:
@@ -79,12 +109,15 @@ while deleting:
 print("Deleting finished...")
 print(data)
 
-
 min_valid = 100
 max_valid = 200
 
-data = [4, 5, 104, 105, 110, 120, 130, 130, 150,
-        160, 170, 183, 185, 187, 188, 191, 350, 360]
+data = [
+    4, 5, 104, 105, 110,
+    120, 130, 130, 150, 160,
+    170, 183, 185, 187, 188,
+    191, 350, 360,
+]
 
 stop = 0
 for index, value in enumerate(data):
@@ -103,8 +136,12 @@ print(data)
 min_valid = 100
 max_valid = 200
 
-data = [104, 105, 110, 120, 130, 130, 150,
-        160, 170, 183, 185, 187, 188, 191, 350, 360]
+data = [
+    104, 105, 110, 120, 130,
+    130, 150, 160, 170, 183,
+    185, 187, 188, 191, 350,
+    360,
+]
 
 # This is a way to index backwards through a list, using a start and stop /
 # value of -1 and a step value of -1
@@ -123,6 +160,6 @@ for index in range(len(data) - 1, - 1, - 1):
 # Start represents from where we should start deleting from, but not including /
 # this piece of data
 
-print("Start value:", start)    # For debugging
+print("Start value:", start)  # For debugging
 del data[start:]
 print(data)

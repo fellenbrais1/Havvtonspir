@@ -1,7 +1,13 @@
-
 # Replacing items in a list with indexing and slices
 
-computer_parts = ["computer", "monitor", "keyboard", "mouse", "mouse mat"]
+computer_parts = [
+    "computer",
+    "monitor",
+    "keyboard",
+    "mouse",
+    "mouse mat",
+]
+
 print(computer_parts)
 
 # replacing a value in a list using an index position
@@ -23,7 +29,18 @@ computer_parts[3:] = ["trackball"]
 print(computer_parts)
 
 # This replaces up to and including the slice end value with the specified list
-computer_parts = ["computer", "monitor", "keyboard", "mouse", "mouse mat"]
-computer_parts[0:2] = ["sodium", "calcium", "ceasium"]
+computer_parts = [
+    "computer",
+    "monitor",
+    "keyboard",
+    "mouse",
+    "mouse mat",
+]
+
+computer_parts[0:2] = [
+    "sodium",
+    "calcium",
+    "ceasium",
+]
+
 print(computer_parts)
- 

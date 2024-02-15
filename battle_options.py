@@ -5,10 +5,19 @@ from time import sleep
 
 
 def battle_options():
+
     available_actions = [
-        "Attack", "Defend", "Magic", "Items",
-        "Draw", "Mug", "GF", "Card", "Escape",
+        "Attack",
+        "Defend",
+        "Magic",
+        "Items",
+        "Draw",
+        "Mug",
+        "GF",
+        "Card",
+        "Escape",
     ]
+
     number = 1
 
     while True:

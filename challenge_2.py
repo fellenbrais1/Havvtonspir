@@ -4,9 +4,7 @@
 
 
 def password_creation():
-    middle_name = ""
-    favourite_pasta = ""
-    number = ""
+    middle_name = favourite_pasta = number = ""
     loop_count = 0
 
     print("Now we are going to make you a new password...")
@@ -47,8 +45,9 @@ def password_creation():
             print("That input is not acceptable.")
 
     while loop_count == 3:
-        created_password = middle_name.capitalize() + \
-                           favourite_pasta.casefold() + number.casefold()
+        created_password = middle_name.capitalize() \
+                           + favourite_pasta.casefold() \
+                           + number.casefold()
         created_password = created_password.replace(" ", "")
         return created_password
 

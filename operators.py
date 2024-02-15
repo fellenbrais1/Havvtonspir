@@ -1,15 +1,15 @@
-
 # An example of the mathematical operators that can be used in Python
+
 a = 12
 b = 3
 
-print(a + b)    # Addition
-print(a - b)    # Subtraction
-print(a / b)    # Division produces a float result
-print(a // b)   # Integer division produces an int result
-print(a * b)    # Multiplication
-print(a % b)    # Modulo division, the remainder after integer division
-print(a ** b)   # Exponent operator (raising a number to a power specified)
+print(a + b)  # Addition
+print(a - b)  # Subtraction
+print(a / b)  # Division produces a float result
+print(a // b)  # Integer division produces an int result
+print(a * b)  # Multiplication
+print(a % b)  # Modulo division, the remainder after integer division
+print(a ** b)  # Exponent operator (raising a number to a power specified)
 
 print()
 

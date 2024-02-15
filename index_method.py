@@ -5,10 +5,15 @@
 # the data into lists etc. happens first
 
 stuff_list = [
-    "tops", "caps", "tappers",
+    "tops",
+    "caps",
+    "tappers",
 ]
+
 stuff_dict = {
-    "1": "taps", "2": "cops", "3": "tupperware",
+    "1": "taps",
+    "2": "cops",
+    "3": "tupperware",
 }
 
 # Testing the '.index()' method

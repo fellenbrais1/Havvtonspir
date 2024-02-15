@@ -1,4 +1,3 @@
-
 # -----------------------------------------------------------------------------
 # Data sets including anomalous data e.g. strings,floats, Bools, etc.
 
@@ -9,9 +8,14 @@ if __name__ == " __main__":
     min_valid = 100
     max_valid = 200
 
-    data = [4, 5, 6.75, True, False, "Hello", 104, 105, 110, 120, 130, 130, 150,
-            160, 170, 183, 185, 187, 188, 191, 301.56145, True, 350,
-            "Ahoy there matey", 360, False]
+    data = [
+        4, 5, 6.75, True, False,
+        "Hello", 104, 105, 110, 120,
+        130, 130, 150, 160, 170,
+        183, 185, 187, 188, 191,
+        301.56145, True, 350, "Ahoy there matey", 360,
+        False,
+    ]
 
     list_to_delete = []
 
@@ -82,8 +86,12 @@ if __name__ == " __main__":
 
 # This list below is imported from the programs in 'testing_outliers.py'
 
-data_1 = [4, 5, 104, 105, 110, 120, 130, 130, 150,
-          160, 170, 183, 185, 187, 188, 191, 350, 360]
+data_1 = [
+    4, 5, 104, 105, 110,
+    120, 130, 130, 150, 160,
+    170, 183, 185, 187, 188,
+    191, 350, 360,
+]
 
 # This variable below is used to test if there is a TypeError when importing /
 # a dataset in 'outliers_final.py'
@@ -94,5 +102,9 @@ data_1 = [4, 5, 104, 105, 110, 120, 130, 130, 150,
 # This list below represents a broken version of 'data_2' that cannot be /
 # reached by 'testing_outliers.py'
 
-data_ = [4, 5, 104, 105, 110, 120, 130, 130, 150,
-         160, 170, 183, 185, 187, 188, 191, 350, 360]
+data_ = [
+    4, 5, 104, 105, 110,
+    120, 130, 130, 150, 160,
+    170, 183, 185, 187, 188,
+    191, 350, 360,
+]

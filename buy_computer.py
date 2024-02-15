@@ -16,10 +16,18 @@ sleep(1.5)
 # Defining the necessary variables etc.
 # The dictionary can have items added and removed and the program will adapt /
 # using the 'max_items' variable based on the dictionary's len
+
 item_dict = {
-    "1": "Computer", "2": "Monitor", "3": "Keyboard", "4": "Mouse",
-    "5": "Mouse Mat", "6": "Graphics Card", "7": "Coolant Block",
-    "8": "Steering Wheel", "9": "Fan Unit", "10": "Power Supply",
+    "1": "Computer",
+    "2": "Monitor",
+    "3": "Keyboard",
+    "4": "Mouse",
+    "5": "Mouse Mat",
+    "6": "Graphics Card",
+    "7": "Coolant Block",
+    "8": "Steering Wheel",
+    "9": "Fan Unit",
+    "10": "Power Supply",
     "11": "Ergonomic Management Keyboard",
 }
 
@@ -29,7 +37,9 @@ current_choice = "-"
 
 # 'selectable_list' is filled with only the values from the key: value pairs /
 # from 'item_dict' to avoid KeyError situations when indexing later
+
 selectable_list = []
+
 for item in item_dict.values():
     selectable_list.append(item)
 
@@ -39,7 +49,9 @@ letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 # The 'computer_parts' list is created to be able to index using the keys in /
 # 'item_dict' based on the users numbered choices
+
 computer_parts = []
+
 for item in item_dict.keys():
     computer_parts.append(item)
 

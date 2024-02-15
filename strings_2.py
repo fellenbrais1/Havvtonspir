@@ -1,4 +1,3 @@
-
 # Practice code indexing values in a string
 
 #                    1
@@ -52,12 +51,12 @@ print(parrot[:])
 
 letters = "abcdefghijklmnopqrstuvwxyz"
 
-print(parrot[-4:-2])    # Bl
-print(parrot[-4:12])    # Bl
+print(parrot[-4:-2])  # Bl
+print(parrot[-4:12])  # Bl
 
 # Step values go at the end of the slice not the middle
-print(parrot[0:6:2])    # Nre
-print(parrot[0:6:3])    # Nw
+print(parrot[0:6:2])  # Nre
+print(parrot[0:6:3])  # Nw
 
 # An example of using a step value in a slice, it can be used to take out /
 # separators like this
@@ -71,6 +70,6 @@ separators = number[1::4]
 print(separators)
 
 # This code takes all values not in separators and prints them as joined values
-values = "".join(char if char not in separators else " " for char in number)\
+values = "".join(char if char not in separators else " " for char in number) \
     .split()
 print([int(val) for val in values])

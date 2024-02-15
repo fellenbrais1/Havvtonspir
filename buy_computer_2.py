@@ -2,9 +2,16 @@
 # the users input using an 'if choice in valid_choices:' type condition
 
 item_list = [
-    "Computer", "Monitor", "Keyboard", "Mouse",
-    "Mouse Mat", "Graphics Card", "Coolant Block",
-    "Steering Wheel", "Fan Unit", "Power Supply",
+    "Computer",
+    "Monitor",
+    "Keyboard",
+    "Mouse",
+    "Mouse Mat",
+    "Graphics Card",
+    "Coolant Block",
+    "Steering Wheel",
+    "Fan Unit",
+    "Power Supply",
     "Ergonomic Management Keyboard",
 ]
 

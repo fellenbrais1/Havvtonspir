@@ -1,11 +1,22 @@
-
 # Assigning values to a list, a series of values in quotes separated by commas
 # In Python, we use '[]' to specify a list
 
-shopping_list = ['milk', 'pasta', 'eggs', 'spam', 'bread', 'rice']
+shopping_list = [
+    'milk',
+    'pasta',
+    'eggs',
+    'spam',
+    'bread',
+    'rice',
+]
 
 # We can store any type of object in a list in Python
-mix_list = [6, 55.22, True, 'pigs in blankets']
+mix_list = [
+    6,
+    55.22,
+    True,
+    'pigs in blankets',
+]
 
 for item in mix_list:
     print(item, " is: ", type(item))

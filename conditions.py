@@ -1,3 +1,5 @@
+# Examples of checking conditions
+
 # The expression below works but is wordy and could be simplified
 # 'and' is used to check that both conditions are true before returning True
 age = int(input("How old are you?: "))
