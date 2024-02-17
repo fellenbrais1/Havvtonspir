@@ -16,6 +16,7 @@ character_base_data = {
     'defence': 10,
     'speed': 10,
     'magic': 10,
+    'initiative': 0,
 }
 
 c_1 = {
@@ -31,6 +32,7 @@ c_1 = {
     'defence': 10,
     'speed': 10,
     'magic': 10,
+    'initiative': 7,
 }
 
 c_2 = {
@@ -46,6 +48,7 @@ c_2 = {
     'defence': 10,
     'speed': 10,
     'magic': 10,
+    'initiative': 2,
 }
 
 c_3 = {
@@ -61,6 +64,23 @@ c_3 = {
     'defence': 10,
     'speed': 10,
     'magic': 10,
+    'initiative': 10,
+}
+
+e_1 = {
+    'enemy number': 0,
+    'name': 'Mad Hatter',
+    'class': 'Hatter',
+    'level': 1,
+    'max_HP': 100,
+    'current_HP': 100,
+    'max_MP': 50,
+    'current_MP': 50,
+    'attack': 10,
+    'defence': 10,
+    'speed': 10,
+    'magic': 10,
+    'initiative': 3,
 }
 
 characters_data = [
@@ -68,6 +88,17 @@ characters_data = [
     c_2,
     c_3,
 ]
+
+battlers = [
+    c_1,
+    c_2,
+    c_3,
+    e_1
+]
+
+# Need to work out how to sort the initiative values into a list for turns
+# COMMENTED OUT FOR NOW
+# turn_order = sorted(battlers)
 
 status_effects = [
     'KO',
