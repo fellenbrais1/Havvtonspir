@@ -1,6 +1,6 @@
 # Practicing appending to a list using numbered items in a dictionary
 # Users can add items to their chosen_list by specifying numbers
-# They can confirm the list before purchasing and can also reset the list and /
+# They can confirm the list before purchasing and can also reset the list and \
 # delete any items they want from the list
 # Added sorting of 'chosen_list' in the code for readability
 
@@ -14,7 +14,7 @@ print("Please enter the number of the part you want to add to your shopping "
 sleep(1.5)
 
 # Defining the necessary variables etc.
-# The dictionary can have items added and removed and the program will adapt /
+# The dictionary can have items added and removed and the program will adapt \
 # using the 'max_items' variable based on the dictionary's len
 
 item_dict = {
@@ -35,7 +35,7 @@ max_items = len(item_dict)
 
 current_choice = "-"
 
-# 'selectable_list' is filled with only the values from the key: value pairs /
+# 'selectable_list' is filled with only the values from the key: value pairs \
 # from 'item_dict' to avoid KeyError situations when indexing later
 
 selectable_list = []
@@ -47,7 +47,7 @@ chosen_list = []
 
 letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-# The 'computer_parts' list is created to be able to index using the keys in /
+# The 'computer_parts' list is created to be able to index using the keys in \
 # 'item_dict' based on the users numbered choices
 
 computer_parts = []
@@ -118,7 +118,7 @@ while not finished:
                 print("\nOkay, so let's go to the checkout page!")
                 sleep(1)
                 finished = True
-        # This 'edit' block allows items to be deleted from 'chosen_list' and /
+        # This 'edit' block allows items to be deleted from 'chosen_list' and \
         # it also allows 'chosen_list' to be cleared completely
         elif choice == 'e':
             while edit:

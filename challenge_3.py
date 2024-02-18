@@ -1,5 +1,5 @@
-# A coding challenge from a textbook, it makes the user suggest a word /
-# starting with a letter of the alphabet, printing it out as an increasingly /
+# A coding challenge from a textbook, it makes the user suggest a word \
+# starting with a letter of the alphabet, printing it out as an increasingly \
 # long string until the end of the alphabet
 
 print("Let's play \"Let's go to the market today!\"")

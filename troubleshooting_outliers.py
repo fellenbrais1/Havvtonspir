@@ -1,4 +1,3 @@
-# -----------------------------------------------------------------------------
 # Data sets including anomalous data e.g. strings,floats, Bools, etc.
 
 if __name__ == " __main__":
@@ -93,13 +92,13 @@ data_1 = [
     191, 350, 360,
 ]
 
-# This variable below is used to test if there is a TypeError when importing /
+# This variable below is used to test if there is a TypeError when importing \
 # a dataset in 'outliers_final.py'
 # COMMENTED OUT FOR NOW
 
 # data_1 = "Hello World!"
 
-# This list below represents a broken version of 'data_2' that cannot be /
+# This list below represents a broken version of 'data_2' that cannot be \
 # reached by 'testing_outliers.py'
 
 data_ = [

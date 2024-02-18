@@ -1,5 +1,5 @@
-# This is the same as the previous example, but concatenating the two lists /
-# we produce a list with the entirety of the second list appended to the end /
+# This is the same as the previous example, but concatenating the two lists \
+# we produce a list with the entirety of the second list appended to the end \
 # of the other list
 
 empty_list = []
@@ -20,8 +20,8 @@ for number_list in numbers:
 
 # -----------------------------------------------------------------------------
 
-# This adds each item as a list to another list, thus creating a nested list /
-# this means that the lists in this list can be iterated over using nested for /
+# This adds each item as a list to another list, thus creating a nested list \
+# this means that the lists in this list can be iterated over using nested for \
 # loops to print out the contents of each one as below
 
 print()

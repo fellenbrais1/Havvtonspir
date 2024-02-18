@@ -1,4 +1,4 @@
-# This code shows examples of concatenation with strings and numerical /
+# This code shows examples of concatenation with strings and numerical \
 # operations with ints etc
 
 string_1 = "He's "

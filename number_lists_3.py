@@ -21,8 +21,8 @@ print(sorted_numbers)
 # The original is still available as 'sorted()' does not change the original
 print(numbers)
 
-# When you create a list from a sequence of characters it will retain the /
-# properties of what made it. e.g. 'sorted_numbers' is a list of ints as it /
+# When you create a list from a sequence of characters it will retain the \
+# properties of what made it. e.g. 'sorted_numbers' is a list of ints as it \
 # was made of ints, 'digits' is a list of strings as it was made of strings
 digits = sorted("432985617")
 print(digits)
@@ -48,7 +48,7 @@ print(more_numbers_2)
 print(numbers is more_numbers_2)
 print(numbers == more_numbers_2)
 
-# You can use the .copy() method instead of a slice as it is more efficient /
+# You can use the .copy() method instead of a slice as it is more efficient \
 # This works in Python 3 and onwards
 more_numbers_3 = numbers.copy()
 print(more_numbers_3)

@@ -1,7 +1,7 @@
-# There may be other changes that could be made to make this program a bit /
+# There may be other changes that could be made to make this program a bit \
 # more user-friendly, such as specifying where a lost file should be
 
-# Added a time measurement function, but this dataset is so small it is quite /
+# Added a time measurement function, but this dataset is so small it is quite \
 # buggy and sometimes equates to 0 time passed between calls of 'datetime.now()'
 from datetime import datetime
 

@@ -23,8 +23,8 @@ data = [
 del data[16:]
 print(data)
 
-# If the first two elements of the list were already removed, you would have /
-# to change the index value to remove items from the end as the index numbers /
+# If the first two elements of the list were already removed, you would have \
+# to change the index value to remove items from the end as the index numbers \
 # have all shifted down to accommodate the shorter list
 
 data = [
@@ -39,7 +39,7 @@ print(data)
 del data[14:]
 print(data)
 
-# OR we can use a minus slice to always be able to take the last two values /
+# OR we can use a minus slice to always be able to take the last two values \
 # from the list regardless of whether any elements have been removed before
 
 data = [
@@ -52,7 +52,7 @@ data = [
 del data[-2:]
 print(data)
 
-# We could set some 'min' and 'max' values to test if a value is within the /
+# We could set some 'min' and 'max' values to test if a value is within the \
 # desired range and then delete them if they are not within that range
 min_valid = 100
 max_valid = 200
@@ -70,21 +70,21 @@ for index, value in enumerate(data):
 
 print(data)
 
-# This code does not work because the size and index values of the list are /
+# This code does not work because the size and index values of the list are \
 # changed every time there is a change made to the list
-# This means that some items will be skipped because of the index /
+# This means that some items will be skipped because of the index \
 # reassignments and the way that Python iterates through the code
 # Be very careful when changing the size of a list that you are iterating over
 
-# You can't mess with the execution of a for loop in python like you can in /
-# some other languages, for example you shouldn't change the index value /
+# You can't mess with the execution of a for loop in python like you can in \
+# some other languages, for example you shouldn't change the index value \
 # manually in Python as it always causes a lot of problems
 
 # This can cause big problems when trying to automate processes in Python
 
 
-# I found a way to automate this successfully using a loop that runs in a /
-# loop until there is nothing else to be deleted. This works but is probably /
+# I found a way to automate this successfully using a loop that runs in a \
+# loop until there is nothing else to be deleted. This works but is probably \
 # very inefficient in terms of computing power
 print()
 
@@ -143,7 +143,7 @@ data = [
     360,
 ]
 
-# This is a way to index backwards through a list, using a start and stop /
+# This is a way to index backwards through a list, using a start and stop \
 # value of -1 and a step value of -1
 start = 0
 for index in range(len(data) - 1, - 1, - 1):
@@ -154,10 +154,10 @@ for index in range(len(data) - 1, - 1, - 1):
         start = index + 1
         break
 
-# This code does the same as what we did with the low values, we change the /
-# index value to generate a deletion slice we can use, adding 1 to make sure /
+# This code does the same as what we did with the low values, we change the \
+# index value to generate a deletion slice we can use, adding 1 to make sure \
 # we do not delete the value that actually represents the start value
-# Start represents from where we should start deleting from, but not including /
+# Start represents from where we should start deleting from, but not including \
 # this piece of data
 
 print("Start value:", start)  # For debugging

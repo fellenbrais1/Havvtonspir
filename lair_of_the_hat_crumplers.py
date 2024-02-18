@@ -63,7 +63,7 @@ while choice != "Y" or "N":
         print("\nI'm sorry, please choose between 'Y' and 'N'.\n")
         continue
 
-# Made this code more efficient by using a for range to initialize all the /
+# Made this code more efficient by using a for range to initialize all the \
 # characters and their information assigning it all to a list
 
 char_1_name = char_2_name = char_3_name = ""

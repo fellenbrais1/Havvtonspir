@@ -456,7 +456,7 @@ else:
 # -----------------------------------------------------------------------------
 # Data sets containing coding keywords etc.
 # FAIL
-# An 'exit() statement anywhere in the list causes the program to immediately /
+# An 'exit() statement anywhere in the list causes the program to immediately \
 # terminate, not sure how to get around this one
 
 print("\n* Data sets containing coding keywords etc.")

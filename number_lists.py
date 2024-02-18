@@ -36,8 +36,8 @@ print()
 print(min(names))
 print(max(names))
 
-# 'min' and 'max' do not work for 'mixed_list' as it contains a mixture of /
-# elements that cannot be compared with mathematical operators like in these /
+# 'min' and 'max' do not work for 'mixed_list' as it contains a mixture of \
+# elements that cannot be compared with mathematical operators like in these \
 # methods
 
 # COMMENTED OUT FOR NOW
@@ -52,7 +52,7 @@ print(len(odd))
 print(len(names))
 print(len(mixed_list))
 
-# '.count' returns how many times a value specified in the parentheses occurs /
+# '.count' returns how many times a value specified in the parentheses occurs \
 # in the variable of value it is dot suffixed to
 
 print()
@@ -61,6 +61,6 @@ print("mississippi".count("s"))
 # 'iss' returns a value of 2 as it occurs twice in 'mississippi'
 print("mississippi".count("iss"))
 
-# However, 'issi' returns a value of 1, the string 'issi' does occur twice, /
+# However, 'issi' returns a value of 1, the string 'issi' does occur twice, \
 # but as these overlap Python cannot count them independently of one another
 print("mississippi".count("issi"))

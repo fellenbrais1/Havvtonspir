@@ -18,13 +18,13 @@ item_to_find = item_to_find.casefold()
 # COMMENTED OUT FOR NOW
 # item_to_find = 'spam'
 
-# Here we bind the found_at variable to None to avoid errors later on in the /
+# Here we bind the found_at variable to None to avoid errors later on in the \
 # program
-# This could be in a situation where an item is not found in the list for /
+# This could be in a situation where an item is not found in the list for \
 # example
 found_at = None
 
-# Breaking out of the loop means we don't need to do any processing once the /
+# Breaking out of the loop means we don't need to do any processing once the \
 # desired result is found
 for index in range(len(shopping_list)):
     if shopping_list[index].casefold() == item_to_find:
@@ -37,7 +37,7 @@ if found_at is not None:
 else:
     print('\'{0}\' not found in the list!'.format(item_to_find))
 
-# This is an alternative and much more efficient way of doing this operation /
+# This is an alternative and much more efficient way of doing this operation \
 # in Python
 
 # COMMENTED OUT FOR NOW

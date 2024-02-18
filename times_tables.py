@@ -1,4 +1,4 @@
-# This file demonstrates using nested for loops, usually 'i' and 'j' are /
+# This file demonstrates using nested for loops, usually 'i' and 'j' are \
 # values used here
 
 for i in range(1, 13):

@@ -18,12 +18,12 @@ print(computer_parts)
 print(computer_parts[3:])
 
 # Replacing items in a list using a slice
-# In this example, each letter of the new assignment is treated as a new list /
+# In this example, each letter of the new assignment is treated as a new list \
 # this means we get a slightly odd result and output
 computer_parts[3:] = "trackball"
 print(computer_parts)
 
-# If we put the item to be added as a list element, it will only add one new /
+# If we put the item to be added as a list element, it will only add one new \
 # list item to the existing list
 computer_parts[3:] = ["trackball"]
 print(computer_parts)

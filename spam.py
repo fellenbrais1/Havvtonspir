@@ -1,4 +1,4 @@
 
 import this
 
-menu = [['eggs', 'bacon', '', ]]
+menu = [['eggs', 'bacon', 'chicken nanban', 'twinkle powder']]

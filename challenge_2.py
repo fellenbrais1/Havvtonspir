@@ -1,5 +1,5 @@
-# A coding challenge from a textbook, prompting a user to enter a middle /
-# name, a favorite type of pasta, and a number to concatenate into a new /
+# A coding challenge from a textbook, prompting a user to enter a middle \
+# name, a favorite type of pasta, and a number to concatenate into a new \
 # password for the user
 
 

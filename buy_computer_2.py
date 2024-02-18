@@ -1,4 +1,4 @@
-# Another way to generate a list of numbers from a list we could use to test /
+# Another way to generate a list of numbers from a list we could use to test \
 # the users input using an 'if choice in valid_choices:' type condition
 
 item_list = [
@@ -15,7 +15,7 @@ item_list = [
     "Ergonomic Management Keyboard",
 ]
 
-# This code works well with lists, but will not work with unsorted /
+# This code works well with lists, but will not work with unsorted \
 # dictionaries, so I still prefer my method for now
 # This is called a list comprehension method
 # We have to add a '+ 1' here as the final value is not included in the range
