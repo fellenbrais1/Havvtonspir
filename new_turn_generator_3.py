@@ -1,9 +1,6 @@
-# This is a bit of an experiment, basically it imports character data from \
-# 'data_test.py' and uses it to generate an order that characters and enemies \
-# can take in a battle. I have added a very basic system of changing the \
-# health of the actors as well, though this doesn't do anything yet
-# There is probably some redundancy in the data lists and dictionaries that \
-# could be cleaned up later
+# This doesn't quite work yet, I think my design is poor. It would be a lot \
+# cleaner to do everything with the base dictionary instead of making a load \
+# of extra lists etc to handle the data
 
 import operator
 from random import randint
@@ -17,13 +14,20 @@ while battle:
     for item in battlers:
         # In a real game, this type of assignment would be done everytime the \
         # character's speed changes in some way
+        if 'slow' in item['statuses']:
+            item['speed'] //= 4
+            item['speed'].__round__()
+        if 'KO' in item['statuses']:
+            item['speed'] = item['init_mod'] = 0
         item['init_mod'] = item['speed'] * 2 / 1.5
         item['init_mod'] = item['init_mod'].__round__()
         item['init'] = randint(0, 20) + item['init_mod']
 
     active_turn_list = []
     for battler in battlers:
-        if 'KO' not in battler['statuses']:
+        if 'KO' in battler['statuses']:
+            continue
+        else:
             battler_initiative = battler['ref'], battler['name'], \
                                  battler['init'], battler['init_mod'], \
                                  battler['statuses']
@@ -33,12 +37,10 @@ while battle:
                               reverse=True)
     print(active_turn_list)
 
-    del_char_list = []
-
     condition = True
     while condition:
         i = 0
-        for i in range(len(battlers)):
+        for i in range(len(active_turn_list)):
             active_character_dict = active_turn_list[i]
             print("The active character is: ", active_character_dict[1])
             input(">>>")
@@ -49,37 +51,27 @@ while battle:
                 print(bd[character_ref]['name'], 'is knocked out!')
                 bd[character_ref]['speed'] = -100
                 continue
-            damage = randint(25, 75) - bd[character_ref]['defence']
-            if damage < 0:
-                damage = 0
-            print('{0} took {1} damage!'.format(bd[character_ref]
-                                                ['name'], damage))
-            bd[character_ref]['current_HP'] \
-                = bd[character_ref]['current_HP'] - damage
-            if bd[character_ref]['current_HP'] <= 0:
-                print("{0} is KO'ed".format(bd[character_ref]['name']))
-                bd[character_ref]['statuses'].append('KO')
-                del_char_list.append(active_turn_list[i])
             else:
-                print(bd[character_ref]['name'], 'now has',
-                      bd[character_ref]['current_HP'], 'HP!')
-            input(">>>")
+                damage = randint(25, 75) - bd[character_ref]['defence']
+                if damage < 0:
+                    damage = 0
+                print('{0} took {1} damage!'.format(bd[character_ref]
+                                                    ['name'], damage))
+                bd[character_ref]['current_HP'] \
+                    = bd[character_ref]['current_HP'] - damage
+                if bd[character_ref]['current_HP'] <= 0:
+                    print("{0} is KO'ed".format(bd[character_ref]['name']))
+                    bd[character_ref]['statuses'].append('KO')
+                    # active_character_dict[15].append('KO')
+                else:
+                    print(bd[character_ref]['name'], 'now has',
+                          bd[character_ref]['current_HP'], 'HP!')
+                input(">>>")
             i += 1
-            if i == len(battlers):
-                end_of_turn = True
-                while end_of_turn:
-                    for item in active_turn_list:
-                        if item in del_char_list:
-                            active_turn_list.remove(item)
-                        for battler in battlers:
-                            if battler == character_ref:
-                                battlers.remove(battler)
-                            break
-                    else:
-                        print("\nNext turn!")
-                        i = 0
-                        condition = False
-                        end_of_turn = False
+            if i == len(active_turn_list):
+                print("\nNext turn!")
+                i = 0
+                condition = False
 
 # This is another list that will be used to apply certain affects to actors
 status_effects = [

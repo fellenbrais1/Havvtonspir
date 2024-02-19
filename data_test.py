@@ -22,7 +22,7 @@ character_base_data = {
     'magic': 10,
     'init': 0,
     'init_mod': 0,
-    'statuses': [],
+    'statuses': ['fine'],
 }
 
 # Master dictionary that can be referenced using a 'name' value
@@ -43,7 +43,7 @@ party_data = {
         'magic': 10,
         'init': 0,
         'init_mod': 0,
-        'statuses': [],
+        'statuses': ['fine'],
     },
     'c_2': {
         'ref': 'c_2',
@@ -61,7 +61,7 @@ party_data = {
         'magic': 10,
         'init': 0,
         'init_mod': 0,
-        'statuses': [],
+        'statuses': ['fine'],
     },
     'c_3': {
         'ref': 'c_3',
@@ -79,7 +79,7 @@ party_data = {
         'magic': 10,
         'init': 0,
         'init_mod': 0,
-        'statuses': [],
+        'statuses': ['fine', 'slow'],
     }
 }
 
@@ -100,7 +100,7 @@ e_1 = {
     'magic': 10,
     'init': 0,
     'init_mod': 0,
-    'statuses': [],
+    'statuses': ['fine'],
 }
 
 # 'battlers' is a collection of the dictionaries that represent who will be \
@@ -133,7 +133,7 @@ battlers_data = {
         'magic': 10,
         'init': 0,
         'init_mod': 0,
-        'statuses': [],
+        'statuses': ['fine'],
     },
     'c_2': {
         'ref': 'c_2',
@@ -151,7 +151,7 @@ battlers_data = {
         'magic': 10,
         'init': 0,
         'init_mod': 0,
-        'statuses': [],
+        'statuses': ['fine'],
     },
     'c_3': {
         'ref': 'c_3',
@@ -169,7 +169,7 @@ battlers_data = {
         'magic': 10,
         'init': 10,
         'init_mod': 0,
-        'statuses': [],
+        'statuses': ['fine', 'slow'],
     },
     'e_1': {
         'ref': 'e_1',
@@ -187,6 +187,6 @@ battlers_data = {
         'magic': 10,
         'init': 0,
         'init_mod': 0,
-        'statuses': [],
+        'statuses': ['fine'],
     },
 }
