@@ -103,16 +103,6 @@ e_1 = {
     'statuses': ['fine'],
 }
 
-# 'battlers' is a collection of the dictionaries that represent who will be \
-# participating in the battle, when enemies are killed they can be removed \
-# from this list
-battlers = [
-    party_data['c_1'],
-    party_data['c_2'],
-    party_data['c_3'],
-    e_1,
-]
-
 # I created this list to allow better referencing of values during battle \
 # processing, I think this dictionary could be populated anew every time an \
 # instance of a battle started in the game and expunged afterwards
@@ -190,3 +180,14 @@ battlers_data = {
         'statuses': ['fine'],
     },
 }
+
+# 'battlers' is a collection of the dictionaries that represent who will be \
+# participating in the battle, when enemies are killed they can be removed \
+# from this list
+battlers = [
+    battlers_data['c_1'],
+    battlers_data['c_2'],
+    battlers_data['c_3'],
+    battlers_data['e_1'],
+]
+
