@@ -1,39 +1,53 @@
-
 from data_test import battlers, battlers_data
+from random import randint
 
 
-def print_stats():
-    a = b = c = d = []
-    for item in battlers_data['c_1']['statuses']:
-        a += [item]
-        # print(item, sep=', ', end='\n',)
+def print_statuses():
+    a = []
+    b = []
+    c = []
+    d = []
+    for i in range(battlers_data + 1):
+        for item in [i], ['statuses']:
+            a += item
+        print(a)
     for item in battlers_data['c_2']['statuses']:
         b += [item]
-        # print(item, sep=', ', end='\n')
+        print(b)
     for item in battlers_data['c_3']['statuses']:
         c += [item]
-        # print(item, sep=', ', end='\n')
+        print(c)
     for item in battlers_data['e_1']['statuses']:
         d += [item]
-        # print(item, sep=', ', end='\n')
+        print(d)
     print(a, b, c, d)
-    print(battlers_data)
 
 
 def init(active_name):
     r = active_name
-    r['init_mod'] \
-        = r['speed']
+    if 'slow' in r['statuses']:
+        r['init_mod'] \
+            = r['speed'] - 20
+        r['init'] = r['init_mod'] + randint(0, 20)
+        r['init_mod'] = r['init_mod'].__round__()
+    elif 'haste' in r['statuses']:
+        r['init_mod'] \
+            = r['speed'] + 20
+        r['init'] = r['init_mod'] + randint(0, 20)
+        r['init_mod'] = r['init_mod'].__round__()
+    elif 'KO' in r['statuses']:
+        r['init_mod'] \
+            = 0
+        r['init'] = r['init_mod']
+    else:
+        r['init_mod'] \
+            = r['speed'] * 2 / 1.5
+        r['init_mod'] = r['init_mod'].__round__()
+        r['init'] = r['init_mod'] + randint(0, 20)
+
     print(r['name'], r['init_mod'])
 
 
-# for battler in battlers:
-#     active_name = battler
-#     init(active_name)
-
-print_stats()
-
-
 if __name__ == 'main':
-    print_stats()
+    print_statuses()
     init(active_name=None)

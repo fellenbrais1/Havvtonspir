@@ -22,7 +22,7 @@ character_base_data = {
     'magic': 10,
     'init': 0,
     'init_mod': 0,
-    'statuses': ['fine'],
+    'statuses': ['fine', ],
 }
 
 # Master dictionary that can be referenced using a 'name' value
@@ -43,7 +43,7 @@ party_data = {
         'magic': 10,
         'init': 0,
         'init_mod': 0,
-        'statuses': ['fine'],
+        'statuses': ['fine', ],
     },
     'c_2': {
         'ref': 'c_2',
@@ -61,7 +61,7 @@ party_data = {
         'magic': 10,
         'init': 0,
         'init_mod': 0,
-        'statuses': ['fine'],
+        'statuses': ['fine', ],
     },
     'c_3': {
         'ref': 'c_3',
@@ -79,7 +79,7 @@ party_data = {
         'magic': 10,
         'init': 0,
         'init_mod': 0,
-        'statuses': ['fine', 'slow'],
+        'statuses': ['fine', 'slow', ],
     }
 }
 
@@ -100,7 +100,7 @@ e_1 = {
     'magic': 10,
     'init': 0,
     'init_mod': 0,
-    'statuses': ['fine'],
+    'statuses': ['fine', 'haste', ],
 }
 
 # I created this list to allow better referencing of values during battle \
@@ -123,7 +123,7 @@ battlers_data = {
         'magic': 10,
         'init': 0,
         'init_mod': 0,
-        'statuses': ['fine'],
+        'statuses': ['fine', ],
     },
     'c_2': {
         'ref': 'c_2',
@@ -141,7 +141,7 @@ battlers_data = {
         'magic': 10,
         'init': 0,
         'init_mod': 0,
-        'statuses': ['fine'],
+        'statuses': ['fine', ],
     },
     'c_3': {
         'ref': 'c_3',
@@ -159,7 +159,7 @@ battlers_data = {
         'magic': 10,
         'init': 10,
         'init_mod': 0,
-        'statuses': ['fine', 'slow'],
+        'statuses': ['fine', 'slow', ],
     },
     'e_1': {
         'ref': 'e_1',
@@ -177,7 +177,7 @@ battlers_data = {
         'magic': 10,
         'init': 0,
         'init_mod': 0,
-        'statuses': ['fine'],
+        'statuses': ['fine', 'haste', ],
     },
 }
 
@@ -190,4 +190,3 @@ battlers = [
     battlers_data['c_3'],
     battlers_data['e_1'],
 ]
-
