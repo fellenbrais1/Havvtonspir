@@ -1,10 +1,10 @@
-
-# This code contains examples of slicing using negative index values and /
+# This code contains examples of slicing using negative index values and \
 # step values
+
 letters = "abcdefghijklmnopqrstuvwxyz"
 print(letters)
 
-# You can use a negative step value to iterate through the values backwards, /
+# You can use a negative step value to iterate through the values backwards, \
 # but it will miss out the first
 # Value unless you program around that
 backwards = letters[25:0:-1]
@@ -39,7 +39,7 @@ print("\n", letters[:-9:-1])
 
 # Some slicing idioms
 
-# This slices backwards and returns the end of the sequence according to /
+# This slices backwards and returns the end of the sequence according to \
 # the number
 print(letters[-4:])
 # This returns the last value in the string

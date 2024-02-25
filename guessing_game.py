@@ -1,4 +1,3 @@
-
 # Modified this code to be more robust and to handle error exceptions \
 # concerning the input
 # User can now choose their difficulty from three options
@@ -14,10 +13,14 @@ def guesser():
     # e.g. between 1 and 'highest'
     highest = 10
     answer = randint(1, highest)
-    difficulty = ['4', '3', '2']
-    guess = 0
-    guess_count = 0
-    guess_count_max = 0
+
+    difficulty = [
+        '4',
+        '3',
+        '2',
+    ]
+
+    guess = guess_count = guess_count_max = 0
 
     print('1. Easy\n2. Medium\n3. Hard')
     ready_1 = True
@@ -32,25 +35,25 @@ def guesser():
                 ready_1 = False
             except IndexError:
                 (print("Please choose your difficulty by typing the numbers "
-                       "1 (Easy), 2 (Medium), or 3 (Hard)"))
+                       "1 (Easy), 2 (Medium), or 3 (Hard)."))
         except ValueError:
             (print("Please choose your difficulty by typing the numbers "
-                   "1 (Easy), 2 (Medium), or 3 (Hard)"))
+                   "1 (Easy), 2 (Medium), or 3 (Hard)."))
 
     print("You must guess a number between 1 and {1}, you have "
-          "{0} guesses \nGood luck!".format(guess_count, highest))
+          "{0} guesses. \nGood luck!".format(guess_count, highest))
     print("You can also enter '0' to quit the game.")
     while guess != answer:
         if guess_count == 0:
-            print("I am sorry you have run out of guesses")
-            print("GAME OVER")
+            print("I am sorry you have run out of guesses!")
+            print("GAME OVER!")
             exit()
         else:
             if guess_count > 1:
-                print("You have {0} guesses left".format(guess_count))
+                print("You have {0} guesses left.".format(guess_count))
             else:
-                print("You have {0} guess left".format(guess_count))
-            print("Please guess a number between 1 and {0} ".format(highest))
+                print("You have {0} guess left.".format(guess_count))
+            print("Please guess a number between 1 and {0}.".format(highest))
             try:
                 guess = int(input())
                 if guess == 0:
@@ -74,14 +77,14 @@ def guesser():
                         guess_count -= 1
                 else:
                     print("I'm sorry, please enter a number between 1 and "
-                          "{0} to proceed".format(highest))
+                          "{0} to proceed.".format(highest))
             # 'except' handles a ValueError situation and loops back to the \
             # input
             except ValueError:
                 print("I'm sorry, please enter a number between 1 and {0} "
-                      "to proceed".format(highest))
+                      "to proceed.".format(highest))
 
-    print("GAME OVER")
+    print("GAME OVER!")
 
 
 guesser()

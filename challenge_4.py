@@ -1,4 +1,3 @@
-
 # A coding challenge from a textbook, just playing with ASCII art
 
 from challenge_3 import *
@@ -10,17 +9,14 @@ print("""
 
 
                    __     __
-                  /  \___/  \\
+                  / \\___/ \\
                  |  0 |  | 0 |
                  ------AA-----
                 / v v v v v v \\
                |       u       |        My name is Frog-san
-                \ A A A A A A /
+               \\ A A A A A A /
                 /             \\
                /      ____     \\
                |      |  |      |
                |      |  |      |
-              C C C C/    \D D D D""")
-
-# The frog throws up multiple weak errors, but they can all be ignored /
-# ASCII art is obviously not liked by the interpreter
+              C C C C/   \\D D D D""")

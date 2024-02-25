@@ -1,11 +1,10 @@
-
 # A program to check the age of a customer is 18 to 30
 # Prints a message to welcome/ dismiss based on the answer
 
 print("Welcome to the Club 18-30 website!")
 print("Let me ask you a few questions to see if a Club 18-30 holiday "
       "is the right fit for you.")
-name = input("What is your name? ")
+name = input("What is your name?: ")
 name = name.capitalize()
 print("Well hello there {0}!".format(name))
 
@@ -16,7 +15,7 @@ print("Well hello there {0}!".format(name))
 done = False
 while not done:
     try:
-        age = int(input("How old are you {0}? ".format(name)))
+        age = int(input("How old are you {0}?: ".format(name)))
         if 17 < age <= 30:
             print("\nCongratulations! At {0} years old, you are eligible to "
                   "come on an 18-30 holiday!".format(age))
@@ -33,6 +32,7 @@ while not done:
             print("Please let us know if you are interested in another "
                   "product {0}.".format(name))
             done = True
+
     # This except code is what runs if an invalid input is entered
     except ValueError:
         print("Please enter your age in numbers {0}.".format(name))

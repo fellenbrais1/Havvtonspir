@@ -1,6 +1,6 @@
-
 # String interpolation is an old python2 method for string replacement fields
 # It will be mothballed from python3 at some point but still works in Jan 2024
+
 age = 24
 print("My age is %d years" % age)
 

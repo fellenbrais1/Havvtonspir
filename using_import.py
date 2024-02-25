@@ -1,17 +1,17 @@
-
-# Trying to supply arguments to an imported function to make it use the /
+# Trying to supply arguments to an imported function to make it use the \
 # supplied inputs
+
 try:
     from story_of_you import story_of_you
 except ImportError:
     print("Change the name of your file to something else or check if other "
           "problems are occurring")
     exit()
-    # This has to be put here to keep the IDE happy but really the next line /
+    # This has to be put here to keep the IDE happy but really the next line \
     # of code is unreachable
     from story_of_you import story_of_you
 
-# This code is to specify values to be used by the 'story_of_you' function /
+# This code is to specify values to be used by the 'story_of_you' function \
 # instead of the default ones
 input_name = "Michael"
 input_age = "35"

@@ -1,4 +1,3 @@
-
 # Code practicing 'while' loops
 
 # Using a for loop to iterate through values
