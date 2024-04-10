@@ -98,6 +98,8 @@ for meal in menu:
             del meal[index]
     print(meal)
 
+print("-----------------------------------------------------------------")
+
 # This second solution is similar to what is happening in 'unwanted_stripper()'/
 # the print string is being modified to not print out "spam". However, this /
 # solution lacks the formatting that mine has.
