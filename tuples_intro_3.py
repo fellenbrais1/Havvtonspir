@@ -62,7 +62,7 @@ metallica = (
     ),
 )
 
-# This code had to be updated since the addition of the 'tracks' tuple in the /
+# This code had to be updated since the addition of the 'tracks' tuple in the \
 # tuple at the top meant there were too many items to unpack.
 
 title, artist, year, tracks = metallica
@@ -85,15 +85,15 @@ table = (
     35.50,
 )
 
-# This code is a little difficult to read because we have to know what the /
-# index values are referencing, AND get the index values right in the first /
+# This code is a little difficult to read because we have to know what the \
+# index values are referencing, AND get the index values right in the first \
 # place.
 
 print(table[1] * table[2])
 
 print("\n-------------------------------------------------------------------\n")
 
-# If we unpack the tuple using meaningful variable names, we can more easily /
+# If we unpack the tuple using meaningful variable names, we can more easily \
 # read the code and what it is doing.
 
 name, length, width, height, price = table

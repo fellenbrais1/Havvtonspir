@@ -1,8 +1,9 @@
 # There may be other changes that could be made to make this program a bit \
-# more user-friendly, such as specifying where a lost file should be
+# more user-friendly, such as specifying where a lost file should be.
 
 # Added a time measurement function, but this dataset is so small it is quite \
-# buggy and sometimes equates to 0 time passed between calls of 'datetime.now()'
+# buggy and sometimes equates to 0 time passed between calls of \
+# 'datetime.now()'.
 from datetime import datetime
 
 print("\n* Final version (for now) of the outlier removal program")
@@ -12,7 +13,7 @@ try:
 except ImportError:
     print("\nThe data could not be found, please make sure it is in the correct"
           " file location and try again.")
-    # Ideally the program should specify where the data should be
+    # Ideally the program should specify where the data should be.
     data = []
     exit()
 

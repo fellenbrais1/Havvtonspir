@@ -1,6 +1,17 @@
-# This test doesn't work for now, there is still more I need to learn here
+# This test doesn't work for now, there is still more I need to learn here.
 
-def active_character_select(battlers):
+def active_character_select(
+        battlers
+):
+    """
+    Determines which player character is the active character in a turn.
+
+    This function does not work as intended.
+    DO NOT USE.
+
+    :param battlers: A list of battlers that take part in the battle handling.
+    :return: 'active_char_list' is yielded by the function.
+    """
     max_index = len(battlers) + 1
     while True:
         for item in range(max_index):
@@ -14,7 +25,20 @@ def active_character_select(battlers):
                 exit()
 
 
-def testo(active_turn_list, battlers):
+def testo(
+        active_turn_list,
+        battlers
+):
+    """
+    A practice function using a generator to determine active player character.
+
+    This function does not work as intended.
+    DO NOT USE.
+
+    :param active_turn_list: The player characters involved in battle handling.
+    :param battlers: A list of battlers that take part in the battle handling.
+    :return: 'active_char_list' is yielded by the function.
+    """
     start = 0
     while True:
         for i in range(start, len(battlers)):

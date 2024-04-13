@@ -1,16 +1,23 @@
 # 'Guessing_Game' but made into a module that won't run automatically \
-# when imported
+# when imported.
 # Modified the code to make it more robust and handle errors concerning \
-# user input
-# User can now choose between three difficulty options on launch
-# Removed unnecessary code (breaks and continues)
+# user input.
+# User can now choose between three difficulty options on launch.
+# Removed unnecessary code (breaks and continues).
 
 from random import randint
 
 
 def guesser():
+    """
+    Runs a number guessing game with three levels of difficulty.
+
+    Includes error handling for invalid user inputs.
+
+    :return: Function runs the game, prints messages, and returns 'None'.
+    """
     # The 'highest' variable allows us to specify what the game plays between \
-    # e.g. between 1 and 'highest'
+    # e.g. between 1 and 'highest'.
     highest = 10
     answer = randint(1, highest)
 
@@ -79,7 +86,7 @@ def guesser():
                     print("I'm sorry, please enter a number between 1 and "
                           "{0} to proceed.".format(highest))
             # 'except' handles a ValueError situation and loops back to the \
-            # input
+            # input.
             except ValueError:
                 print("I'm sorry, please enter a number between 1 and {0} "
                       "to proceed.".format(highest))
@@ -88,6 +95,6 @@ def guesser():
 
 
 # This code causes it not to run automatically and only when called by \
-# another program
+# another program.
 if __name__ == " __main__":
     guesser()

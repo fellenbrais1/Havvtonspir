@@ -1,4 +1,5 @@
-# An example with playing with lists, iterating through them, and adding to them
+# An example with playing with lists, iterating through them, and adding to \
+# them.
 
 computer_parts = [
     "computer",
@@ -12,8 +13,8 @@ print()
 for item in computer_parts:
     print(item)
 
-# The user is allowed to add to a list only if it is a new item
-# Then the user can break out of the loop and display the amended list
+# The user is allowed to add to a list only if it is a new item.
+# Then the user can break out of the loop and display the amended list.
 building_list = True
 while building_list:
     parts_choice = input("\nWhat do you need for your computer?: ")
@@ -47,11 +48,11 @@ print("\nYour final computer parts list is:")
 for item in computer_parts:
     print(item)
 
-# Testing indexing a list
+# Testing indexing a list.
 print("\nThe salesman recommends that you buy a '{0}'"
       " first.".format(computer_parts[1]))
 
-# Practicing slicing a list
+# Practicing slicing a list.
 print("\nI recommend all of the following:")
 for item in computer_parts[0:3]:
     print(item)
@@ -62,6 +63,6 @@ print()
 for item in computer_parts[0::2]:
     print(item)
 
-# Practicing sub-indexing a list
+# Practicing sub-indexing a list.
 print("\nThe first letter of the third item is: ", computer_parts[2][0], ".",
       sep="")

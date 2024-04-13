@@ -1,4 +1,4 @@
-# A coding challenge from a textbook, just playing with ASCII art
+# A coding challenge from a textbook, just playing with ASCII art.
 
 from challenge_3 import *
 

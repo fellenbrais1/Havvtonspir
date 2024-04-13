@@ -1,5 +1,5 @@
 # A coding challenge from a textbook asking for three numbers which it \
-# then multiplies together
+# then multiplies together.
 
 print("")
 print(100 + 200)

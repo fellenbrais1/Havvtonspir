@@ -1,4 +1,4 @@
-# Data to be used by 'sample_jukebox.py'
+# Data to be used by 'sample_jukebox.py'.
 
 albums = [
     ("Welcome to my Nightmare", "Alice Cooper", 1975,

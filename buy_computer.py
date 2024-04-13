@@ -1,13 +1,13 @@
-# Practicing appending to a list using numbered items in a dictionary
-# Users can add items to their chosen_list by specifying numbers
+# Practicing appending to a list using numbered items in a dictionary.
+# Users can add items to their chosen_list by specifying numbers.
 # They can confirm the list before purchasing and can also reset the list and \
-# delete any items they want from the list
-# Added sorting of 'chosen_list' in the code for readability
+# delete any items they want from the list.
+# Added sorting of 'chosen_list' in the code for readability.
 
-# Importing needed methods
+# Importing needed methods.
 from time import sleep
 
-# Introduction text
+# Introduction text.
 print("\nWelcome to the one-stop computer shop!")
 print("Please enter the number of the part you want to add to your shopping "
       "list. \nEnter '0' to review your list and confirm if it's good to go!")
@@ -15,7 +15,7 @@ sleep(1.5)
 
 # Defining the necessary variables etc.
 # The dictionary can have items added and removed and the program will adapt \
-# using the 'max_items' variable based on the dictionary's len
+# using the 'max_items' variable based on the dictionary's len.
 
 item_dict = {
     "1": "Computer",
@@ -36,7 +36,7 @@ max_items = len(item_dict)
 current_choice = "-"
 
 # 'selectable_list' is filled with only the values from the key: value pairs \
-# from 'item_dict' to avoid KeyError situations when indexing later
+# from 'item_dict' to avoid KeyError situations when indexing later.
 
 selectable_list = []
 
@@ -48,7 +48,7 @@ chosen_list = []
 letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 # The 'computer_parts' list is created to be able to index using the keys in \
-# 'item_dict' based on the users numbered choices
+# 'item_dict' based on the users numbered choices.
 
 computer_parts = []
 
@@ -59,7 +59,7 @@ finished = False
 
 edit = True
 
-# Main loop to enable continuable inputs
+# Main loop to enable continuable inputs.
 while not finished:
     while current_choice != '0':
         if current_choice in computer_parts:
@@ -119,7 +119,7 @@ while not finished:
                 sleep(1)
                 finished = True
         # This 'edit' block allows items to be deleted from 'chosen_list' and \
-        # it also allows 'chosen_list' to be cleared completely
+        # it also allows 'chosen_list' to be cleared completely.
         elif choice == 'e':
             while edit:
                 print("\nYour current shopping list is:")
@@ -176,7 +176,7 @@ while not finished:
             print("\nOkay, let's choose some more items in that case.")
             sleep(1)
 
-# Final 'chosen_list' printing and exit message
+# Final 'chosen_list' printing and exit message.
 print("\nThank you for your purchases today:")
 chosen_list.sort()
 letter_count = 0

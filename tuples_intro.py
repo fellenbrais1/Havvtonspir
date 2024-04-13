@@ -1,11 +1,11 @@
-# An experiment with tuples
+# An experiment with tuples.
 
-# When defining a tuple, enclose the values in round brackets to make it /
+# When defining a tuple, enclose the values in round brackets to make it \
 # obvious that it is a tuple.
 
 t = ("a", "b", "c",)
 
-# The output looks like a list output, but it is enclosed in round brackets /
+# The output looks like a list output, but it is enclosed in round brackets \
 # which shows that it is a tuple.
 
 print(t)

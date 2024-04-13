@@ -1,5 +1,5 @@
-# A program to check the age of a customer is 18 to 30
-# Prints a message to welcome/ dismiss based on the answer
+# A program to check the age of a customer is 18 to 30.
+# Prints a message to welcome/ dismiss based on the answer.
 
 print("Welcome to the Club 18-30 website!")
 print("Let me ask you a few questions to see if a Club 18-30 holiday "
@@ -9,9 +9,9 @@ name = name.capitalize()
 print("Well hello there {0}!".format(name))
 
 # This try loop is to handle ValueError if the user types a str into the age \
-# variable
+# variable.
 # A while loop is used to prompt the user for another input in case of an \
-# erroneous one
+# erroneous one.
 done = False
 while not done:
     try:
@@ -33,6 +33,6 @@ while not done:
                   "product {0}.".format(name))
             done = True
 
-    # This except code is what runs if an invalid input is entered
+    # This except code is what runs if an invalid input is entered.
     except ValueError:
         print("Please enter your age in numbers {0}.".format(name))

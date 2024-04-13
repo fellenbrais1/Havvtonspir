@@ -1,7 +1,10 @@
-# An example of creating a simple function and making it configurable by /
+# An example of creating a simple function and making it configurable by \
 # the user.
 
-def multiply(provided_a, provided_b):
+def multiply(
+        provided_a,
+        provided_b
+):
     """
     Multiplies two ints together and returns the result.
 
@@ -9,7 +12,7 @@ def multiply(provided_a, provided_b):
 
     :param provided_a: The first int provided by the user.
     :param provided_b: The second int provided by the user.
-    :return: The multiplied int value of provided_a and provided_b.
+    :return: The multiplied int value of 'provided_a' and 'provided_b'.
     """
     result = provided_a * provided_b
     return result
@@ -46,7 +49,9 @@ print("-----------------------------------------------------------------------")
 
 
 # This function returns a True or False if a string is a palindrome or not.
-def is_palindrome(provided_string):
+def is_palindrome(
+        provided_string
+):
     """
     Checks if 'provided_string' is a palindrome or not and returns True/ False.
 
@@ -58,9 +63,11 @@ def is_palindrome(provided_string):
     return provided_string[::-1].casefold() == provided_string.casefold()
 
 
-# This function allows a sentence to be stripped down to alnum characters and /
+# This function allows a sentence to be stripped down to alnum characters and \
 # then checked to see if it is a palindrome using 'is_palindrome().
-def is_sentence_palindrome(provided_sentence):
+def is_sentence_palindrome(
+        provided_sentence
+):
     """
     Creates a new sentence stripped of spaces and punctuation for checking.
 
@@ -80,7 +87,7 @@ def is_sentence_palindrome(provided_sentence):
         else:
             continue
     print(new_sentence)
-    # Instead of duplicating code, we are calling 'is_palindrome()' to work /
+    # Instead of duplicating code, we are calling 'is_palindrome()' to work \
     # out if the sentence is a palindrome or not and returning the result here.
     result = is_palindrome(new_sentence)
     return result

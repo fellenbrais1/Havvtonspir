@@ -37,6 +37,7 @@ print(metallica[1])
 print(metallica[2])
 
 # This code below doesn't work because tuples are immutable.
+
 # COMMENTED OUT FOR NOW
 # metallica[0] = "Master of Puppets"
 

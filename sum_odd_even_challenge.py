@@ -2,7 +2,20 @@
 # according to the Udemy test evaluator, which is broken as all hell.
 
 
-def sum_eo(provided_n, provided_t):
+def sum_eo(
+        provided_n,
+        provided_t
+):
+    """
+    Allows the summing of all numbers even or odd up to the specified number.
+
+    This is up to and not including the specified number.
+    Contains error handling for incorrect user inputs.
+
+    :param provided_n: User specified value for determining the number to use.
+    :param provided_t: User specified value for determining odd or even process.
+    :return: 'total' is returned as an int.
+    """
     while True:
         if provided_n > 0:
             if provided_t.casefold() == 'e':

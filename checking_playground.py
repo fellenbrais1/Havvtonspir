@@ -1,7 +1,8 @@
+# A collection of activities to check if something is in or not in a string.
 
 a, b, c = 7, 2, 3
 
-print(a, b, c, sep = "#", end  = ".")
+print(a, b, c, sep="#", end=".")
 print()
 
 print(a + b)
@@ -11,7 +12,7 @@ print(a // b)
 print(a % b)
 print(a * b)
 
-print("Your numbers for today are", a, b, "and", c, sep = ", ")
+print("Your numbers for today are", a, b, "and", c, sep=", ")
 
 if a > b:
     Min = a
@@ -25,7 +26,8 @@ else:
     Odd_even = "Odd"
 print(Odd_even)
 
-print("\nThis is a test to see if the", "sep and end carry over", sep = " this is the sep ", end = ".")
+print("\nThis is a test to see if the", "sep and end carry over",
+      sep=" this is the sep ", end=".")
 print()
 
 List_one = ["Michael", "Time for cheese", "Gromit", 1, "Wallace"]

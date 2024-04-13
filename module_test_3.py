@@ -1,3 +1,5 @@
+# A test of different modules that could be used for a battle handling system.
+
 from data_test import battlers, battlers_data as bd
 from random import randint
 import operator
@@ -5,6 +7,15 @@ from odict import odict
 
 
 def init():
+    """
+    Determines the initiative value of the active character in a list.
+
+    Initiative is based off of the character's 'init' and the generated
+    'init_mod' scores summed together with a random int between 0 and 20.
+    Statuses also affect the generated 'init_mod'.
+
+    :return: Function prints messages and returns 'None'.
+    """
     print_string = ""
     init_list = []
     for battler in battlers:
@@ -41,6 +52,13 @@ def init():
 
 
 def active_turn():
+    """
+    Creates 'active_turn_list' by indexing into character data.
+
+    'active_turn_list' is reversed to give usable output. for battle handling.
+
+    :return: Function prints messages and returns 'None'.
+    """
     active_turn_list = []
     for battler in battlers:
         battler_initiative = battler['ref'], battler['name'], \
@@ -55,6 +73,14 @@ def active_turn():
 
 
 def battle_turn(active_turn_list):
+    """
+    Determines damage taken by battler characters and applies new HP totals.
+
+    Calls 'print_stats()' after execution.
+
+    :param active_turn_list: The list of participating characters in a battle.
+    :return: Functions calls 'print_stats()' and returns 'None'.
+    """
     condition = True
     while condition:
         for i in range(len(active_turn_list)):
@@ -90,6 +116,15 @@ def battle_turn(active_turn_list):
 
 
 def print_stats(active_turn_list):
+    """
+    Prints out a list of status effects for all active battler characters.
+
+    Makes use of the battlers_data dictionary to get data to process.
+    A lot of junk code should be removed from this function before use.
+
+    :param active_turn_list: The list of participating characters in a battle.
+    :return: Function calls 'print_statuses()' and returns 'None'.
+    """
     od = odict(bd)
     stats = []
     for i in range(len(active_turn_list)):
@@ -105,6 +140,7 @@ def print_stats(active_turn_list):
         for line in stats:
             print(line)
 
+    # COMMENTED OUT FOR NOW
     # a = []
     # b = []
     # c = []
@@ -135,6 +171,14 @@ def print_stats(active_turn_list):
 
 
 def print_statuses():
+    """
+    Prints the status list for each active character in battle handling.
+
+    Makes use of the battlers_data dictionary to get data to process.
+    A lot of junk code should be removed from this function before use.
+
+    :return: Function prints messages and returns 'None'.
+    """
     od = odict(bd)
     statuses = ""
     for i in range(len(battlers) + 1):
@@ -149,6 +193,8 @@ def print_statuses():
     else:
         for line in statuses:
             print(line)
+
+    # COMMENTED OUT FOR NOW
     #     status =
     # for item in bd['c_1']['statuses']:
     #     a += [item]
@@ -166,15 +212,20 @@ def print_statuses():
     #     d += [item]
     # else:
     #     pass
-    # print(str.ljust(bd['c_1']['name'] + "'s statuses: ", 30) + str(status) + "\n",
-    #       str.ljust(bd['c_2']['name'] + "'s statuses: ", 30) + str(status) + "\n",
-    #       str.ljust(bd['c_3']['name'] + "'s statuses: ", 30) + str(status) + "\n",
-    #       str.ljust(bd['e_1']['name'] + "'s statuses: ", 30) + str(status) + "\n",
+    # print(str.ljust(bd['c_1']['name'] + "'s statuses: ", 30) + str(status)
+    # + "\n",
+    #       str.ljust(bd['c_2']['name'] + "'s statuses: ", 30) + str(status)
+    #       + "\n",
+    #       str.ljust(bd['c_3']['name'] + "'s statuses: ", 30) + str(status)
+    #       + "\n",
+    #       str.ljust(bd['e_1']['name'] + "'s statuses: ", 30) + str(status)
+    #       + "\n",
     #       sep="")
 
 
 init()
 
+# COMMENTED OUT FOR NOW
 # init()
 #
 # a = []

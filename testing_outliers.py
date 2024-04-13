@@ -1,7 +1,7 @@
-# Error testing the removing outlying data process
+# Error testing the removing outlying data process.
 
 # -----------------------------------------------------------------------------
-# Outlying values at both ends of the dataset
+# Outlying values at both ends of the dataset.
 # PASS
 
 print("\n* Outlying values at both ends of the dataset:")
@@ -46,7 +46,7 @@ print("Cleansed data:", data)
 print("Elements deleted:", list_to_delete)
 
 # -----------------------------------------------------------------------------
-# Outlying values at the low end only
+# Outlying values at the low end only.
 # PASS
 
 print("\n* Outlying values at the low end only:")
@@ -91,7 +91,7 @@ print("Cleansed data:", data)
 print("Elements deleted:", list_to_delete)
 
 # -----------------------------------------------------------------------------
-# Outlying values at the high end only
+# Outlying values at the high end only.
 # PASS
 
 print("\n* Outlying values at the high end only:")
@@ -136,7 +136,7 @@ print("Cleansed data:", data)
 print("Elements deleted:", list_to_delete)
 
 # -----------------------------------------------------------------------------
-# No outlying values
+# No outlying values.
 # PASS
 
 print("\n* No outlying values:")
@@ -183,7 +183,7 @@ else:
     print("No elements needed to be deleted")
 
 # -----------------------------------------------------------------------------
-# Only outlying values
+# Only outlying values.
 # PASS
 
 print("\n* Only outlying values:")
@@ -232,7 +232,7 @@ else:
     print("No elements needed to be deleted")
 
 # -----------------------------------------------------------------------------
-# Empty data set
+# Empty data set.
 # PASS
 
 print("\n* Empty data set:")
@@ -365,7 +365,7 @@ else:
     print("Status: The data set is empty and there is nothing to process")
 
 # -----------------------------------------------------------------------------
-# Data sets that cannot be reached
+# Data sets that cannot be reached.
 # PASS
 
 print("\n* Data sets that cannot be reached.")
@@ -380,8 +380,8 @@ default_data = [
 try:
     from troubleshooting_outliers import data_2 as data
 except ImportError:
-    # In the real file, an exit statement would be better here, maybe also /
-    # specifying to the user which directory/ position the data should be in
+    # In the real file, an exit statement would be better here, maybe also \
+    # specifying to the user which directory/ position the data should be in.
     print("\nThe data could not be found, please make sure it is in the correct"
           " file location and try again.")
     print("'default_data' will be used in place of 'data_2' for now.")
@@ -456,8 +456,8 @@ else:
 # -----------------------------------------------------------------------------
 # Data sets containing coding keywords etc.
 # FAIL
-# An 'exit() statement anywhere in the list causes the program to immediately \
-# terminate, not sure how to get around this one
+# An 'exit()' statement anywhere in the list causes the program to immediately \
+# terminate, not sure how to get around this one.
 
 print("\n* Data sets containing coding keywords etc.")
 

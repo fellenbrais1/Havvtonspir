@@ -1,10 +1,17 @@
-# Changed this program to use the 'get_integer()' function to get user input /
+# Changed this program to use the 'get_integer()' function to get user input \
 # and validate it before the program uses it.
 
 from random import randint
 
 
 def guesser():
+    """
+    Runs a number guessing game with three levels of difficulty.
+
+    Includes error handling for invalid user inputs.
+
+    :return: Function runs the game, prints messages, and returns 'None'.
+    """
     highest = 10
     answer = randint(1, highest)
 
@@ -29,7 +36,7 @@ def guesser():
             guess_count = int(guess_count)
             guess_count_max = guess_count
             ready_1 = False
-        # Removed the ValueError check block as the 'get_integer()' function /
+        # Removed the ValueError check block as the 'get_integer()' function \
         # does this now.
         except IndexError:
             print("That number is invalid, please enter a number "
@@ -81,9 +88,19 @@ def guesser():
     print("GAME OVER!")
 
 
-# This function reads a user input and returns it if the input cannot be /
+# This function reads a user input and returns it if the input cannot be \
 # changed into an int. This is then called whenever the program needs an input.
-def get_integer(prompt):
+def get_integer(
+        prompt
+):
+    """
+    Checks if a string is numeric and returns it as an int.
+
+    A non-numeric string will result in another attempt for user input.
+
+    :param prompt: The str user input fed to this function.
+    :return: 'temp' as an int for use in the main program.
+    """
     while True:
         temp = input(prompt)
         if temp.isnumeric():

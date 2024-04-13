@@ -1,29 +1,32 @@
-# An example function that does not return anything, but actually performs an /
-# action, in this breaking down some text and printing it line by line with /
+# An example function that does not return anything, but actually performs an \
+# action, in this breaking down some text and printing it line by line with \
 # custom formatting.
 
 
-# The splitlines() method splits a specified unit of text into new lines that /
-# the code can process.
-# I have specified a default value for the provided_width parameter that will /
+# The 'splitlines()' method splits a specified unit of text into new lines \
+# that the code can process.
+# I have specified a default value for the provided_width parameter that will \
 # be used if no other argument is provided by the code.
-def banner_text(provided_text=" ", provided_width=60):
+def banner_text(
+        provided_text=" ",
+        provided_width=60
+):
     """
     Prints provided text by line with asterisk formatting.
 
-    This function will raise a ValueError if the provided_text is too wide for
+    This function will raise a 'ValueError' if 'provided_text' is too wide for
     the provided_width and crash the function.
 
     :param provided_text: This is the text that will be fed into the function,
     an asterisk prints a line of asterisks, a space produces an empty line.
     :param provided_width: Specified width to format to, if the text is wider
     than this width a ValueError will be raised.
-    :return: This function prints but only returns 'None'.
+    :return: Function prints messages and returns 'None'.
     """
     lines = provided_text.splitlines()
     for line in lines:
         if len(line) > provided_width - 4:
-            # Added a 'raise ValueError' with a descriptive comment that will /
+            # Added a 'raise ValueError' with a descriptive comment that will \
             # help people to debug the problem.
             raise ValueError("'{0}' is wider than the specified width: '{1}'"
                              .format(provided_text, provided_width))
@@ -80,7 +83,7 @@ while True:
             print("Please enter a numerical value for the screen width.")
             continue
 
-# A duplicate of the code above to handle process for 'text_to_call_2',
+# A duplicate of the code above to handle process for 'text_to_call_2', \
 # ideally, this would be handled within the function to avoid duplication.
 while True:
     screen_width = 60
@@ -103,6 +106,7 @@ banner_text()
 
 print("\n-------------------------------------------------------------------\n")
 
+# This is how we can call the docstring to be printed etc. using '__doc__'.
 print(banner_text.__doc__)
 print("\n-------------------------------------------------------------------\n")
 print(input.__doc__)

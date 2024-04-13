@@ -40,9 +40,9 @@ print(generated_list)
 
 print()
 
-# However, to do any mathematical operations, we will have to convert each /
-# incidence of a string to an int first, this can be done by creating a new /
-# list of the converted values, however, this could run into memory problems /
+# However, to do any mathematical operations, we will have to convert each \
+# incidence of a string to an int first, this can be done by creating a new \
+# list of the converted values, however, this could run into memory problems \
 # when dealing with very large lists etc.
 
 int_list = []
@@ -55,8 +55,8 @@ for item in int_list:
 
 print("\n-------------------------------------------------------------------\n")
 
-# Alternatively, we can replace the values with ints in place, this can be /
-# more efficient in terms of memory, but you lose the original list, which /
+# Alternatively, we can replace the values with ints in place, this can be \
+# more efficient in terms of memory, but you lose the original list, which \
 # could be a problem.
 
 for index in range(len(generated_list)):

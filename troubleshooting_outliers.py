@@ -83,7 +83,7 @@ if __name__ == " __main__":
 
 # --------------------------------------------------------------------------
 
-# This list below is imported from the programs in 'testing_outliers.py'
+# This list below is imported from the programs in 'testing_outliers.py'.
 
 data_1 = [
     4, 5, 104, 105, 110,
@@ -93,13 +93,13 @@ data_1 = [
 ]
 
 # This variable below is used to test if there is a TypeError when importing \
-# a dataset in 'outliers_final.py'
-# COMMENTED OUT FOR NOW
+# a dataset in 'outliers_final.py'.
 
+# COMMENTED OUT FOR NOW
 # data_1 = "Hello World!"
 
 # This list below represents a broken version of 'data_2' that cannot be \
-# reached by 'testing_outliers.py'
+# reached by 'testing_outliers.py'.
 
 data_ = [
     4, 5, 104, 105, 110,

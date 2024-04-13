@@ -1,11 +1,19 @@
-# This code is for a very special psychic guessing game
-# It is guaranteed to guess any number you pick on the first try
+# This code is for a very special psychic guessing game.
+# It is guaranteed to guess any number you pick on the first try.
 
-# Importing the sleep function from time to allow waits in the print outputs
+# Importing the sleep function from time to allow waits in the print outputs.
 from time import sleep
 
 
 def jespers_hi_lo():
+    """
+    A game that will guess your number correctly first time, guaranteed.
+
+    Error handling for incorrect user input prompts another entry attempt.
+    The code handles when a player lies abut it having guessed their number.
+
+    :return: Function runs the game, prints messages, and returns 'None'.
+    """
     low = 1
     high = 1000
 

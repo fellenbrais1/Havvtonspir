@@ -1,15 +1,15 @@
 # Indexing backwards through a list is a safer way to remove elements without \
-# having to worry about the index values shuffling down
+# having to worry about the index values shuffling down.
 
 # This short loop does the same thing as 'outliers.py' but a bit more \
-# efficiently, but there are reasons for the longer program
+# efficiently, but there are reasons for the longer program.
 
-# If we delete items from a list when iterating backwards we avoid the problems\
-# of index values sliding down and causing problems during iteration
+# If we delete items from a list when iterating backwards we avoid the \
+# problems of index values sliding down and causing problems during iteration.
 
 # -----------------------------------------------------------------------------
 # The first method does this by using a negative start, stop, and slice value \
-# in the 'index in range()' statement
+# in the 'index in range()' statement.
 
 data = [
     104, 101, 4, 105, 308,
@@ -31,10 +31,10 @@ print(data)
 
 # -----------------------------------------------------------------------------
 # This second method uses the 'reversed()' function to change the order of the \
-# data, so we can then effectively iterate backwards over the list
+# data, so we can then effectively iterate backwards over the list.
 
 # This second method is easier to understand and is more efficient because it \
-# uses 'enumerate()' which is more efficient than indexes over 1000 items
+# uses 'enumerate()' which is more efficient than indexes over 1000 items.
 
 print()
 
@@ -50,7 +50,7 @@ max_valid = 200
 # We define a 'top_index - 1' value, so we can use this to reference the index \
 # values as if we were indexing forwards, then we can use these values to \
 # delete the relevant data from the list instead of using minus index values \
-# which would be very confusing
+# which would be very confusing.
 top_index = len(data) - 1
 for index, value in enumerate(reversed(data)):
     if data[index] < min_valid or data[index] > max_valid:

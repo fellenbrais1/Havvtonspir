@@ -1,4 +1,4 @@
-# A sample jukebox menu selection project using data from 'jukebox_data.py'
+# A sample jukebox menu selection project using data from 'jukebox_data.py'.
 
 from jukebox_data import *
 
@@ -10,6 +10,13 @@ SONGS_LIST = 3
 
 # First function to choose the album.
 def choose_album():
+    """
+    Function to allow the user to choose which album they want to play.
+
+    Uses the 'albums' list from jukebox_data.py' to get data.
+
+    :return: 'album' is returned as a tuple for use in 'choose_song()'.
+    """
     trigger = False
     album = ""
     while not trigger:
@@ -46,7 +53,18 @@ def choose_album():
 
 
 # Second function to choose the song to play.
-def choose_song(provided_album):
+def choose_song(
+        provided_album
+):
+    """
+    Function to allow the user to choose which song they want to play.
+
+    Indexes into the chosen album from the 'albums' list from jukebox_data.py'
+    to get data to use.
+
+    :param provided_album: The album that was chosen in 'choose_album()'.
+    :return: 'track' is returned as a tuple for use in 'play_song()'.
+    """
     trigger = False
     track = ""
     while not trigger:
@@ -92,7 +110,17 @@ def choose_song(provided_album):
 
 
 # Final function to play the selected song, loop around, or to finish.
-def play_song(provided_track):
+def play_song(
+        provided_track
+):
+    """
+    Plays the song specified by the user in 'choose_song()'.
+
+    Uses only the track name from the tuple indexed into in 'choose_song()'.
+
+    :param provided_track: The track chosen in 'choose_track()'.
+    :return: Function prints messages and returns 'None'.
+    """
     print("\nPlaying:\n", provided_track)
     while True:
         print("\nWould you like to choose another song to play? y/n")

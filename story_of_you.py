@@ -1,11 +1,22 @@
-# A function to gather user data and print out a story about them
+# A function to gather user data and print out a story about them.
 
 
 def story_of_you(
         name='',
         age='',
-        hobbies='',
+        hobbies=''
 ):
+    """
+    Allows user specified information to be printed back as a personal story.
+
+    Hobbies are broken down into three separate inputs that are added together
+    into the list 'hobbies'.
+
+    :param name: User specified name.
+    :param age: User specified age.
+    :param hobbies: User specified hobbies.
+    :return: Function prints messages and returns 'None'.
+    """
     if name == '':
         name = input("What is your name? ".capitalize())
     else:
@@ -33,7 +44,6 @@ def story_of_you(
 if __name__ == "__main__":
     story_of_you(name='', age='', hobbies='')
 
-# Code not needed for now
 
 # COMMENTED OUT FOR NOW
 # input_hobbies = []

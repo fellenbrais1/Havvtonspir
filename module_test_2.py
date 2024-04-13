@@ -1,14 +1,31 @@
+# A test of different modules that could be used for a battle handling system.
+
+import operator
 from data_test import battlers
 from module_test import init, print_statuses
 
 
 def main_loop():
+    """
+    Determines the 'active_name' of the active character in battle handling.
+
+    Function uses this to call 'init()'.
+
+    :return: 'active_name' is used when calling 'init()'.
+    """
     for battler in battlers:
         active_name = battler
         init(active_name)
 
 
 def active_turn():
+    """
+    Creates 'active_turn_list' by indexing into character data.
+
+    'active_turn_list' is reversed to give usable output. for battle handling.
+
+    :return: Function prints messages and returns 'None'.
+    """
     active_turn_list = []
     for battler in battlers:
         if 'KO' in battler['statuses']:

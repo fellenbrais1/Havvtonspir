@@ -1,16 +1,23 @@
 # Modified this code to be more robust and to handle error exceptions \
-# concerning the input
-# User can now choose their difficulty from three options
-# Removed unnecessary code (breaks and continues)
+# concerning the input.
+# User can now choose their difficulty from three options.
+# Removed unnecessary code (breaks and continues).
 
 # Importing the 'randint' function from the 'random' module to generate \
-# random numbers for the 'answer' variable
+# random numbers for the 'answer' variable.
 from random import randint
 
 
 def guesser():
+    """
+    Runs a number guessing game with three levels of difficulty.
+
+    Includes error handling for invalid user inputs.
+
+    :return: Function runs the game, prints messages, and returns 'None'.
+    """
     # The 'highest' variable allows us to specify what the game plays between \
-    # e.g. between 1 and 'highest'
+    # e.g. between 1 and 'highest'.
     highest = 10
     answer = randint(1, highest)
 
@@ -79,7 +86,7 @@ def guesser():
                     print("I'm sorry, please enter a number between 1 and "
                           "{0} to proceed.".format(highest))
             # 'except' handles a ValueError situation and loops back to the \
-            # input
+            # input.
             except ValueError:
                 print("I'm sorry, please enter a number between 1 and {0} "
                       "to proceed.".format(highest))

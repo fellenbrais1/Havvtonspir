@@ -1,6 +1,6 @@
 # A coding challenge from a textbook, it makes the user suggest a word \
 # starting with a letter of the alphabet, printing it out as an increasingly \
-# long string until the end of the alphabet
+# long string until the end of the alphabet.
 
 print("Let's play \"Let's go to the market today!\"")
 print("You have to say \"I went to the market today and bought a [thing]\" "
@@ -8,6 +8,14 @@ print("You have to say \"I went to the market today and bought a [thing]\" "
 
 
 def went_market():
+    """
+    Allows the playing on an 'I went to the market' game from a-z.
+
+    User input needs to have the same starting lesson of the active letter, if
+    this is not correct the user will be prompted to enter again.
+
+    :return: Function runs the game, prints messages, and returns 'None'.
+    """
     # Starting letter = "a"
     # Starting ord value = 97
     ord_value = 97

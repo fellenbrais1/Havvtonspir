@@ -1,6 +1,6 @@
 # This is the same as the previous example, but concatenating the two lists \
 # we produce a list with the entirety of the second list appended to the end \
-# of the other list
+# of the other list.
 
 empty_list = []
 
@@ -22,7 +22,7 @@ for number_list in numbers:
 
 # This adds each item as a list to another list, thus creating a nested list \
 # this means that the lists in this list can be iterated over using nested for \
-# loops to print out the contents of each one as below
+# loops to print out the contents of each one as below.
 
 print()
 
@@ -39,9 +39,9 @@ odd = [
 numbers = [even, odd]
 print(numbers)
 
-# outer loop
+# outer loop.
 for number_list in numbers:
     print(number_list)
-    # inner loop
+    # inner loop.
     for value in number_list:
         print(value)

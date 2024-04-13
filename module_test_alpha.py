@@ -1,21 +1,30 @@
 # This is a very early build of the battle system, which loops around and is \
 # comprised of functions calling one another, at the moment it provides a lot \
 # of debugging data which would not be present in the finished article, I \
-# tried to make it a lot more dependent on the master dictionary , but it \
-# seems that having some data in a list is so much easier for indexing
+# tried to make it a lot more dependent on the master dictionary, but it \
+# seems that having some data in a list is so much easier for indexing.
 
 # A checking function could be called at the end of each turn if the number of \
 # active player characters or enemies reaches zero, which would send an \
 # argument back to another function somewhere else that handles the ending of \
-# battles
+# battles.
 
 from data_test import battlers, battlers_data as bd
 from random import randint
 import operator
 
 
-# This function assigns initiative values to each participant in the battle
+# This function assigns initiative values to each participant in the battle.
 def init():
+    """
+    Determines the initiative value of the active character in a list.
+
+    Initiative is based off of the character's 'init' and the generated
+    'init_mod' scores summed together with a random int between 0 and 20.
+    Statuses also affect the generated 'init_mod'.
+
+    :return: Function prints messages, calls 'active_turn()' and returns 'None'.
+    """
     print_string = ""
     init_list = []
     for battler in battlers:
@@ -54,6 +63,13 @@ def init():
 # This function sorts the 'active_turn_list' based on the initiative values \
 # generated in the prior function
 def active_turn():
+    """
+    Creates 'active_turn_list' by indexing into character data.
+
+    'active_turn_list' is reversed to give usable output for battle handling.
+
+    :return: Function prints messages, calls 'battle_turn()' and returns 'None'.
+    """
     active_turn_list = []
     for battler in battlers:
         battler_initiative = battler['ref'], battler['name'], \
@@ -70,7 +86,17 @@ def active_turn():
 # future to handle only damage and assigning the 'KO' status, another function \
 # should be made to handle the choices player characters and enemies will make \
 # and that can call this one when needed
-def battle_turn(active_turn_list):
+def battle_turn(
+        active_turn_list
+):
+    """
+    Determines damage taken by battler characters and applies new HP totals.
+
+    Calls 'print_stats()' after execution.
+
+    :param active_turn_list: The list of participating characters in a battle.
+    :return: Function prints messages, calls 'print_stats()' and returns 'None'.
+    """
     i = 0
     condition = True
     while condition:
@@ -109,7 +135,18 @@ def battle_turn(active_turn_list):
 # This is a debugging function to check changes to stats are being applied, \
 # but could be repurposed to produce character stats as displayed in a stats \
 # screen or menu etc.
-def print_stats(active_turn_list):
+def print_stats(
+        active_turn_list
+):
+    """
+    Prints out a list of status effects for all active battler characters.
+
+    Makes use of the battlers_data dictionary to get data to process.
+
+    :param active_turn_list: The list of participating characters in a battle.
+    :return: function prints messages, calls 'print_statuses()' and returns
+    'None'.
+    """
     stat_list = []
     for i in range(len(active_turn_list) + 1):
         stats = []
@@ -135,7 +172,17 @@ def print_stats(active_turn_list):
 # This is a debugging function to check changes to statuses are being applied, \
 # but could be called later as a 'check party status' action in a menu or in \
 # a battle etc.
-def print_statuses(active_turn_list):
+def print_statuses(
+        active_turn_list
+):
+    """
+    Prints the status list for each active character in battle handling.
+
+    Makes use of the battlers_data dictionary to get data to process.
+
+    :param active_turn_list: The list of participating characters in a battle.
+    :return: Function prints messages, calls 'init()' and returns 'None'.
+    """
     statuses_list = []
     for i in range(len(active_turn_list) + 1):
         statuses = []
@@ -159,5 +206,5 @@ def print_statuses(active_turn_list):
 
 
 # This function starts the process for now, but in future it would all be \
-# called by the central game engine
+# called by the central game engine.
 init()

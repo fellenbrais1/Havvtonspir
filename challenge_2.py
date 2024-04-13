@@ -1,9 +1,17 @@
 # A coding challenge from a textbook, prompting a user to enter a middle \
 # name, a favorite type of pasta, and a number to concatenate into a new \
-# password for the user
+# password for the user.
 
 
 def password_creation():
+    """
+    Creates a password for a number of user inputs.
+
+    Asks the user for a name, type of pasta, and number and uses these to
+    generate a password. Invalid inputs will prompt another entry attempt.
+
+    :return: 'created_password' is returned as a string.
+    """
     middle_name = favourite_pasta = number = ""
     loop_count = 0
 

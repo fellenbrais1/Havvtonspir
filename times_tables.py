@@ -1,5 +1,5 @@
 # This file demonstrates using nested for loops, usually 'i' and 'j' are \
-# values used here
+# values used here.
 
 for i in range(1, 13):
     for j in range(1, 13):

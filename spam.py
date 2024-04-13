@@ -1,9 +1,9 @@
 # The final comma on a list allows a new item to be added to the list without \
-# throwing up an error
+# throwing up an error.
 
-# This also allows elements in a list to be rearranged without incident
+# This also allows elements in a list to be rearranged without incident.
 # Use [Alt + Shift + Up/ Down] to do this while hovering over the line you \
-# want to move
+# want to move.
 
 menu = [
     ['egg', 'bacon'],

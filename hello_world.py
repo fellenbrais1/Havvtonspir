@@ -1,4 +1,4 @@
-# Traditional first things to code in Python
+# Traditional first things to code in python.
 
 print("Hello, World!")
 print(1 + 2)

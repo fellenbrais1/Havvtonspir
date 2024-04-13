@@ -1,5 +1,5 @@
 # Trying to supply arguments to an imported function to make it use the \
-# supplied inputs
+# supplied inputs.
 
 try:
     from story_of_you import story_of_you
@@ -8,16 +8,16 @@ except ImportError:
           "problems are occurring")
     exit()
     # This has to be put here to keep the IDE happy but really the next line \
-    # of code is unreachable
+    # of code is unreachable.
     from story_of_you import story_of_you
 
 # This code is to specify values to be used by the 'story_of_you' function \
-# instead of the default ones
+# instead of the default ones.
 input_name = "Michael"
 input_age = "35"
 input_hobbies = ["Gaming", "Eating", "Programming"]
 
-# This block of code is to test 'story_of_you' by supplying empty values
+# This block of code is to test 'story_of_you' by supplying empty values.
 
 # COMMENTED OUT FOR NOW
 # input_name = ""
