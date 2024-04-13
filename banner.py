@@ -2,7 +2,6 @@
 # action, in this breaking down some text and printing it line by line with \
 # custom formatting.
 
-
 # The 'splitlines()' method splits a specified unit of text into new lines \
 # that the code can process.
 # I have specified a default value for the provided_width parameter that will \
@@ -28,7 +27,7 @@ def banner_text(
         if len(line) > provided_width - 4:
             # Added a 'raise ValueError' with a descriptive comment that will \
             # help people to debug the problem.
-            raise ValueError("'{0}' is wider than the specified width: '{1}'"
+            raise ValueError("'{0}' is wider than the specified width: '{1}'."
                              .format(provided_text, provided_width))
 
         if line == "*":
@@ -77,7 +76,7 @@ while True:
         break
     except ValueError as e:
         if "larger than the specified width" in str(e):
-            raise ValueError("'{0}' is wider than the specified width: '{1}'"
+            raise ValueError("'{0}' is wider than the specified width: '{1}'."
                              .format(text_to_call, screen_width))
         else:
             print("Please enter a numerical value for the screen width.")
@@ -94,7 +93,7 @@ while True:
         break
     except ValueError as e:
         if "larger than the specified width" in str(e):
-            raise ValueError("'{0}' is wider than the specified width: '{1}'"
+            raise ValueError("'{0}' is wider than the specified width: '{1}'."
                              .format(text_to_call_2, screen_width))
         else:
             print("Please enter a numerical value for the screen width.")

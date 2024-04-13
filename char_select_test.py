@@ -1,8 +1,6 @@
 # This test doesn't work for now, there is still more I need to learn here.
 
-def active_character_select(
-        battlers
-):
+def active_character_select(battlers):
     """
     Determines which player character is the active character in a turn.
 

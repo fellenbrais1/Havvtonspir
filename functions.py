@@ -49,9 +49,7 @@ print("-----------------------------------------------------------------------")
 
 
 # This function returns a True or False if a string is a palindrome or not.
-def is_palindrome(
-        provided_string
-):
+def is_palindrome(provided_string):
     """
     Checks if 'provided_string' is a palindrome or not and returns True/ False.
 
@@ -65,9 +63,7 @@ def is_palindrome(
 
 # This function allows a sentence to be stripped down to alnum characters and \
 # then checked to see if it is a palindrome using 'is_palindrome().
-def is_sentence_palindrome(
-        provided_sentence
-):
+def is_sentence_palindrome(provided_sentence):
     """
     Creates a new sentence stripped of spaces and punctuation for checking.
 

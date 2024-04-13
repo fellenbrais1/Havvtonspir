@@ -6,7 +6,7 @@
 # 'datetime.now()'.
 from datetime import datetime
 
-print("\n* Final version (for now) of the outlier removal program")
+print("\n* Final version (for now) of the outlier removal program.")
 
 try:
     from troubleshooting_outliers import data_1 as data

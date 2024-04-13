@@ -53,9 +53,7 @@ def choose_album():
 
 
 # Second function to choose the song to play.
-def choose_song(
-        provided_album
-):
+def choose_song(provided_album):
     """
     Function to allow the user to choose which song they want to play.
 
@@ -110,9 +108,7 @@ def choose_song(
 
 
 # Final function to play the selected song, loop around, or to finish.
-def play_song(
-        provided_track
-):
+def play_song(provided_track):
     """
     Plays the song specified by the user in 'choose_song()'.
 

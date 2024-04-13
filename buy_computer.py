@@ -107,7 +107,7 @@ while not finished:
         current_choice = "-"
         sleep(1)
         choice = input("\nAre you happy with this list? Y/N ('E' to edit) "
-                       ">>> ")
+                       ">>>: ")
         choice.casefold()
         if choice == 'y':
             if not chosen_list:

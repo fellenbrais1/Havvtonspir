@@ -32,9 +32,7 @@ def print_statuses():
     print(a, b, c, d)
 
 
-def init(
-        active_name
-):
+def init(active_name):
     """
     Determines the initiative value of the active character in a list.
 
