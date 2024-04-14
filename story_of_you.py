@@ -2,9 +2,9 @@
 
 
 def story_of_you(
-        name='',
-        age='',
-        hobbies=''
+        name: str = '',
+        age: str = '',
+        hobbies: str | list = ''
 ):
     """
     Allows user specified information to be printed back as a personal story.

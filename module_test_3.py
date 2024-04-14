@@ -72,7 +72,7 @@ def active_turn():
     battle_turn(active_turn_list)
 
 
-def battle_turn(active_turn_list):
+def battle_turn(active_turn_list: list):
     """
     Determines damage taken by battler characters and applies new HP totals.
 
@@ -115,7 +115,7 @@ def battle_turn(active_turn_list):
                 print_stats(active_turn_list)
 
 
-def print_stats(active_turn_list):
+def print_stats(active_turn_list: list):
     """
     Prints out a list of status effects for all active battler characters.
 

@@ -33,9 +33,9 @@ menu_2 = [
 # 'de_unwanted()' cleans spam out of the menu list and generates a new list \
 # 'no_unwanted_menu' that is returned as it might be needed for something else.
 def de_unwanted(
-        provided_menu,
-        unwanted_item
-):
+        provided_menu: list,
+        unwanted_item: str
+) -> list:
     """
     Scrubs instances of a specified ingredient from a menu of meal items.
 
@@ -67,9 +67,9 @@ def de_unwanted(
 # 'unwanted_stripper()' takes the menu as it is and prints the items without \
 # whichever item is specified in 'unwanted'.
 def unwanted_stripper(
-        provided_menu,
-        unwanted_item
-):
+        provided_menu: list,
+        unwanted_item: str
+) -> None:
     """
     Scrubs instances of a specified ingredient from a menu of meal items.
 

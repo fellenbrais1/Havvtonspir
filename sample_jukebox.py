@@ -9,7 +9,7 @@ SONGS_LIST = 3
 
 
 # First function to choose the album.
-def choose_album():
+def choose_album(initial_albums: tuple) -> tuple:
     """
     Function to allow the user to choose which album they want to play.
 
@@ -23,7 +23,7 @@ def choose_album():
         print("\nWelcome to the jukebox!")
         print("Please choose an album or enter '0' to quit!\n")
         album_list = []
-        for item in albums:
+        for item in initial_albums:
             jukebox_album = item[0]
             album_list.append(jukebox_album)
         for index, album in enumerate(album_list):
@@ -34,7 +34,7 @@ def choose_album():
             choice -= 1
             while True:
                 if choice in valid_choices:
-                    album = albums[choice]
+                    album = initial_albums[choice]
                     trigger = True
                 elif choice == -1:
                     print("\nExiting program!")
@@ -49,11 +49,14 @@ def choose_album():
                   "please try again.")
             continue
     else:
-        return album
+        return album, initial_albums
 
 
 # Second function to choose the song to play.
-def choose_song(provided_album):
+def choose_song(
+        provided_album: tuple,
+        initial_albums: tuple
+) -> str:
     """
     Function to allow the user to choose which song they want to play.
 
@@ -61,6 +64,7 @@ def choose_song(provided_album):
     to get data to use.
 
     :param provided_album: The album that was chosen in 'choose_album()'.
+    :param initial_albums: The original list of imported albums.
     :return: 'track' is returned as a tuple for use in 'play_song()'.
     """
     trigger = False
@@ -85,7 +89,7 @@ def choose_song(provided_album):
                         print("\nWould you like to choose another album? y/n?")
                         choice_2 = input(">>>: ")
                         if choice_2.casefold() == "y":
-                            provided_album = choose_album()
+                            provided_album = choose_album(initial_albums)
                             break
                         elif choice_2.casefold() == 'n':
                             print("\nExiting program!")
@@ -108,7 +112,7 @@ def choose_song(provided_album):
 
 
 # Final function to play the selected song, loop around, or to finish.
-def play_song(provided_track):
+def play_song(provided_track: str) -> None:
     """
     Plays the song specified by the user in 'choose_song()'.
 
@@ -134,6 +138,6 @@ def play_song(provided_track):
 
 # Master loop to keep things going around if the user wants to play more songs.
 while True:
-    album_chosen = choose_album()
-    track_to_play = choose_song(album_chosen)
+    album_chosen = choose_album(albums)
+    track_to_play = choose_song(album_chosen, albums)
     play_song(track_to_play)

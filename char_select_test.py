@@ -1,6 +1,6 @@
 # This test doesn't work for now, there is still more I need to learn here.
 
-def active_character_select(battlers):
+def active_character_select(battlers: list):
     """
     Determines which player character is the active character in a turn.
 
@@ -24,8 +24,8 @@ def active_character_select(battlers):
 
 
 def testo(
-        active_turn_list,
-        battlers
+        active_turn_list: list,
+        battlers: list
 ):
     """
     A practice function using a generator to determine active player character.

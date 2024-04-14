@@ -7,9 +7,9 @@
 # I have specified a default value for the provided_width parameter that will \
 # be used if no other argument is provided by the code.
 def banner_text(
-        provided_text=" ",
-        provided_width=60
-):
+        provided_text: str = " ",
+        provided_width: int = 60
+) -> None:
     """
     Prints provided text by line with asterisk formatting.
 

@@ -86,7 +86,7 @@ def active_turn():
 # future to handle only damage and assigning the 'KO' status, another function \
 # should be made to handle the choices player characters and enemies will make \
 # and that can call this one when needed
-def battle_turn(active_turn_list):
+def battle_turn(active_turn_list: list):
     """
     Determines damage taken by battler characters and applies new HP totals.
 
@@ -133,7 +133,7 @@ def battle_turn(active_turn_list):
 # This is a debugging function to check changes to stats are being applied, \
 # but could be repurposed to produce character stats as displayed in a stats \
 # screen or menu etc.
-def print_stats(active_turn_list):
+def print_stats(active_turn_list: list):
     """
     Prints out a list of status effects for all active battler characters.
 
@@ -168,7 +168,7 @@ def print_stats(active_turn_list):
 # This is a debugging function to check changes to statuses are being applied, \
 # but could be called later as a 'check party status' action in a menu or in \
 # a battle etc.
-def print_statuses(active_turn_list):
+def print_statuses(active_turn_list: list):
     """
     Prints the status list for each active character in battle handling.
 

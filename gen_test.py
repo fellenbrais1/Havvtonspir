@@ -21,7 +21,7 @@ class NumberGen:
         return value
 
 
-def number_gen():
+def number_gen() -> NumberGen:
     """
     Function to generate a number using a generator class object.
 

@@ -3,7 +3,7 @@
 # password for the user.
 
 
-def password_creation():
+def password_creation() -> str:
     """
     Creates a password for a number of user inputs.
 

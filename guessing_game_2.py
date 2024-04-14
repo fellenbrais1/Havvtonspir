@@ -90,7 +90,7 @@ def guesser():
 
 # This function reads a user input and returns it if the input cannot be \
 # changed into an int. This is then called whenever the program needs an input.
-def get_integer(prompt):
+def get_integer(prompt: str) -> int:
     """
     Checks if a string is numeric and returns it as an int.
 

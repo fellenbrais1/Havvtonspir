@@ -3,9 +3,9 @@
 
 
 def sum_eo(
-        provided_n,
-        provided_t
-):
+        provided_n: int,
+        provided_t: str
+) -> int:
     """
     Allows the summing of all numbers even or odd up to the specified number.
 
