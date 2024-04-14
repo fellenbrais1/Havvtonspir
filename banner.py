@@ -20,7 +20,7 @@ def banner_text(
     an asterisk prints a line of asterisks, a space produces an empty line.
     :param provided_width: Specified width to format to, if the text is wider
     than this width a ValueError will be raised.
-    :return: Function prints messages and returns 'None'.
+    :raises ValueError: If the supplied string is too long to fit.
     """
     lines = provided_text.splitlines()
     for line in lines:

@@ -9,7 +9,7 @@ def fibonacci(n: int) -> int:
     iteration of the sequence.
 
     :param: n: The number of times you want to iterate through the sequence.
-    :return: Function returns 'result'.
+    :return: 'result'.
     """
 
     if 0 <= n <= 1:
