@@ -5,14 +5,12 @@ from random import randint
 from time import sleep
 
 
-def battle_options():
+def battle_options() -> None:
     """
     Allows a user to choose the next action they will take in battle.
 
     Also determines the action the active enemy will take in battle. This
     function runs in a loop broken by an 'Escape' action.
-
-    :return: Function prints messages and returns 'None'.
     """
 
     available_actions = [

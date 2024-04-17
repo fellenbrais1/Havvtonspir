@@ -6,7 +6,7 @@ import operator
 
 
 # Initiative order calculation.
-def initiative_generator():
+def initiative_generator() -> list:
     """
     Determines the initiative order of the active characters in battle handling.
 
@@ -26,13 +26,11 @@ def initiative_generator():
 
 
 # Active character in turn generation.
-def turn_order():
+def turn_order() -> None:
     """
     Uses the 'active_turn_list' to determine the turn order of characters.
 
     Once it has run through the list of battlers, a new turn is started.
-
-    :return: Function handles data, prints messages, and returns 'None'.
     """
     while True:
         i = 0

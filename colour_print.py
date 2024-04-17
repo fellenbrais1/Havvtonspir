@@ -17,12 +17,17 @@ print(RED, "This will be in red.", sep="")
 print(RESET, "This is now reset.", sep="")
 
 
-def print_special(colour, provided_text):
+def print_special(
+        provided_text: str,
+        colour: str
+) -> None:
     """
+    Allows printing using ANSI escape code formatting.
 
-    :param colour:
-    :param provided_text:
-    :return:
+    Automatically resets the formatting after each call.
+
+    :param provided_text: The text fed to this function.
+    :param colour: The ANSI formatting escape code.
     """
     print_string = colour + provided_text
     print(print_string, RESET)

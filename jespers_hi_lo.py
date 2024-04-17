@@ -5,14 +5,12 @@
 from time import sleep
 
 
-def jespers_hi_lo():
+def jespers_hi_lo() -> None:
     """
     A game that will guess your number correctly first time, guaranteed.
 
     Error handling for incorrect user input prompts another entry attempt.
     The code handles when a player lies abut it having guessed their number.
-
-    :return: Function runs the game, prints messages, and returns 'None'.
     """
     low = 1
     high = 1000

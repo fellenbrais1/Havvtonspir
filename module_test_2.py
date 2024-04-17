@@ -2,29 +2,25 @@
 
 import operator
 from data_test import battlers
-from module_test import init, print_statuses
+from module_test import init
 
 
-def main_loop():
+def main_loop() -> None:
     """
     Determines the 'active_name' of the active character in battle handling.
 
     Function uses this to call 'init()'.
-
-    :return: 'active_name' is used when calling 'init()'.
     """
     for battler in battlers:
         active_name = battler
         init(active_name)
 
 
-def active_turn():
+def active_turn() -> None:
     """
     Creates 'active_turn_list' by indexing into character data.
 
     'active_turn_list' is reversed to give usable output. for battle handling.
-
-    :return: Function prints messages and returns 'None'.
     """
     active_turn_list = []
     for battler in battlers:

@@ -8,13 +8,11 @@
 from random import randint
 
 
-def guesser():
+def guesser() -> None:
     """
     Runs a number guessing game with three levels of difficulty.
 
-    Includes error handling for invalid user inputs.
-
-    :return: Function runs the game, prints messages, and returns 'None'.
+    Includes error handling for invalid user inputs..
     """
     # The 'highest' variable allows us to specify what the game plays between \
     # e.g. between 1 and 'highest'.

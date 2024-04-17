@@ -7,14 +7,12 @@ print("You have to say \"I went to the market today and bought a [thing]\" "
       "starting with the current letter of the alphabet.")
 
 
-def went_market():
+def went_market() -> None:
     """
     Allows the playing on an 'I went to the market' game from a-z.
 
     User input needs to have the same starting lesson of the active letter, if
     this is not correct the user will be prompted to enter again.
-
-    :return: Function runs the game, prints messages, and returns 'None'.
     """
     # Starting letter = "a"
     # Starting ord value = 97

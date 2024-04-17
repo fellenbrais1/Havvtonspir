@@ -3,14 +3,12 @@
 # This is an example of a for loop iterating through a set of values.
 
 
-def cheerleader():
+def cheerleader() -> None:
     """
     Function to cheer for someone's name letter by letter.
 
     This function will accept any string, and ends with an exclamation mark. A
     space will also result in an empty line in the output.
-
-    :return: Function prints messages and returns 'None'.
     """
     from time import sleep
     name = input("Who do you want to cheer on?: ")

@@ -1,16 +1,14 @@
 # A test of different modules that could be used for a battle handling system.
 
-from data_test import battlers, battlers_data
+from data_test import battlers_data
 from random import randint
 
 
-def print_statuses():
+def print_statuses() -> None:
     """
     Prints the status list for each active character in battle handling.
 
     Makes use of the battlers_data dictionary to get data to process.
-
-    :return: Function prints messages and returns 'None'.
     """
     a = []
     b = []
@@ -32,7 +30,7 @@ def print_statuses():
     print(a, b, c, d)
 
 
-def init(active_name):
+def init(active_name: any) -> None:
     """
     Determines the initiative value of the active character in a list.
 
@@ -40,7 +38,6 @@ def init(active_name):
     'init_mod' scores summed together with a random int between 0 and 20.
 
     :param active_name: The active character name fed to the function.
-    :return: Function prints messages and returns 'None'.
     """
     r = active_name
     if 'slow' in r['statuses']:

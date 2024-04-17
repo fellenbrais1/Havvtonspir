@@ -3,7 +3,7 @@
 
 import operator
 from random import randint
-from char_select_test import active_character_select, testo
+from char_select_test import active_character_select
 
 active_character_object = 0
 
@@ -113,7 +113,7 @@ print(active_turn_list)
 
 while True:
     try:
-        active_character_object = next(active_character_select(battlers))
+        active_character_object = next(active_character_select[battlers])
         print(active_character_object)
         break
     except StopIteration:
@@ -180,8 +180,8 @@ print()
 #     active_character_dict = next(testo(active_turn_list, battlers))
 #     print("The active character is: ", active_character_dict[1])
 
-    # else:
-    #     print("Finished!")
+# else:
+#     print("Finished!")
 
 #     try:
 #         active_character_object = next(active_character_select(battlers))

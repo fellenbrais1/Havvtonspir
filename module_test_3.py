@@ -6,7 +6,7 @@ import operator
 from odict import odict
 
 
-def init():
+def init() -> None:
     """
     Determines the initiative value of the active character in a list.
 
@@ -51,13 +51,11 @@ def init():
         active_turn()
 
 
-def active_turn():
+def active_turn() -> None:
     """
     Creates 'active_turn_list' by indexing into character data.
 
     'active_turn_list' is reversed to give usable output. for battle handling.
-
-    :return: Function prints messages and returns 'None'.
     """
     active_turn_list = []
     for battler in battlers:
@@ -72,14 +70,13 @@ def active_turn():
     battle_turn(active_turn_list)
 
 
-def battle_turn(active_turn_list: list):
+def battle_turn(active_turn_list: list) -> None:
     """
     Determines damage taken by battler characters and applies new HP totals.
 
     Calls 'print_stats()' after execution.
 
     :param active_turn_list: The list of participating characters in a battle.
-    :return: Functions calls 'print_stats()' and returns 'None'.
     """
     condition = True
     while condition:
@@ -115,7 +112,7 @@ def battle_turn(active_turn_list: list):
                 print_stats(active_turn_list)
 
 
-def print_stats(active_turn_list: list):
+def print_stats(active_turn_list: list) -> None:
     """
     Prints out a list of status effects for all active battler characters.
 
@@ -123,7 +120,6 @@ def print_stats(active_turn_list: list):
     A lot of junk code should be removed from this function before use.
 
     :param active_turn_list: The list of participating characters in a battle.
-    :return: Function calls 'print_statuses()' and returns 'None'.
     """
     od = odict(bd)
     stats = []
@@ -170,14 +166,12 @@ def print_stats(active_turn_list: list):
     print_statuses()
 
 
-def print_statuses():
+def print_statuses() -> None:
     """
     Prints the status list for each active character in battle handling.
 
     Makes use of the battlers_data dictionary to get data to process.
     A lot of junk code should be removed from this function before use.
-
-    :return: Function prints messages and returns 'None'.
     """
     od = odict(bd)
     statuses = ""

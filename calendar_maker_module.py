@@ -4,13 +4,11 @@
 from calendar import *
 
 
-def calender_maker():
+def calender_maker()-> None:
     """
     A program to generate a calendar based on a year number.
 
     Makes use of calendar module to gather the data for calendar creation.
-
-    :return: Function prints calendar and returns 'None'.
     """
     year = int(input("Enter the year: "))
     print(calendar(year, 2, 1, 8, 3))

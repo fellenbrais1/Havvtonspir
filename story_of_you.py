@@ -5,7 +5,7 @@ def story_of_you(
         name: str = '',
         age: str = '',
         hobbies: str | list = ''
-):
+) -> None:
     """
     Allows user specified information to be printed back as a personal story.
 
@@ -15,7 +15,6 @@ def story_of_you(
     :param name: User specified name.
     :param age: User specified age.
     :param hobbies: User specified hobbies.
-    :return: Function prints messages and returns 'None'.
     """
     if name == '':
         name = input("What is your name? ".capitalize())
