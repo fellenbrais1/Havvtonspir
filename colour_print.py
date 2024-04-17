@@ -2,6 +2,12 @@
 # issues for Windows, Mac, and Linux operating systems.
 import colorama
 
+# This set of commands is to test if things are running in a Venv or not. When \
+# the statement gets 'VIRTUAL_ENV' it will display the path if there is one, \
+# and None if it is not running in one.
+import os
+print(os.environ.get('VIRTUAL_ENV'))
+
 # Some ANSI escape sequences for colours and effects
 # 'L' = 'light'
 WHITE = '\u001b[0;37m'
