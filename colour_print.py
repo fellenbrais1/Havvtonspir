@@ -1,3 +1,7 @@
+# 'colorama' allows ANSI formatting codes to be used in the terminal without \
+# issues for Windows, Mac, and Linux operating systems.
+import colorama
+
 # Some ANSI escape sequences for colours and effects
 # 'L' = 'light'
 WHITE = '\u001b[0;37m'
@@ -93,6 +97,9 @@ def print_special(
     print(print_string, RESET, sep="")
 
 
+# The 'colorama' package needs to be initialised before use.
+colorama.init()
+
 # Experiments with the 'special_print()' function.
 print_special("My name is Michael", L_RED)
 print_special("And I live in a Pichael.", MAGENTA)
@@ -100,3 +107,6 @@ print_special("And I live in a Pichael.", MAGENTA)
 print_special("I like cheese.", L_GRAY)
 
 print_special("Hello World!", L_CYAN, UNDERLINE, REVERSE)
+
+# The 'colorama' package needs to be de-initialised after use.
+colorama.deinit()
